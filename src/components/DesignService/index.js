@@ -1,5 +1,6 @@
 import { Plus_Jakarta_Sans } from "next/font/google";
 import BeyondDesign from "../BeyondDesign";
+import LetsChat from "../LetsChat";
 
 const jarkata = Plus_Jakarta_Sans({
   weight: "400",

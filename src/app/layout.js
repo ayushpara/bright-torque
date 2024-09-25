@@ -8,6 +8,7 @@ import { ConfigProvider } from "antd";
 import { COLOR_PRIMARY, COLOR_SECONDARY } from "../styles/style-constants";
 import HeaderLayout from "@/components/HeaderLayout";
 import FooterLayout from "@/components/FooterLayout";
+import MobileFooterNavigator from "@/components/MobileFooterNavigator";
 
 const inter = Syne({ subsets: ["latin"] });
 
@@ -33,7 +34,7 @@ export const RootLayout = async ({ children }) => {
                 },
               }}
             >
-              <div className="min-h-screen w-screen flex flex-col bg-white">
+              <div className="min-h-screen w-screen flex flex-col bg-white relative">
                 <div className="flex ">
                   <HeaderLayout />
                 </div>
@@ -43,6 +44,9 @@ export const RootLayout = async ({ children }) => {
                 </div>
                 <div className="flex w-full ">
                   <FooterLayout />
+                </div>
+                <div className="sm:hidden sticky bottom-0 ">
+                <MobileFooterNavigator/>
                 </div>
               </div>
             </ConfigProvider>

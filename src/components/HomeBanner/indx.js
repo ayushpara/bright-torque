@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import starIcon from "../../static/icons/star.svg";
 import viewArrowIcon from "../../static/icons/viewArrow.svg";
+import desktopImage from "../../static/images/desktop.png";
 
 import { projects } from "@/utilities/helpers";
 
@@ -35,13 +36,13 @@ const HomeBanner = () => {
       <div className="p-5 sm:px-[120px] sm:py-16">
         <div className="w-full grid flex-row sm:grid-cols-4">
           <div className="sm:col-span-3 flex flex-col order-last sm:order-none">
-            <p className="sm:text-[72px] text-[32px] sm:leading-[84px] leading-[40px] text-base text-green-1 ">
+            <p className="sm:text-[72px] text-[33px] sm:leading-[84px] leading-[40px] text-base text-green-1 ">
               Design Experts.
             </p>
-            <p className="sm:text-[72px] text-[32px]  sm:leading-[84px] leading-[40px] text-base text-secondary text-green-2 ">
+            <p className="sm:text-[72px] text-[33px]  sm:leading-[84px] leading-[40px] text-base text-secondary text-green-2 ">
               Helping Mission-Focused
             </p>
-            <p className="sm:text-[72px] text-[32px]  sm:leading-[84px] leading-[40px] text-base text-green-1 ">
+            <p className="sm:text-[72px] text-[33px]  sm:leading-[84px] leading-[40px] text-base text-green-1 ">
               B2B Saas Companies.
             </p>
             <p className="text-green-3 sm:text-xl text-base">
@@ -113,7 +114,7 @@ const HomeBanner = () => {
                   alt={project.heading}
                   className={`w-full h-full ${
                     selectedIndex === index
-                      ? "object-fill w-full"
+                      ? "object-cover w-full"
                       : "object-cover sm:w-auto  w-[49px]"
                   } rounde sm:rounded-[20px] rounded-xl sm:h-full h-[128px]`}
                 />
