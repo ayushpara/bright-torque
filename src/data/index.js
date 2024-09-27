@@ -172,7 +172,7 @@ export const budgets = [
   { label: "$20k-$50k", value: "20-50" },
   { label: "$50k-$75k", value: "50-75" },
   { label: "$75k-$100k", value: "75-100" },
-  { label: "$100k+", value: "100000" },
+  { label: "$100k+", value: "100" },
 ];
 
 //about

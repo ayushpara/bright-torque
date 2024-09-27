@@ -35,7 +35,7 @@ export const RootLayout = async ({ children }) => {
               }}
             >
               <div className="min-h-screen w-screen flex flex-col bg-white relative">
-                  <HeaderLayout />
+                <HeaderLayout />
 
                 <div className="flex  bg-white min-h-screen w-full">
                   {children}
@@ -44,7 +44,7 @@ export const RootLayout = async ({ children }) => {
                   <FooterLayout />
                 </div>
                 <div className="sm:hidden sticky bottom-0 ">
-                <MobileFooterNavigator/>
+                  <MobileFooterNavigator />
                 </div>
               </div>
             </ConfigProvider>

@@ -31,27 +31,33 @@ const HomeBanner = () => {
             </p>
           </div>
           <div className="flex flex-row justify-end items-center">
-          <motion.div
-            initial="initial"
-            animate="animate"
-            variants={rotateVariants}
-            className="sm:col-span-1 justify-end items-center flex sm:h-[123px] sm:w-[123px] w-[45px] h-[45px]"
-            style={{ transformOrigin: "center center" }} 
-          >
-             
             <motion.div
-              className="absolute  "
-              style={{ width: '100%', height: '100%', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+              initial="initial"
+              animate="animate"
+              variants={rotateVariants}
+              className="sm:col-span-1 justify-end items-center flex sm:h-[123px] sm:w-[123px] w-[45px] h-[45px]"
+              style={{ transformOrigin: "center center" }}
             >
-              <Image
-                style={{ transformOrigin: "center center" }}
-                src={starIcon}
-                alt="star"
-                layout="fill" 
-                className="object-cover absolute w-full h-full"
-              />
+              <motion.div
+                className="absolute  "
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  borderRadius: "50%",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <Image
+                  style={{ transformOrigin: "center center" }}
+                  src={starIcon}
+                  alt="star"
+                  layout="fill"
+                  className="object-cover absolute w-full h-full"
+                />
+              </motion.div>
             </motion.div>
-          </motion.div>
           </div>
         </div>
       </div>
@@ -87,13 +93,12 @@ const HomeBanner = () => {
             {homeProjects.map((project, index) => (
               <motion.div
                 key={index}
-                className={`relative flex-grow transition-all duration-300 sm:h-[512px] hover:cursor-pointer  ${
+                className={`relative flex-grow transition-all duration-300 sm:h-[512px] h-[129px] hover:cursor-pointer  ${
                   selectedIndex === index ? "col-span-3" : "col-span-1"
                 }`}
                 onClick={() => setSelectedIndex(index)}
                 style={{
                   flex: selectedIndex === index ? "5" : "1",
-                  // height: "512px",
                 }}
               >
                 <Image
