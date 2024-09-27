@@ -4,7 +4,7 @@ import { usePathname, useRouter } from "next/navigation";
 import logoImage from "../../static/images/logo.png";
 import { headerButtons } from "@/data";
 
-const HeaderButton = ({ headerButton, index, pathname }) => {
+const HeaderButton = ({ headerButton, pathname }) => {
   const router = useRouter();
 
   return (
@@ -27,8 +27,6 @@ const HeaderButton = ({ headerButton, index, pathname }) => {
 
 const HeaderLayout = () => {
   const pathname = usePathname();
-
-  console.log("check path naem-->", pathname);
 
   return (
     <div className=" bg-primary sm:h-[95px] h-[71px] w-full sm:px-[120px] px-5 header-layout">

@@ -2,9 +2,8 @@
 import { headerButtons } from "@/data"
 import { usePathname, useRouter } from "next/navigation";
 
-export const HeaderButton = ({ headerButton, index, pathname }) => {
+export const HeaderButton = ({ headerButton, pathname }) => {
     const router = useRouter();
-    console.log('chck header footer button->', headerButton, headerButton.redirect === pathname)
     return (
       <div
         onClick={() => router.push(headerButton.redirect)}
