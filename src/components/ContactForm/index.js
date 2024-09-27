@@ -164,7 +164,7 @@ const ContactForm = () => {
             </div>
 
             <Form.Item name="is_newsletter">
-              <div className="flex flex-row items-start justify-center">
+              <div className="flex flex-row items-start ">
                 <Checkbox
                   className=""
                   onChange={(val) => setIsRead(val.target.checked)}
