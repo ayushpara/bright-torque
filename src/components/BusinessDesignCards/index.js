@@ -4,6 +4,7 @@ import { useState, useRef } from "react";
 import { businessDesigns } from "@/data";
 import { scrollContainer } from "@/utilities/helpers";
 import LetsChat from "../LetsChat";
+import useMediaQuery from "../useMedia";
 
 const BusinessDesignCard = ({
   businessDesign,
@@ -13,7 +14,7 @@ const BusinessDesignCard = ({
 }) => {
   return (
     <div
-      className=" justify-between flex flex-col space-y-8 hover:cursor-pointer w-full "
+      className=" justify-between flex flex-col space-y-8 hover:cursor-pointer sm:w-full "
       onClick={() => onChangeDesign(index)}
     >
       <div className="space-y-3 flex flex-col">
@@ -31,18 +32,48 @@ const BusinessDesignCard = ({
   );
 };
 
+const MobileImageConainer = ({ businessDesign }) => {
+  return (
+    <div className="relative min-w-full h-[316px]">
+      <Image
+        width={132}
+        height={132}
+        src={businessDesign.images[0]}
+        alt="image"
+        className=" absolute "
+      />
+      <Image
+        width={187}
+        height={187}
+        src={businessDesign.images[1]}
+        alt="image"
+        className="absolute top-0 right-0 "
+      />
+      <Image
+        width={187}
+        height={187}
+        src={businessDesign.images[2]}
+        alt="image"
+        className="absolute left-[10%] bottom-0 "
+      />
+    </div>
+  );
+};
+
 const BusinessDesignCards = () => {
+  const isMobile = useMediaQuery("(max-width: 767px)");
   const [selectedDesign, setSelectedDesign] = useState(0);
   const images = businessDesigns.flatMap((item) => item.images);
 
   const containerRef = useRef(null);
+  const businessContainerRef = useRef(null);
 
   const getImageSize = (index) => {
     const imagePosition = index + 1;
-    if (imagePosition % 3 === 1) return "w-[132px] h-[132px]";
+    if (imagePosition % 3 === 1) return "min-w-[132px] min-h-[132px]";
     if (imagePosition % 3 === 2)
-      return "sm:w-[295px] sm:h-[295px] w-[187px] h-[187px] item-center flex justify-center ";
-    if (imagePosition % 3 === 0) return "w-[185px] h-[185px]";
+      return "sm:w-[295px] sm:h-[295px] min-w-[187px] min-h-[187px] item-center flex justify-center ";
+    if (imagePosition % 3 === 0) return "min-w-[185px] min-h-[185px]";
   };
 
   const getImageContainerStyles = (index) => {
@@ -65,53 +96,73 @@ const BusinessDesignCards = () => {
 
   const onChangeDesign = (val) => {
     if (val > selectedDesign) {
-      scrollContainer(500, containerRef);
+      scrollContainer(isMobile ? 400 : 500, containerRef);
+      isMobile && scrollContainer(300, businessContainerRef);
     } else {
-      scrollContainer(-500, containerRef);
+      scrollContainer(isMobile ? -400 : -500, containerRef);
+      isMobile && scrollContainer(-300, businessContainerRef);
     }
     setSelectedDesign(val);
   };
 
   return (
     <div className=" flex flex-col sm:w-full w-screen">
-      <div className="order-2 sm:order-1 grid sm:grid-cols-4 gap-10 sm:px-20 px-5 sm:mbo-0 mb-5 ">
+      <div
+        ref={businessContainerRef}
+        className="order-2 sm:order-1 sm:grid sm:grid-cols-4 flex flex-row gap-10 sm:px-20 px-5 sm:mb-0 mb-5 overflow-x-auto scrollbar-hidden "
+      >
         {businessDesigns.map((businessDesign, index) => (
-          <BusinessDesignCard
-            businessDesign={businessDesign}
-            index={index}
-            onChangeDesign={onChangeDesign}
-            selectedDesign={selectedDesign}
-          />
+          <div
+            className="flex justify-center  min-w-[75%] sm:w-auto"
+            key={index}
+          >
+            <BusinessDesignCard
+              businessDesign={businessDesign}
+              index={index}
+              onChangeDesign={onChangeDesign}
+              selectedDesign={selectedDesign}
+            />
+          </div>
         ))}
       </div>
 
       <div className=" order-1 sm:order-2 sm:py-20 py-5">
-        <div
-          className="scrollbar-hidden flex sm:space-x-7 space-x-7 overflow-x-auto sm:h-[316px] h-[330px] pl-5 relative "
-          ref={containerRef}
-        >
-          {images.map((image, index) => {
-            return (
-              <div className={`${getImageContainerStyles(index)} `}>
-                <div
-                  className={`${getImageSize(
-                    index
-                  )} relative rounded-full w-full flex `}
-                >
-                  <Image
-                    src={image}
-                    alt="image"
-                    className="absolute w-full h-full"
-                  />
+        {!isMobile ? (
+          <div
+            className="scrollbar-hidden flex sm:space-x-7 space-x-7 overflow-x-auto sm:h-[316px] h-[330px] pl-5 relative w-full"
+            ref={containerRef}
+          >
+            {images.map((image, index) => {
+              return (
+                <div className="relative">
+                  <div className={`${getImageContainerStyles(index)}`}>
+                    <div
+                      className={`${getImageSize(
+                        index
+                      )} relative rounded-full w-full flex `}
+                    >
+                      <Image
+                        src={image}
+                        alt="image"
+                        className="absolute w-full h-full"
+                      />
+                    </div>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
-        </div>
+              );
+            })}
+          </div>
+        ) : (
+          <div ref={containerRef} className="flex flex-row min-w-full overflow-x-auto space-x-3 pl-5 scrollbar-hidden">
+            {businessDesigns.map((businessDesign, index) => (
+              <MobileImageConainer businessDesign={businessDesign} />
+            ))}
+          </div>
+        )}
       </div>
       <div className="sm:px-20 px-5 order-3 sm:pb-20 pb-5">
-        <LetsChat/>
-        </div>
+        <LetsChat />
+      </div>
     </div>
   );
 };

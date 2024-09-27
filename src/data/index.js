@@ -12,6 +12,10 @@ import transform1Image from "../static/images/transform1.png";
 import transform2Image from "../static/images/transform2.png";
 import transform3Image from "../static/images/transform3.png";
 
+import design1Image from "../static/images/design1.png";
+import design2Image from "../static/images/design2.png";
+import design3Image from "../static/images/design3.png";
+
 import scale1Image from "../static/images/scale1.png";
 import scale2Image from "../static/images/scale2.png";
 import scale3Image from "../static/images/scale3.png";
@@ -155,7 +159,7 @@ export const businessDesigns = [
     heading: "Design for impact",
     description:
       "User interface design is not just creating interfaces with paint on top. We’re aiming to bring the experiences to life. With careful consideration of every UI design element, the goal is to ensure that we deliver a consistent visual experience",
-    images: [discover1Image, discover2Image, discover3Image],
+    images: [design1Image, design2Image, design3Image],
   },
   {
     heading: "Scale for growth",
