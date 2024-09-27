@@ -1,6 +1,6 @@
 import Image from "next/image";
 import highlightStarIcon from "../../static/icons/highlightStar.svg";
-import { hightlights } from "@/utilities/about";
+import { hightlights } from "@/data";
 import desktopImage from "../../static/images/desktop.png";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import BeyondDesign from "../BeyondDesign";

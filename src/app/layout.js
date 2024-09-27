@@ -35,9 +35,7 @@ export const RootLayout = async ({ children }) => {
               }}
             >
               <div className="min-h-screen w-screen flex flex-col bg-white relative">
-                <div className="flex ">
                   <HeaderLayout />
-                </div>
 
                 <div className="flex  bg-white min-h-screen w-full">
                   {children}

@@ -1,5 +1,5 @@
 import { Plus_Jakarta_Sans } from "next/font/google";
-import { projects } from "@/utilities/helpers";
+import { projects } from "@/data";
 import Image from "next/image";
 import JoinForces from "../JoinForces";
 
@@ -12,10 +12,10 @@ const Projects = () => {
   return (
     <div className={`sm:py-[80px] sm:px-[120px] p-5 ${jarkata.className}`}>
       <div>
-        <p className="text-[#001325F2] font-medium text-[44px]">
+        <p className="text-[#001325F2] font-medium text-[44px] leading-[44px] ">
           Look at the projects we’ve delivered !
         </p>
-        <p className="text-[#001325A3] text-xl">
+        <p className="text-[#001325A3] text-xl pt-5">
           We partner with SaaS and tech companies globally and count industry{" "}
           <br />
           heavyweights among our clients. In 2023 alone, we helped our clients{" "}

@@ -4,68 +4,55 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import starIcon from "../../static/icons/star.svg";
 import viewArrowIcon from "../../static/icons/viewArrow.svg";
-import desktopImage from "../../static/images/desktop.png";
-
-import { projects } from "@/utilities/helpers";
+import { homeProjects } from "@/data";
+import { rotateVariants } from "@/utilities/helpers";
 
 const HomeBanner = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
-
-  const rotateVariants = {
-    animate: {
-      rotateY: 360,
-      x:"0%",
-      y:"0%",
-      translateX: "-50%",
-      translateY: "-50%",
-      transition: {
-        duration: 1,
-        repeat: Infinity,
-        ease: "linear",
-      },
-    },
-    initial:{
-      x:"50%",
-      y:"50%"
-      
-  },
-  };
 
   return (
     <div className="w-full bg-primary">
       <div className="p-5 sm:px-[120px] sm:py-16">
         <div className="w-full grid flex-row sm:grid-cols-4">
           <div className="sm:col-span-3 flex flex-col order-last sm:order-none">
-            <p className="sm:text-[72px] text-[33px] sm:leading-[84px] leading-[40px] text-base text-green-1 ">
+            <p className="sm:text-[72px] text-[31px] sm:leading-[84px] leading-[40px] text-green-1 ">
               Design Experts.
             </p>
-            <p className="sm:text-[72px] text-[33px]  sm:leading-[84px] leading-[40px] text-base text-secondary text-green-2 ">
+            <p className="sm:text-[72px] text-[31px]  sm:leading-[84px] leading-[40px] text-secondary text-green-2 ">
               Helping Mission-Focused
             </p>
-            <p className="sm:text-[72px] text-[33px]  sm:leading-[84px] leading-[40px] text-base text-green-1 ">
+            <p className="sm:text-[72px] text-[31px]  sm:leading-[84px] leading-[40px] text-green-1 ">
               B2B Saas Companies.
             </p>
-            <p className="text-green-3 sm:text-xl text-base">
+            <p className="text-green-3 sm:text-xl text-base mt-5">
               We’re a Product Design & Branding Agency <br />
               who specializes in B2B SaaS platforms, complex Web Apps <br />
               and diverse UI/UX design projects. Based in India...
             </p>
           </div>
+          <div className="flex flex-row justify-end items-center">
           <motion.div
             initial="initial"
             animate="animate"
             variants={rotateVariants}
-            className="sm:col-span-1 justify-end items-center flex"
+            className="sm:col-span-1 justify-end items-center flex sm:h-[123px] sm:w-[123px] w-[45px] h-[45px]"
+            style={{ transformOrigin: "center center" }} 
           >
-            <div className="relative sm:w-[123px] sm:h-[123px] w-[45px] h-[45px]">
+             
+            <motion.div
+              className="absolute  "
+              style={{ width: '100%', height: '100%', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+            >
               <Image
-              style={{transformOrigin:"center center"}}
+                style={{ transformOrigin: "center center" }}
                 src={starIcon}
                 alt="star"
+                layout="fill" 
                 className="object-cover absolute w-full h-full"
               />
-            </div>
+            </motion.div>
           </motion.div>
+          </div>
         </div>
       </div>
       <div className="p-5 sm:px-[70px] sm:py-16">
@@ -79,7 +66,7 @@ const HomeBanner = () => {
               className="flex "
             >
               <p className="text-white sm:text-[120px] text-[29px] leading-[29px] sm:leading-[120px]">
-                {projects[selectedIndex].heading}
+                {homeProjects[selectedIndex].heading}
               </p>
             </motion.div>
 
@@ -91,16 +78,16 @@ const HomeBanner = () => {
               className="flex "
             >
               <p className="text-white sm:text-lg text-[5px] sm:mt-5 mt-2">
-                {projects[selectedIndex].description}
+                {homeProjects[selectedIndex].description}
               </p>
             </motion.div>
           </>
 
           <div className="flex flex-row sm:gap-10 gap-5 sm:mt-10 mt-5">
-            {projects.map((project, index) => (
+            {homeProjects.map((project, index) => (
               <motion.div
                 key={index}
-                className={`relative flex-grow transition-all duration-300 sm:h-[512px] ${
+                className={`relative flex-grow transition-all duration-300 sm:h-[512px] hover:cursor-pointer  ${
                   selectedIndex === index ? "col-span-3" : "col-span-1"
                 }`}
                 onClick={() => setSelectedIndex(index)}

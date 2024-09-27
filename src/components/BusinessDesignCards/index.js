@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState, useRef } from "react";
-import { businessDesigns } from "@/utilities/helpers";
+import { businessDesigns } from "@/data";
 import { scrollContainer } from "@/utilities/helpers";
 import LetsChat from "../LetsChat";
 

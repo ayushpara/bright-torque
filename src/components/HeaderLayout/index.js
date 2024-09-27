@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import logoImage from "../../static/images/logo.png";
-import { headerButtons } from "@/utilities/helpers";
+import { headerButtons } from "@/data";
 
 const HeaderButton = ({ headerButton, index, pathname }) => {
   const router = useRouter();
@@ -31,7 +31,7 @@ const HeaderLayout = () => {
   console.log("check path naem-->", pathname);
 
   return (
-    <div className=" bg-primary h-[95px] w-full sm:px-[120px] px-5  ">
+    <div className=" bg-primary sm:h-[95px] h-[71px] w-full sm:px-[120px] px-5 header-layout">
       <div className="flex flex-row justify-between h-full items-center">
         <div className="flex items-center justify-center">
           <Image src={logoImage} alt="logo" />

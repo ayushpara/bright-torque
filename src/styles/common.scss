@@ -45,3 +45,13 @@
     border: 1px solid #d9d9d9;; 
     background-color: transparent !important; 
   }
+
+  .header-layout {
+    position: sticky;
+    top: 0; 
+    z-index: 1000; 
+  }
+
+  .green-color {
+    filter: invert(9%) sepia(79%) saturate(5556%) hue-rotate(178deg) brightness(90%) contrast(99%);
+  }

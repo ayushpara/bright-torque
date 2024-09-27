@@ -1,9 +1,7 @@
-import Image from "next/image";
-import HomeBanner from "@/components/HomeBanner/indx";
+import HomeBanner from "@/components/HomeBanner";
 import BusinessPartners from "@/components/BusinessPartners";
 import DesignService from "@/components/DesignService";
 import HelpBusiness from "@/components/HelpBusiness";
-import MobileFooterNavigator from "@/components/MobileFooterNavigator";
 
 export default function Home() {
   return (

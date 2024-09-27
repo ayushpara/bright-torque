@@ -1,4 +1,4 @@
-import { projectTypes, budgets } from "@/utilities/helpers";
+import { projectTypes, budgets } from "@/data";
 import { Form, Input, Button, Checkbox } from "antd";
 import { useState } from "react";
 import useMediaQuery from "../useMedia";

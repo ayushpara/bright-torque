@@ -3,7 +3,6 @@ import Capabilities from "@/components/Capabilities"
 import JoinForces from "@/components/JoinForces"
 import HightLights from "@/components/Highlights"
 
-
 const About=()=>{
     return(
         <div className="w-full">

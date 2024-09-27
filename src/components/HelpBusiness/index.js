@@ -28,7 +28,7 @@ const HelpBusiness = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className="pb-10">
         <BusinessDesignCards />
       </div>
     </div>

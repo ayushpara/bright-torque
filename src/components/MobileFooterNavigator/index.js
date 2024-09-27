@@ -1,5 +1,5 @@
 "use client"
-import { headerButtons } from "@/utilities/helpers"
+import { headerButtons } from "@/data"
 import { usePathname, useRouter } from "next/navigation";
 
 export const HeaderButton = ({ headerButton, index, pathname }) => {

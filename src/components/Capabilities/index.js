@@ -1,4 +1,10 @@
-import { strategies, designs } from "@/utilities/about";
+import { strategies, designs } from "@/data";
+import { Plus_Jakarta_Sans } from "next/font/google";
+
+const jarkata = Plus_Jakarta_Sans({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 const Capabilities = () => {
   return (
@@ -24,7 +30,7 @@ const Capabilities = () => {
           {strategies.map((strategy) => (
             <div className="w-full">
                 <p className="text-[#001325D6] text-[24px]">{strategy.heading}</p>
-                <p className="text-sm text-[#001325D6] sm:w-3/4">{strategy.description}</p>
+                <p className={`text-sm text-[#001325D6] sm:w-3/4 ${jarkata.className}`}>{strategy.description}</p>
             </div>
           ))}
         </div>
@@ -41,7 +47,7 @@ const Capabilities = () => {
           {designs.map((design) => (
             <div className="">
                 <p className="text-[#001325D6] text-[24px]">{design.heading}</p>
-                <p className="text-sm text-[#001325D6] sm:w-3/4">{design.description}</p>
+                <p className={`text-sm text-[#001325D6] sm:w-3/4 ${jarkata.className}`}>{design.description}</p>
             </div>
           ))}
         </div>
