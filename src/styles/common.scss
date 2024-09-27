@@ -1,3 +1,47 @@
 .scrollbar-hidden::-webkit-scrollbar {
     display: none;
   }
+
+  .ant-input.custom-input {
+    border: none;
+    border-bottom: 1px solid #d9d9d9;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+  }
+  .ant-form-item-control {
+    margin-bottom: 16px !important; 
+  }
+
+  .ant-input.custom-input:focus {
+    box-shadow: none;
+  }
+
+  .ant-form-item-row.custom-input {
+    margin-bottom: 35px;
+  }
+
+  .custom-input::placeholder {
+    font-size: 20px; 
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .ant-btn-primary {
+    box-shadow: none !important;
+  }
+
+  .ant-input-outlined.ant-input-status-error.custom-input {
+    border: none;
+    background-color: transparent !important;
+    color: inherit; 
+    box-shadow: none; 
+  }
+  
+  .ant-input-outlined.ant-input-status-error:not(.ant-input-disabled) {
+    border-color: transparent !important; 
+  }
+  
+  .ant-input-outlined.ant-input-status-error.custom-input:focus {
+    border: 1px solid #d9d9d9;; 
+    background-color: transparent !important; 
+  }

@@ -119,4 +119,20 @@ export const scrollContainer = (scrollOffset, containerRef) => {
   requestAnimationFrame(animateScroll);
 };
 
+export const projectTypes = [
+  {label :"Logo/Branding", value : "Logo/Branding"},
+  {label :"Illustration",value : "Illustration"},
+  {label :"Web Design", value : "Web Design"},
+  {label :"Design Product", value : "Design Product"},
+  {label :"App Design", value : "App Design"},
+  {label :"Webflow Development", value : "Webflow Development"},
+  {label :"Other", value : "Other"},
+];
 
+export const budgets = [
+  {label : "Less than $20k",value : "20"},
+  {label :"$20k-$50k",value : "20-50"},
+  {label :"$50k-$75k",value : "50-75"},
+ {label : "$75k-$100k",value : "75-100"},
+  {label :"$100k+",value : "100000"},
+];

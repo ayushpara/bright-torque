@@ -34,6 +34,7 @@ const BusinessDesignCard = ({
 const BusinessDesignCards = () => {
   const [selectedDesign, setSelectedDesign] = useState(0);
   const images = businessDesigns.flatMap((item) => item.images);
+
   const containerRef = useRef(null);
 
   const getImageSize = (index) => {
@@ -41,7 +42,7 @@ const BusinessDesignCards = () => {
     if (imagePosition % 3 === 1) return "w-[132px] h-[132px]";
     if (imagePosition % 3 === 2)
       return "sm:w-[295px] sm:h-[295px] w-[187px] h-[187px] item-center flex justify-center ";
-    if (imagePosition % 3 === 0) return "w-[187px] h-[187px]";
+    if (imagePosition % 3 === 0) return "w-[185px] h-[185px]";
   };
 
   const getImageContainerStyles = (index) => {
@@ -108,7 +109,7 @@ const BusinessDesignCards = () => {
           })}
         </div>
       </div>
-      <div className="sm:px-20 px-5 order-3 sm:pb-20 pb-20">
+      <div className="sm:px-20 px-5 order-3 sm:pb-20 pb-5">
         <LetsChat/>
         </div>
     </div>
