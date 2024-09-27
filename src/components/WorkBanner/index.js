@@ -29,7 +29,7 @@ const WorkBanner = () => {
                 transform design across industry...
               </span>
             </p>
-            <p className="text-green-3 sm:text-xl text-base sm:pt-5 pt-3">
+            <p className={`text-green-3 sm:text-xl text-base sm:pt-5 pt-3 ${jarkata.className} `}>
               Transforming pixels into meaningful designs
             </p>
           </div>

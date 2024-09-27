@@ -61,7 +61,7 @@ export const hightlights = [
         description : "Earned 5-star reviews on Freelancer.com from happy clients."
     },
     {
-        heading : "Top5%",
+        heading : "Top 5%",
         description : "Certified UI/UX design"
     }
 ]

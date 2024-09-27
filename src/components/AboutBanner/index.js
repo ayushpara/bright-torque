@@ -3,6 +3,12 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import starIcon from "../../static/icons/aboutStar.svg";
 import { rotateVariants } from "@/utilities/helpers";
+import { Plus_Jakarta_Sans } from "next/font/google";
+
+const jarkata = Plus_Jakarta_Sans({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 const AboutBanner = () => {
   return (
@@ -14,7 +20,7 @@ const AboutBanner = () => {
               Tranforming your ideas into{" "}
               <span className="text-secondary">Brand & Prodicts</span>
             </p>
-            <p className="text-green-3 sm:text-xl text-base sm:pt-5 pt-3">
+            <p className={`text-green-3 sm:text-xl text-base sm:pt-5 pt-3 ${jarkata.className} `}>
               Breaking new ground to transform the industry.
             </p>
           </div>

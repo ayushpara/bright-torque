@@ -5,8 +5,8 @@ import arrowIcon from "../../static/icons/arrow.svg";
 const JoinForces = () => {
   return (
     <div>
-        <div className="flex items-center justify-center flex-col space-y-10 ">
-          <div className="sm:w-[84px] sm:h-[84px] relative">
+        <div className="flex items-center justify-center flex-col sm:space-y-10 space-y-5 ">
+          <div className="sm:w-[84px] sm:h-[84px] h-[32px] w-[32px] relative">
             <Image
               src={arrowIcon}
               alt="arrow"
@@ -21,7 +21,7 @@ const JoinForces = () => {
               millions every single day.
             </p>
           </div>
-          <Button type="primary">Let's Chat</Button>
+          <Button className="flex min-h-[37px]" type="primary">Let's Chat</Button>
         </div>
     </div>
   );

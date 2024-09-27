@@ -6,6 +6,13 @@ import starIcon from "../../static/icons/star.svg";
 import viewArrowIcon from "../../static/icons/viewArrow.svg";
 import { homeProjects } from "@/data";
 import { rotateVariants } from "@/utilities/helpers";
+import { Plus_Jakarta_Sans } from "next/font/google";
+
+const jarkata = Plus_Jakarta_Sans({
+  weight: "400",
+  subsets: ["latin"],
+});
+
 
 const HomeBanner = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -24,7 +31,7 @@ const HomeBanner = () => {
             <p className="sm:text-[72px] text-[31px]  sm:leading-[84px] leading-[40px] text-green-1 ">
               B2B Saas Companies.
             </p>
-            <p className="text-green-3 sm:text-xl text-base mt-5">
+            <p className={`text-green-3 sm:text-xl text-base mt-5 ${jarkata.className} `}>
               We’re a Product Design & Branding Agency <br />
               who specializes in B2B SaaS platforms, complex Web Apps <br />
               and diverse UI/UX design projects. Based in India...
@@ -61,7 +68,7 @@ const HomeBanner = () => {
           </div>
         </div>
       </div>
-      <div className="p-5 sm:px-[70px] sm:py-16">
+      <div className={`p-5 sm:px-[70px] sm:py-16 ${jarkata.className}`}>
         <div className="sm:rounded-[40px] rounded-xl bg-secondary sm:p-10 p-5">
           <>
             <motion.div
@@ -83,7 +90,7 @@ const HomeBanner = () => {
               transition={{ duration: 0.7 }}
               className="flex "
             >
-              <p className="text-white sm:text-lg text-[5px] sm:mt-5 mt-2">
+              <p className="text-white font-normal sm:text-lg text-[5px] sm:mt-5 mt-2">
                 {homeProjects[selectedIndex].description}
               </p>
             </motion.div>
@@ -125,7 +132,7 @@ const HomeBanner = () => {
                     ))}
                   </div>
                   <div>
-                    <div className="sm:rounded-[1440px] rounded-[312px] sm:h-[56px] sm:w-[208px] w-[40px] h-[13.83px] bg-white justify-center flex items-center">
+                    <div className="sm:rounded-[1440px] border border-secondary rounded-[312px] sm:h-[56px] sm:w-[208px] w-[40px] h-[13.83px] bg-white justify-center flex items-center">
                       <div className="flex flex-row sm:space-x-7 space-x-2 items-center">
                         <p className="text-black-2 sm:text-lg text-[4.34px]">
                           View

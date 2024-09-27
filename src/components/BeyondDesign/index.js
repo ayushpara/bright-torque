@@ -7,7 +7,7 @@ import freshAnglesIcon from "../../static/icons/freshAngles.svg";
 
 const BeyondDesign = () => {
   return (
-    <div>
+    <div className="smlp-0 pt-7">
       <div className="grid sm:grid-cols-2">
         <div>
           <div className="space-y-5">
@@ -28,7 +28,7 @@ const BeyondDesign = () => {
       </div>
       <div>
         <div className="grid sm:grid-cols-3 sm:gap-10 gap-5 sm:pt-20 sm:pb-8 pt-5">
-          <div className="bg-[#F6D0DB] rounded-[48px] sm:p-[56px] p-10 justify-between  flex flex-col col-span-1 sm:h-auto h-[421px]">
+          <div className="bg-[#F6D0DB] rounded-[48px] sm:p-[56px] py-10 px-5 justify-between  flex flex-col col-span-1 h-auto gap-[64px] ">
             <div className="relative h-[88px] w-[88px]">
               <Image
                 src={youFirstIcon}
@@ -40,15 +40,15 @@ const BeyondDesign = () => {
               <p className="text-black-3 text-[40px] leading-[48px]">
                 You First
               </p>
-              <p className="text-black-3 text-lg ">
+              <p className="text-black-3 text-[17.72px] ">
                 You’re the reason we’re here, full stop. We value collaboration
                 above ego and tackle the extra mile to achieve your vision with
                 a can-do attitude.
               </p>
             </div>
           </div>
-          <div className="col-span-2 w-full ">
-            <div className="bg-white rounded-[48px] sm:p-[56px] p-10 justify-between  flex flex-col col-span-1 h-[422px]">
+          <div className="sm:col-span-2 w-full ">
+            <div className="bg-white rounded-[48px] sm:p-[56px] p-10 justify-between  flex flex-col col-span-1 sm:h-[422px] gap-[64px]">
             <div className="relative h-[88px] w-[88px]">
               <Image src={cuttingEdgeIcon} alt="cutting edge" className="object-cover absolute w-full h-full" />
               
@@ -65,7 +65,7 @@ const BeyondDesign = () => {
               </div>
             </div>
             <div className="grid sm:grid-cols-2 sm:gap-10 gap-5 sm:mt-10 mt-5">
-              <div className="bg-[#B6D5D8] rounded-[48px] sm:p-[56px] p-10 justify-between  flex flex-col col-span-1 h-[422px]">
+              <div className="bg-[#B6D5D8] rounded-[48px] sm:p-[56px] p-10 justify-between  flex flex-col col-span-1 sm:h-[422px] gap-[64px]">
               <div className="relative h-[88px] w-[88px]">
                 <Image src={hideNothingIcon} alt="hide nothing" className="object-cover absolute w-full h-full" />
                 </div>
@@ -80,7 +80,7 @@ const BeyondDesign = () => {
                   </p>
                 </div>
               </div>
-              <div className="bg-[#FFE5B6] rounded-[48px] sm:p-[56px] p-10 justify-between flex flex-col col-span-1 h-[422px]">
+              <div className="bg-[#FFE5B6] rounded-[48px] sm:p-[56px] sm:py-10 py-10 px-5 justify-between flex flex-col col-span-1 h-[422px]">
               <div className="relative h-[88px] w-[88px]">
                 <Image src={freshAnglesIcon} alt="you First" className="object-cover absolute w-full h-full" />
                 </div>

@@ -8,6 +8,14 @@ import discover1Image from "../static/images/discover1.png";
 import discover2Image from "../static/images/discover2.png";
 import discover3Image from "../static/images/discover3.png";
 
+import transform1Image from "../static/images/transform1.png";
+import transform2Image from "../static/images/transform2.png";
+import transform3Image from "../static/images/transform3.png";
+
+import scale1Image from "../static/images/scale1.png";
+import scale2Image from "../static/images/scale2.png";
+import scale3Image from "../static/images/scale3.png";
+
 //projects
 import esgateImage from "../static/images/projects/esgate.png";
 import mgamerImage from "../static/images/projects/mgamer.png";
@@ -141,7 +149,7 @@ export const businessDesigns = [
     heading: "Transform",
     description:
       "We then start building an information architecture that helps you seamlessly navigatethrough the end-user journey. Here, we place emphasis on innovating through features that would create an ideal user experience. Finally, we wireframe, prototype and test the product with live users",
-    images: [discover1Image, discover2Image, discover3Image],
+    images: [transform1Image, transform2Image, transform3Image],
   },
   {
     heading: "Design for impact",
@@ -153,7 +161,7 @@ export const businessDesigns = [
     heading: "Scale for growth",
     description:
       "We help companies create custom front-end development projects and work with no-code platforms like Webflow.  If the development is not being taken up abrighttorque, our project manager is usually supporting your dev team for all the questions and concerns they may face during the development.",
-    images: [discover1Image, discover2Image, discover3Image],
+    images: [scale1Image, scale2Image, scale3Image],
   },
 ];
 
@@ -249,7 +257,7 @@ export const hightlights = [
     description: "Earned 5-star reviews on Freelancer.com from happy clients.",
   },
   {
-    heading: "Top5%",
+    heading: "Top 5%",
     description: "Certified UI/UX design",
   },
 ];
