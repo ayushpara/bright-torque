@@ -16,7 +16,6 @@ const WorkBanner = () => {
       <div className="p-5 sm:px-[120px] sm:py-16">
         <div className="w-full sm:flex-row flex-col flex">
           <div className="flex flex-col order-last sm:order-none">
-            <p className="text-base text-green-1">OUR WORK</p>
             <p className="sm:text-[72px] text-[31px] sm:leading-[74px] leading-[40px] text-secondary text-green-2 sm:block hidden">
               Breaking new ground to
             </p>

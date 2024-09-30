@@ -29,7 +29,7 @@ const HomeBanner = () => {
               Helping Mission-Focused
             </p>
             <p className="sm:text-[72px] text-[31px]  sm:leading-[84px] leading-[40px] text-green-1 ">
-              B2B Saas Companies.
+              Zero-to-One Startup.
             </p>
             <p className={`text-green-3 sm:text-xl text-base mt-5 ${jarkata.className} `}>
               We’re a Product Design & Branding Agency <br />

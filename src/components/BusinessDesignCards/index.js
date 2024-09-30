@@ -95,13 +95,29 @@ const BusinessDesignCards = () => {
   };
 
   const onChangeDesign = (val) => {
-    if (val > selectedDesign) {
-      scrollContainer(isMobile ? 400 : 500, containerRef);
-      isMobile && scrollContainer(300, businessContainerRef);
-    } else {
-      scrollContainer(isMobile ? -400 : -500, containerRef);
-      isMobile && scrollContainer(-300, businessContainerRef);
+    if (isMobile) {
+      if (val > selectedDesign) {
+        scrollContainer(isMobile ? 400 : 500, containerRef);
+        isMobile && scrollContainer(300, businessContainerRef);
+      } else {
+        scrollContainer(isMobile ? -400 : -500, containerRef);
+        isMobile && scrollContainer(-300, businessContainerRef);
+      }
+      setSelectedDesign(val);
+      return;
     }
+
+    const container = containerRef.current;
+    const totalScrollWidth = container.scrollWidth - container.clientWidth;
+    if (val === 0) {
+      scrollContainer(-container.scrollLeft, containerRef);
+    } else if (val === 3) {
+      scrollContainer(totalScrollWidth, containerRef);
+    } else {
+      const scrollPosition = (totalScrollWidth / 4) * (val + 1);
+      scrollContainer(scrollPosition - container.scrollLeft, containerRef);
+    }
+
     setSelectedDesign(val);
   };
 
@@ -153,7 +169,10 @@ const BusinessDesignCards = () => {
             })}
           </div>
         ) : (
-          <div ref={containerRef} className="flex flex-row min-w-full overflow-x-auto space-x-3 pl-5 scrollbar-hidden">
+          <div
+            ref={containerRef}
+            className="flex flex-row min-w-full overflow-x-auto space-x-3 pl-5 scrollbar-hidden"
+          >
             {businessDesigns.map((businessDesign, index) => (
               <MobileImageConainer businessDesign={businessDesign} />
             ))}

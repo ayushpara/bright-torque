@@ -14,19 +14,19 @@ const FooterLayout = () => {
     >
       <div className="flex sm:flex-row flex-col sm:gap-20 gap-5 sm:mt-0 mt-5 items-center justify-center ">
         <p className="sm:text-[24px] text-base text-white items-center  flex">
-          more yummy
+          Visually Delicious
         </p>
         <p className="sm:text-[24px] text-base text-white items-center flex">
-          you first
+          Boldly Original
         </p>
         <p className="sm:text-[24px] text-base text-white items-center flex">
-          cutting edge
+          Visually Delicious
         </p>
         <p className="sm:text-[24px] text-base text-white items-center flex">
-          hide nothing
+          Delightfully Crafted
         </p>
         <p className="sm:text-[24px] text-base text-white items-center flex">
-          more yummy
+          Pure Authenticity
         </p>
       </div>
       <div className="absolute top-[-35px]">

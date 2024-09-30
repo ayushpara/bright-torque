@@ -146,25 +146,25 @@ export const businessDesigns = [
   {
     heading: "Discover",
     description:
-      "We begin with understanding your product,business goals and vision. Once we know what needs to be achieved, we dive deep into product research and discovery that helps us find gaps and unforeseen challenges. This research is then converted into actionable insights and structured goals.",
+      "We start by understanding your product, business goals, and vision. From there, we conduct thorough research to identify gaps and challenges, turning our findings into actionable insights and clear goals.",
     images: [discover1Image, discover2Image, discover3Image],
   },
   {
     heading: "Transform",
     description:
-      "We then start building an information architecture that helps you seamlessly navigatethrough the end-user journey. Here, we place emphasis on innovating through features that would create an ideal user experience. Finally, we wireframe, prototype and test the product with live users",
+      "We create an information architecture to guide seamless end-user navigation, focusing on innovative features for an ideal experience. Finally, we wireframe, prototype, and test the product with real users.",
     images: [transform1Image, transform2Image, transform3Image],
   },
   {
     heading: "Design for impact",
     description:
-      "User interface design is not just creating interfaces with paint on top. We’re aiming to bring the experiences to life. With careful consideration of every UI design element, the goal is to ensure that we deliver a consistent visual experience",
+      "UI design is more than just adding visuals; it’s about bringing experiences to life. We carefully craft each element to deliver a consistent and engaging visual experience.",
     images: [design1Image, design2Image, design3Image],
   },
   {
     heading: "Scale for growth",
     description:
-      "We help companies create custom front-end development projects and work with no-code platforms like Webflow.  If the development is not being taken up abrighttorque, our project manager is usually supporting your dev team for all the questions and concerns they may face during the development.",
+      "We build custom front-end projects and work with no-code platforms like Webflow. If development isn’t handled by us, our project manager supports your dev team with any questions or concerns.",
     images: [scale1Image, scale2Image, scale3Image],
   },
 ];

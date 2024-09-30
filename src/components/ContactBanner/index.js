@@ -11,7 +11,7 @@ const ContactBanner = () => {
       <div className="p-5 sm:px-[70px] sm:py-16">
         <div className="w-full sm:flex-row flex-col flex ">
           <div className="flex flex-col order-last sm:order-none sm:w-3/4">
-            <p className="text-green-3 sm:text-[72px] text-[36px] leading-[40px] sm:leading-[84px] text-base sm:pt-5 pt-3">
+            <p className="text-green-3 sm:text-[72px] text-[36px] leading-[40px] sm:leading-[84px] sm:pt-5 pt-3">
               Let's have a <br />
               Conversation
             </p>

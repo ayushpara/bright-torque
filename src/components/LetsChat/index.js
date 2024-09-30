@@ -14,7 +14,7 @@ const LetsChat = () => {
     <div className={`bg-[#B6D5D8] sm:py-[64px] sm:px-[80px] px-5 py-10 w-full flex flex-col rounded-[48px] ${jarkata.className}`}>
       <div className="grid sm:flex flex-col sm:flex-row sm:grid-cols-1 sm:justify-between sm:space-y-0 space-y-5 justify-center items-center">
         <div className="space-y-5">
-          <p className="text-green-1 sm:text-[160px] text-[64px] leading-[64px] sm:leading-[144px]">
+          <p className="text-green-1 sm:text-[120px] text-[64px] leading-[64px] sm:leading-[144px]">
             Let's Chat
           </p>
           <p className="text-black-3 sm:text-[24px] text-base sm:leading-[33px]">
@@ -24,11 +24,13 @@ const LetsChat = () => {
         <div className="sm:w-auto w-full flex sm:justify-end justify-center">
         <div className="bg-white rounded-full sm:w-[204px] sm:h-[204px] w-[140px] h-[140px] items-center flex justify-center ">
           <div className="relative sm:w-[130px] sm:h-[130px] w-[76px] h-[76px]">
+            <a href= "mailto: name@email.com">
             <Image
               src={arrowIcon}
               alt="let's chat"
               className="absolute w-full h-full object-cover green-color"
             />
+            </a>
           </div>
         </div>
         </div>

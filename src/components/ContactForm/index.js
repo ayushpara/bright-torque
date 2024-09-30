@@ -4,19 +4,24 @@ import { useState } from "react";
 import axios from "axios";
 import useMediaQuery from "../useMedia";
 
-const Tag = ({ tag, type, onSelectTag, selectedValue }) => {
+const Tag = ({ tag, type, onSelectTag, selectedValue=[] }) => {
+  const isSelected=()=>{
+    if(type==="budget") return tag.value === selectedValue
+    return selectedValue.includes(tag.value)
+  }
+
   return (
     <div
       onClick={() => {
         onSelectTag(tag.value, type);
       }}
       className={`${
-        tag.value === selectedValue ? "bg-secondary" : "border-black-3"
+        isSelected() ? "bg-secondary" : "border-black-3"
       } sm:h-[56px] hover:cursor-pointer hover:border-secondary rounded-[1440px] sm:px-[32px] px-[16px] py-[8px] sm:py-[15px] border  flex-row whitespace-nowrap justify-center items-center inline-flex`}
     >
       <p
         className={`${
-          tag.value === selectedValue ? "text-white" : "text-black-1"
+          isSelected() ? "text-white" : "text-black-1"
         } sm:text-lg text-xs `}
       >
         {tag.label}
@@ -28,7 +33,7 @@ const Tag = ({ tag, type, onSelectTag, selectedValue }) => {
 const ContactForm = () => {
   const isMobile = useMediaQuery("(max-width: 767px)");
   const [form] = Form.useForm();
-  const [selectedProject, setSelectedProject] = useState(null);
+  const [selectedProject, setSelectedProject] = useState([]);
   const [selectedBudget, setSelectedBudget] = useState(null);
   const [loading, setLoading] = useState(false);
   const [api, contextHolder] = message.useMessage();
@@ -38,7 +43,16 @@ const ContactForm = () => {
       setSelectedBudget(value);
       return;
     }
-    setSelectedProject(value);
+    console.log('check type value', value, type)
+    if(selectedProject.includes(value)){
+      const removeIndex = selectedProject.indexOf(value)
+      selectedProject.splice(removeIndex, 1);
+      setSelectedProject([...selectedProject]);
+      return
+    }
+    selectedProject.push(value)
+    console.log('selected project--->',selectedProject)
+    setSelectedProject([...selectedProject]);
   };
 
   const onSubmit = (values) => {
@@ -54,13 +68,15 @@ const ContactForm = () => {
       .then((response) => {
         setLoading(false);
         form.resetFields();
-        setSelectedProject(null)
+        setSelectedProject([])
         setSelectedBudget(null)
         api.success("Thank you! We’ve received your message and will get back to you shortly");
       })
       .catch((error) => {
         setLoading(false)});
   };
+
+  console.log('check selected proe',selectedProject)
 
   return (
     <div className="bg-white sm:my-[70px] my-[40px] rounded-[48px]">

@@ -39,7 +39,7 @@ const Capabilities = () => {
         <div className="flex flex-row justify-between items-center">
           <p className="text-[#001325F2] text-[44px]">Design</p>
           <div className="flex justify-end">
-            <p className="text-[#001325F2] sm:text-[24px]">1/2</p>
+            <p className="text-[#001325F2] sm:text-[24px]">2/2</p>
           </div>
         </div>
         <div className="h-[1px] bg-primary w-full mt-5" />
