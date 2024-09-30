@@ -4,10 +4,16 @@ import youFirstIcon from "../../static/icons/youFirst.svg";
 import cuttingEdgeIcon from "../../static/icons/cuttingEdge.svg";
 import hideNothingIcon from "../../static/icons/hideNothing.svg";
 import freshAnglesIcon from "../../static/icons/freshAngles.svg";
+import { Plus_Jakarta_Sans } from "next/font/google";
+
+const jarkata = Plus_Jakarta_Sans({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 const BeyondDesign = () => {
   return (
-    <div className="smlp-0 pt-7">
+    <div className={`smlp-0 pt-7 ${jarkata.className}`}>
       <div className="grid sm:grid-cols-2 sm:items-center">
         <div>
           <div className="space-y-5">

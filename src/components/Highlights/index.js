@@ -14,7 +14,7 @@ const HightLights = () => {
   return (
     <div className="bg-white">
       <div
-        className={`sm:p-[70px] p-5 w-full rounded-t-[64px] bg-primary ${jarkata.className}`}
+        className={`sm:p-[70px] p-5 pb-16 w-full rounded-t-[64px] bg-primary ${jarkata.className}`}
       >
         <div className="sm:mt-0 mt-10">
           <div className=" flex sm:flex-row flex-col justify-between">

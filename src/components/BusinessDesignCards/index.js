@@ -6,6 +6,14 @@ import { scrollContainer } from "@/utilities/helpers";
 import LetsChat from "../LetsChat";
 import useMediaQuery from "../useMedia";
 
+import { Plus_Jakarta_Sans } from "next/font/google";
+
+const jarkata = Plus_Jakarta_Sans({
+  weight: "400",
+  subsets: ["latin"],
+});
+
+
 const BusinessDesignCard = ({
   businessDesign,
   index,
@@ -14,12 +22,12 @@ const BusinessDesignCard = ({
 }) => {
   return (
     <div
-      className=" justify-between flex flex-col space-y-8 hover:cursor-pointer sm:w-full "
+      className={` justify-between flex flex-col space-y-8 hover:cursor-pointer sm:w-full ${jarkata.className} `}
       onClick={() => onChangeDesign(index)}
     >
       <div className="space-y-3 flex flex-col">
         <p className="text-white text-[32px]">{businessDesign.heading}</p>
-        <p className="text-white text-sm break-words break-all">
+        <p className="text-white text-sm ">
           {businessDesign.description}
         </p>
       </div>

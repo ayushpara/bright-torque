@@ -28,7 +28,9 @@ const WorkBanner = () => {
                 transform design across industry...
               </span>
             </p>
-            <p className={`text-green-3 sm:text-xl text-base sm:pt-5 pt-3 ${jarkata.className} `}>
+            <p
+              className={`text-green-3 sm:text-xl text-base sm:pt-5 pt-3 ${jarkata.className} `}
+            >
               Transforming pixels into meaningful designs
             </p>
           </div>
@@ -52,14 +54,22 @@ const WorkBanner = () => {
         </div>
       </div>
       <div
-        className={`relative sm:py-10 p-5 bg-secondary flex flex-col items-center justify-center w-full ${jarkata.className}`}
+        className={`relative sm:py-10 sm:px-0 p-5   bg-secondary flex flex-col items-center justify-center w-full ${jarkata.className}`}
       >
-        <div className="flex sm:flex-row flex-col sm:gap-20 gap-5 items-center justify-center">
-          <p className="sm:text-[24px] text-base text-white">more yummy</p>
-          <p className="sm:text-[24px] text-base text-white">you first</p>
-          <p className="sm:text-[24px] text-base text-white">cutting edge</p>
-          <p className="sm:text-[24px] text-base text-white">hide nothing</p>
-          <p className="sm:text-[24px] text-base text-white">more yummy</p>
+        <div className="flex sm:flex-row flex-col sm:px-[120px] sm:space-y-0 space-y-4 items-center justify-between w-full">
+          <p className="sm:text-[24px] text-base text-white">
+            Visually Delicious
+          </p>
+          <p className="sm:text-[24px] text-base text-white">Boldly Original</p>
+          <p className="sm:text-[24px] text-base text-white">
+            Visually Delicious
+          </p>
+          <p className="sm:text-[24px] text-base text-white">
+            Delightfully Crafted
+          </p>
+          <p className="sm:text-[24px] text-base text-white">
+            Pure Authenticity
+          </p>
         </div>
       </div>
     </div>

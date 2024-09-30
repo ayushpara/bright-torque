@@ -24,7 +24,7 @@ const LetsChat = () => {
         <div className="sm:w-auto w-full flex sm:justify-end justify-center">
         <div className="bg-white rounded-full sm:w-[204px] sm:h-[204px] w-[140px] h-[140px] items-center flex justify-center ">
           <div className="relative sm:w-[130px] sm:h-[130px] w-[76px] h-[76px]">
-            <a href= "mailto: name@email.com">
+            <a href= "mailto:ayush@visao.io">
             <Image
               src={arrowIcon}
               alt="let's chat"

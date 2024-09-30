@@ -7,7 +7,7 @@ import BusinessDesignCards from "../BusinessDesignCards";
 const HelpBusiness = () => {
   return (
     <div className={`bg-secondary`}>
-      <div className="p-5 sm:px-[120px] sm:py-[136px]">
+      <div className="p-5 sm:px-[120px] sm:py-[136px] ">
         <div className="flex sm:flex-row flex-col justify-between items-center sm:space-y-0 space-y-7">
           <div className="relative sm:w-[77px] w-[32px] h-[32px] sm:h-[77px]">
             <Image
