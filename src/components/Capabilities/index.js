@@ -9,13 +9,17 @@ const jarkata = Plus_Jakarta_Sans({
 const Capabilities = () => {
   return (
     <div className="bg-white">
-      <div className="sm:px-[120px] sm:py-[60px] p-5 sticky sm:top-20 top-10 z-10 bg-white" key="1">
+      <div
+        className="sm:px-[120px] sm:py-[60px] p-5 sticky sm:top-20 top-10 z-10 bg-white"
+        key="1"
+      >
         <p className="text-[#032825] sm:text-[54px] text-[32px] leading-[84px] font-semibold">
           Our Capabilities
         </p>
         <p className="text-[#032825] text-xl">
-          We believe in mastery, not mediocrity. Our focus is always on sharp,
-          exceptional and 'whoa' kinda results.
+          We believe in excellence, not mediocrity. Our focus is consistently on
+          delivering sharp,
+          <br /> exceptional, and truly impressive results.
         </p>
       </div>
       <div key="2" className="sm:px-[120px] sm:py-[60px] p-5">
@@ -30,7 +34,11 @@ const Capabilities = () => {
           {strategies.map((strategy) => (
             <div className="w-full" key={strategy.heading}>
               <p className="text-[#001325D6] text-[24px]">{strategy.heading}</p>
-              <p className={`text-sm text-[#001325D6] sm:w-3/4 ${jarkata.className}`}>{strategy.description}</p>
+              <p
+                className={`text-sm text-[#001325D6] sm:w-3/4 ${jarkata.className}`}
+              >
+                {strategy.description}
+              </p>
             </div>
           ))}
         </div>
@@ -47,7 +55,11 @@ const Capabilities = () => {
           {designs.map((design) => (
             <div key={design.heading}>
               <p className="text-[#001325D6] text-[24px]">{design.heading}</p>
-              <p className={`text-sm text-[#001325D6] sm:w-3/4 ${jarkata.className}`}>{design.description}</p>
+              <p
+                className={`text-sm text-[#001325D6] sm:w-3/4 ${jarkata.className}`}
+              >
+                {design.description}
+              </p>
             </div>
           ))}
         </div>

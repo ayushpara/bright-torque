@@ -193,27 +193,27 @@ export const strategies = [
   {
     heading: "UX Research and Data Analysis",
     description:
-      "We use a mix of high-tech tools and good old-fashioned intuition to uncover the secrets behind why your users do what they do. We'll gather the data needed to create a UI/UX design that will leave your users gushing with delight.",
+      "We combine cutting-edge tools with tried-and-true intuition to uncover the reasons behind user behavior. By gathering the necessary data, we create a UI/UX design that will leave your users thrilled.",
   },
   {
     heading: "User Flows and Customer Journey",
     description:
-      "From the moment the user click on your website to the final checkout, we'll create a seamless experience that will have them saying wow. With our  approach, you can trust that your design will be a smooth and memorable ride for your customers.",
+      "From the instant a user clicks on your website to the final checkout, we’ll craft a seamless experience that leaves them amazed. With our approach, you can be confident that your design will provide a smooth and memorable journey for your customers.",
   },
   {
     heading: "Surveys and User Interviews",
     description:
-      "Ready to get the lowdown on what your users really want? We'll get the inside scoop on what your users are thinking and leave no stone unturned in our quest for user-centered design perfection.  Whether it's through face-to-face interviews, online surveys, or focus groups.",
+      "Ready to discover what your users truly want? We’ll dig deep to understand their thoughts and leave no stone unturned in our pursuit of user-centered design excellence, whether through in-person interviews, online surveys, or focus groups.",
   },
   {
     heading: "Wireframing",
     description:
-      "Wireframing is like a blueprint for your website or app! And we're the architects! Whether you're starting from scratch or revamping your existing design, we'll make sure that every element is in the right place, so your users can find what they're looking for with ease.",
+      "Wireframing serves as the blueprint for your website or app, and we’re the architects! Whether you’re building from the ground up or updating an existing design, we’ll ensure that every element is strategically positioned, making it easy for your users to find what they need.",
   },
   {
     heading: "UX Audits",
     description:
-      "Our UX audits are like a comprehensive check-up for your digital presence. We'll take a deep dive into every nook and cranny to uncover any pain points and usability issues that may be hurting your user experience.",
+      "Our UX audits act as a thorough check-up for your digital presence. We’ll thoroughly examine every detail to identify pain points and usability issues that may be affecting your user experience.",
   },
 ];
 
@@ -221,27 +221,27 @@ export const designs = [
   {
     heading: "UI/UX Design",
     description:
-      "Our UI/UX designs are a perfect blend of creativity and usability. We’ll work with you every step of the way to bring your vision to life. You can trust that your design will stand out from the crowd and leave a lasting impression on your users. Let's get designing!",
+      "Our UI/UX designs seamlessly combine creativity and usability. We’ll collaborate with you throughout the process to bring your vision to life, ensuring your design stands out and leaves a lasting impression on your users. Let’s get set design !",
   },
   {
     heading: "Interaction Design",
     description:
-      "We'll craft a seamless user experience that keeps your visitors engaged and coming back for more. From intuitive navigation to engaging animations, we'll bring your digital vision to life in a way that will have your users clicking and tapping their way to digital bliss!",
+      "We’ll create a seamless user experience that keeps visitors engaged and returning. With intuitive navigation and captivating animations, we’ll bring your digital vision to life, leading users to digital bliss!",
   },
   {
     heading: "Web/ Mobile App Design",
     description:
-      "Our designs are not only aesthetically pleasing, but also intuitive and user-friendly. Whether it's a website, a mobile app, or both, we'll craft a digital experience that will make your users feel like they've stumbled upon a pot of gold at the end of the internet rainbow.",
+      "Our designs are not only visually appealing but also intuitive and user-friendly. Whether it’s a website, a mobile app, or both, we’ll create a digital experience that feels like a pot of gold at the end of the internet rainbow for your users.",
   },
   {
     heading: "Usability Testing",
     description:
-      "Is your design user-friendly? Let's find out! We'll gather a diverse group of users and ask them to navigate your website or app to uncover any pain points or usability issues, and give you the data you need to make your digital presence the best it can be.",
+      "Is your design user-friendly? Let’s discover! We’ll gather a diverse group of users to navigate your website or app, identifying pain points and usability issues, providing you with the data needed to enhance your digital presence.",
   },
   {
     heading: "Digital Prototyping",
     description:
-      "We'll create a working model of your website or app, complete with interactive elements and real-life user scenarios. We'll tweak and perfect the design until it's just right, and then you'll have a fully functional prototype that's ready to take the digital world by storm.",
+      "We’ll develop a working model of your website or app, featuring interactive elements and real-life user scenarios. We’ll refine the design until it’s perfect, giving you a fully functional prototype ready to make an impact in the digital world.",
   },
 ];
 
