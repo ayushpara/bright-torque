@@ -16,13 +16,11 @@ const Projects = () => {
           Look at the projects we’ve delivered !
         </p>
         <p className="text-[#001325A3] text-xl pt-5">
-          We partner with SaaS and tech companies globally and count industry{" "}
+        We collaborate with SaaS and tech companies worldwide, including industry leaders.
           <br />
-          heavyweights among our clients. In 2023 alone, we helped our clients{" "}
-          <br />
-          raise over 8MN USD by building user-centric and visually stunning{" "}
-          <br />
-          products.
+          In 2023 alone, we supported our clients in securing significant funding by creating user-centric, visually striking products.
+         
+         
         </p>
       </div>
       <div className="grid sm:grid-cols-2 sm:gap-20 gap-10 pt-20">
