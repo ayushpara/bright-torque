@@ -8,7 +8,7 @@ const About=()=>{
         <div className="w-full">
             <AboutBanner/>
             <Capabilities />
-            <div className="sm:p-[70px] p-5  pb-16" >
+            <div className="sm:py-[70px] lg:px-[120px] sm:px-[70px] p-5  pb-16" >
             <JoinForces/>
             </div>
             <HightLights/>
