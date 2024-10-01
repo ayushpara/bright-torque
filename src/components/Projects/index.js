@@ -10,7 +10,8 @@ const jarkata = Plus_Jakarta_Sans({
 
 const Projects = () => {
   return (
-    <div className={`sm:py-[80px] sm:px-[120px] p-5 ${jarkata.className}`}>
+    <>
+    <div className={`sm:py-[80px] lg:px-[120px] sm:px-[70px] p-5 ${jarkata.className}`}>
       <div>
         <p className="text-[#001325F2] font-medium text-[44px] leading-[44px] ">
           Look at the projects we’ve delivered !
@@ -36,7 +37,7 @@ const Projects = () => {
             <p className="sm:text-[32px] text-lg sm:leading-[43px] text-black-3">
               {project.heading}
             </p>
-            <p className="sm:text-base text-[9px] sm:leading-[27px] text-black-3">
+            <p className="sm:text-base text-[14px] sm:leading-[27px] text-black-3">
               {project.description}
             </p>
             <div className="flex flex-row sm:space-x-5 space-x-3">
@@ -49,11 +50,13 @@ const Projects = () => {
           </div>
         ))}
       </div>
-      <div className="sm:py-20 py-5">
-        <JoinForces/>
-      </div>
+  
      
     </div>
+    <div className="px-5 pb-5 lg:px-[120px] sm:px-[70px] sm:pb-[80px]">
+      <JoinForces />
+      </div>
+    </>
   );
 };
 

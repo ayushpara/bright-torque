@@ -13,7 +13,7 @@ const jarkata = Plus_Jakarta_Sans({
 const WorkBanner = () => {
   return (
     <div className="w-full bg-primary">
-      <div className="p-5 sm:px-[120px] sm:py-16">
+      <div className="p-5 lg:px-[120px] sm:px-[70px] sm:py-16">
         <div className="w-full sm:flex-row flex-col flex">
           <div className="flex flex-col order-last sm:order-none">
             <p className="sm:text-[72px] text-[31px] sm:leading-[74px] leading-[40px] text-secondary text-green-2 sm:block hidden">
@@ -56,18 +56,18 @@ const WorkBanner = () => {
       <div
         className={`relative sm:py-10 sm:px-0 p-5   bg-secondary flex flex-col items-center justify-center w-full ${jarkata.className}`}
       >
-        <div className="flex sm:flex-row flex-col sm:px-[120px] sm:space-y-0 space-y-4 items-center justify-between w-full">
-          <p className="sm:text-[24px] text-base text-white">
+        <div className="flex sm:flex-row flex-col sm:px-[20px] lg:px-[120px] sm:space-y-0 space-y-4 items-center justify-between w-full">
+          <p className="sm:text-[20px] lg:text-[24px] text-base text-white">
             Visually Delicious
           </p>
-          <p className="sm:text-[24px] text-base text-white">Boldly Original</p>
-          <p className="sm:text-[24px] text-base text-white">
+          <p className="sm:text-[20px] lg:text-[24px] text-base text-white">Boldly Original</p>
+          <p className="sm:text-[20px] lg:text-[24px] text-base text-white">
             Visually Delicious
           </p>
-          <p className="sm:text-[24px] text-base text-white">
+          <p className="sm:text-[20px] lg:text-[24px] text-base text-white">
             Delightfully Crafted
           </p>
-          <p className="sm:text-[24px] text-base text-white">
+          <p className="sm:text-[20px] lg:text-[24px] text-base text-white">
             Pure Authenticity
           </p>
         </div>

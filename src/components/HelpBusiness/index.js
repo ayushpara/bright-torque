@@ -16,9 +16,12 @@ const HelpBusiness = () => {
               className="absolute w-full h-full"
             />
           </div>
-
-          <p className="text-white sm:text-[64px] text-[32px] leading-[36px] sm:leading-[80px] font-semibold sm:text-start text-center">
+          <p className="hidden sm:block text-white sm:text-[64px] text-[32px] leading-[36px] sm:leading-[80px] font-semibold lg:text-start text-center">
             Process that help business <br />
+            design products that scale
+          </p>
+          <p className="sm:hidden text-white sm:text-[64px] text-[32px] leading-[36px] sm:leading-[80px] font-semibold lg:text-start text-center">
+            Process that help business
             design products that scale
           </p>
           <div className="relative sm:w-[77px] sm:h-[77px]  w-[32px] h-[32px]">

@@ -21,12 +21,12 @@ const BusinessPartners = () => {
   ];
   return (
     <div className="bg-white ">
-      <div className="p-5 sm:px-[120px] sm:py-[80px]">
+      <div className="p-5 lg:px-[120px] sm:px-[70px] sm:py-[80px]">
       <JoinForces />
       </div>
       
       <div className="p-5 sm:px-[40px] sm:py-[80px]">
-        <div className="border rounded-xl border-primary grid sm:grid-cols-2 sm:p-10 p-5 sm:gap-20 gap-10">
+        <div className="border sm:rounded-[48px] rounded-[24px] border-primary grid sm:grid-cols-2 sm:p-10 p-5 sm:gap-20 gap-10">
           <div className="flex flex-col justify-between">
             <div>
               <p className="text-black-3 sm:text-[64px] text-[32px] sm:leading-[84px] leading-[36px]">
@@ -53,7 +53,7 @@ const BusinessPartners = () => {
             </div>
           </div>
 
-          <div className="bg-primary sm:h-[620px] h-[320px] w-full rounded-[40px]"></div>
+          <div className="bg-primary sm:h-[620px] h-[320px] w-full rounded-[24px] sm:rounded-[40px]"></div>
         </div>
       </div>
     </div>

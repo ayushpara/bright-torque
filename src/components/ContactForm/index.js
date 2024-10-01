@@ -17,7 +17,7 @@ const Tag = ({ tag, type, onSelectTag, selectedValue=[] }) => {
       }}
       className={`${
         isSelected() ? "bg-secondary" : "border-black-3"
-      } sm:h-[56px] hover:cursor-pointer hover:border-secondary rounded-[1440px] sm:px-[32px] px-[16px] py-[8px] sm:py-[15px] border  flex-row whitespace-nowrap justify-center items-center inline-flex`}
+      } sm:h-[56px] hover:cursor-pointer rounded-[1440px] sm:px-[32px] px-[16px] py-[8px] sm:py-[15px] border  flex-row whitespace-nowrap justify-center items-center inline-flex`}
     >
       <p
         className={`${
@@ -186,7 +186,7 @@ const ContactForm = () => {
               >
                 <Input
                   size="large"
-                  placeholder="Project Deails"
+                  placeholder="Project Details"
                   className="custom-input"
                 />
               </Form.Item>
