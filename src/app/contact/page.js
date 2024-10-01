@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div className="w-full">
       <ContactBanner />
-      <div className="p-5 sm:px-[70px] sm:py-16">
+      <div className="p-5 sm:px-[70px]  lg:px-[120px] sm:py-16 ">
         <JoinForces />
       </div>
       <div className="p-5 sm:px-[70px] sm:py-16 bg-primary">

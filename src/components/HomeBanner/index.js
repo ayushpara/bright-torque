@@ -28,7 +28,7 @@ const HomeBanner = () => {
               Helping Mission-Focused
             </p>
             <p className="sm:text-[72px] text-[31px]  sm:leading-[84px] leading-[40px] text-green-1 ">
-              Zero-to-One Startup.
+              Zero-to-One Startups.
             </p>
             <p
               className={`text-green-3 sm:text-xl text-base mt-5 ${jarkata.className} sm:block hidden `}

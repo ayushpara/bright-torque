@@ -219,7 +219,7 @@ const ContactForm = () => {
                 <Button
                   htmlType="submit"
                   type="primary"
-                  className="flex sm:min-h-[84px] min-h-[58px] w-[312px] rounded-[1440px] bg-black-3 "
+                  className="flex sm:min-h-[84px] min-h-[58px] sm:w-[312px] w-full rounded-[1440px] bg-black-3 "
                   style={{
                     borderRadius: 16,
                     borderRadius: isMobile ? 1440 : 500,
