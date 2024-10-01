@@ -13,13 +13,12 @@ const jarkata = Plus_Jakarta_Sans({
   subsets: ["latin"],
 });
 
-
 const HomeBanner = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   return (
     <div className="w-full bg-primary">
-      <div className="p-5 sm:px-[120px] sm:py-16">
+      <div className="p-5 lg:px-[120px] sm:px-[70px] sm:py-16">
         <div className="w-full grid flex-row sm:grid-cols-4">
           <div className="sm:col-span-3 flex flex-col order-last sm:order-none">
             <p className="sm:text-[72px] text-[31px] sm:leading-[84px] leading-[40px] text-green-1 ">
@@ -31,10 +30,19 @@ const HomeBanner = () => {
             <p className="sm:text-[72px] text-[31px]  sm:leading-[84px] leading-[40px] text-green-1 ">
               Zero-to-One Startup.
             </p>
-            <p className={`text-green-3 sm:text-xl text-base mt-5 ${jarkata.className} `}>
+            <p
+              className={`text-green-3 sm:text-xl text-base mt-5 ${jarkata.className} sm:block hidden `}
+            >
               We’re a Product Design & Branding Agency <br />
               who specializes in B2B SaaS platforms, complex Web Apps <br />
               and diverse UI/UX design projects. Based in India...
+            </p>
+            <p
+              className={`text-green-3 sm:text-xl text-base mt-5 ${jarkata.className} sm:hidden  `}
+            >
+              We’re a Product Design & Branding Agency who specializes in B2B
+              SaaS platforms, complex Web Apps and diverse UI/UX design
+              projects. Based in India...
             </p>
           </div>
           <div className="flex flex-row justify-end items-center">

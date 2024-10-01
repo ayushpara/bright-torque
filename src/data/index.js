@@ -180,11 +180,11 @@ export const projectTypes = [
 ];
 
 export const budgets = [
-  { label: "Less than $20k", value: "20" },
-  { label: "$20k-$50k", value: "20-50" },
-  { label: "$50k-$75k", value: "50-75" },
-  { label: "$75k-$100k", value: "75-100" },
-  { label: "$100k+", value: "100" },
+  { label: "Less then 1000$", value: "1000" },
+  { label: "$1k - $2.5k", value: "1-2.5" },
+  { label: "$2.5 - $5k", value: "2.5-5" },
+  { label: "$5k - $10k", value: "5-10" },
+  { label: "$10k - $15k", value: "10-15" },
 ];
 
 //about

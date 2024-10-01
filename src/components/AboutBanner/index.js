@@ -13,7 +13,7 @@ const jarkata = Plus_Jakarta_Sans({
 const AboutBanner = () => {
   return (
     <div className="w-full bg-primary">
-      <div className="p-5 sm:px-[120px] sm:py-16">
+      <div className="p-5 lg:px-[120px] sm:px-[70px] sm:py-16">
         <div className="w-full sm:flex-row flex-col flex ">
           <div className="flex flex-col order-last sm:order-none sm:w-3/4">
             <p className="sm:text-[72px] text-[35px]  sm:leading-[74px] leading-[40px] text-green-1">

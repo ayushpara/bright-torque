@@ -43,7 +43,7 @@ export const RootLayout = async ({ children }) => {
                 <div className="flex w-full ">
                   <FooterLayout />
                 </div>
-                <div className="sm:hidden sticky bottom-0 ">
+                <div className="sm:hidden sticky bottom-0 z-20 ">
                   <MobileFooterNavigator />
                 </div>
               </div>

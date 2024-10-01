@@ -14,7 +14,7 @@ const LetsChat = () => {
     <div className={`bg-[#B6D5D8] sm:py-[64px] sm:px-[80px] px-5 py-10 w-full flex flex-col rounded-[48px] ${jarkata.className}`}>
       <div className="grid sm:flex flex-col sm:flex-row sm:grid-cols-1 sm:justify-between sm:space-y-0 space-y-5 justify-center items-center">
         <div className="space-y-5">
-          <p className="text-green-1 sm:text-[120px] text-[64px] leading-[64px] sm:leading-[144px]">
+          <p className="text-green-1 lg:text-[120px] sm:text-[100px] text-[64px] leading-[64px] sm:leading-[144px]">
             Let's Chat
           </p>
           <p className="text-black-3 sm:text-[24px] text-base sm:leading-[33px]">

@@ -34,7 +34,9 @@ const HeaderLayout = () => {
     <div className=" bg-primary sm:h-[95px] h-[71px] w-full sm:px-[120px] px-5 header-layout">
       <div className="flex flex-row justify-between h-full items-center">
         <div className="flex items-center justify-center hover:cursor-pointer">
-          <Image src={logoImage} alt="logo" onClick={()=>router.push(HOME)} />
+          <div className="relative w-[162px] h-[24px] ">
+          <Image src={logoImage} alt="logo" onClick={()=>router.push(HOME)} className="object-cover w-full h-full absolute" />
+          </div >
         </div>
 
         <div className="h-[68px] bg-white w-[479px] rounded-[1440px] sm:flex flex-row items-center px-5 justify-between hidden ">

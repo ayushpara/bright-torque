@@ -43,7 +43,7 @@ const BeyondDesign = () => {
               />
             </div>
             <div className="space-y-5">
-              <p className="text-black-3 text-[40px] leading-[48px]">
+              <p className="text-black-3 sm:text-[40px] text-[32px] leading-[48px]">
                 Business First
               </p>
               <p className="text-black-3 text-[17.72px] ">
@@ -63,7 +63,7 @@ const BeyondDesign = () => {
                 />
               </div>
               <div className="space-y-5">
-                <p className="text-black-3 text-[40px] leading-[48px]">
+                <p className="text-black-3 sm:text-[40px] text-[32px] leading-[48px]">
                   Cutting Edge
                 </p>
                 <p className="text-black-3 text-lg ">
@@ -82,7 +82,7 @@ const BeyondDesign = () => {
                   />
                 </div>
                 <div className="space-y-5">
-                  <p className="text-black-3 text-[40px] leading-[48px]">
+                  <p className="text-black-3 sm:text-[40px] text-[32px] leading-[48px]">
                     Hide Nothing
                   </p>
                   <p className="text-black-3 text-lg ">
@@ -101,7 +101,7 @@ const BeyondDesign = () => {
                   />
                 </div>
                 <div className="space-y-5">
-                  <p className="text-black-3 text-[40px] leading-[48px]">
+                  <p className="text-black-3 sm:text-[40px] text-[32px] leading-[48px]">
                     Fresh Angles
                   </p>
                   <p className="text-black-3 text-lg ">
