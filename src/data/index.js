@@ -55,7 +55,7 @@ export const headerButtons = [
 
 export const homeProjects = [
   {
-    heading: "ESGATE",
+    heading: "ESGATE2",
     description: "Making your crypto experience safe and fun.",
     image: esgateImage,
     tags: ["Brand", "Web", "Illustration"],
