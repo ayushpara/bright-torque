@@ -55,75 +55,75 @@ export const headerButtons = [
 
 export const homeProjects = [
   {
-    heading: "ESGATE2",
-    description: "Making your crypto experience safe and fun.",
+    heading: "ESGATE",
+    description: "ESGATE provides investors with detailed ESG data and insights, highlighting the significance of accurate, niche-specific information for sustainable finance.",
     image: esgateImage,
-    tags: ["Brand", "Web", "Illustration"],
+    tags: ["Brand", "Web","SaaS"],
   },
   {
     heading: "mGamer",
-    description: "Making your crypto experience safe and fun.",
+    description: "An App lets users earn money and game credits by completing tasks like watching ads and surveys.",
     image: mgamerImage,
-    tags: ["Brand", "Web", "Illustration"],
+    tags: ["Brand", "App","Illustration"],  
   },
   {
     heading: "StudyTorch",
-    description: "Making your crypto experience safe and fun.",
+    description: "An App for creating, organizing study notes, collections, quizzes, and sharing with friends.",
     image: studytorchImage,
-    tags: ["Brand", "Web", "Illustration"],
+    tags: ["Brand","Web"],
   },
 ];
 
 export const projects = [
   {
     heading: "ESGATE",
-    description: "Making your crypto experience safe and fun.",
+    description: "ESGATE provides investors with detailed ESG data and insights, highlighting the significance of accurate, niche-specific information for sustainable finance.",
     image: esgateImage,
-    tags: ["Brand", "Web", "Illustration"],
+    tags: ["Brand", "Web", "SaaS"],
   },
   {
-    heading: "BrandBook",
-    description: "Making your crypto experience safe and fun.",
+    heading: "Launchbees",
+    description: "Efficiently manage feature releases, upsells, and configurations without redeploying code.",
     image: brandBookImage,
-    tags: ["Brand", "Web", "Illustration"],
+    tags: ["Brand", "Web", "SaaS"],
   },
   {
     heading: "AdGen",
-    description: "Making your crypto experience safe and fun.",
+    description: "Convert inactive users into revenue leads with simple tasks and rewards.",
     image: adGenImage,
-    tags: ["Brand", "Web", "Illustration"],
+    tags: ["Brand", "Web"],
   },
 
   {
     heading: "StudyTorch",
-    description: "Making your crypto experience safe and fun.",
+    description: "An App for creating, organizing study notes, collections, quizzes, and sharing with friends.",
     image: studytorchImage,
-    tags: ["Brand", "Web", "Illustration"],
+    tags: ["Brand", "Web", "SaaS"],
   },
   {
     heading: "mGamer",
-    description: "Making your crypto experience safe and fun.",
+    description: "An App lets users earn money and game credits by completing tasks like watching ads and surveys.",
     image: mgamerImage,
-    tags: ["Brand", "Web", "Illustration"],
+    tags: ["Brand", "App", "Illustration"],
   },
 
   {
     heading: "mPaisa",
-    description: "Making your crypto experience safe and fun.",
+    description: "Earn money and gift cards by playing games, completing tasks, and answering surveys.",
     image: mPaisaImage,
     tags: ["Brand", "Web", "Illustration"],
   },
   {
-    heading: "Ayush",
-    description: "Making your crypto experience safe and fun.",
+    heading: "Revu",
+    description: "Revu is a revolutionary learning tool that intelligently leverages the concepts of spaced repetition",
     image: ayushImage,
-    tags: ["Brand", "Web", "Illustration"],
+    tags: ["Brand", "App"],
   },
   {
     heading: "MealQ",
-    description: "Making your crypto experience safe and fun.",
+    description: "MealsQ is a quick food ordering App specifically designed for the Australian users.",
     image: mealqImage,
-    tags: ["Brand", "Web", "Illustration"],
+    tags: ["Brand", "Web"],
   },
 ];
 
