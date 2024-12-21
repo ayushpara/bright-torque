@@ -17,7 +17,7 @@ const AboutBanner = () => {
         <div className="w-full sm:flex-row flex-col flex ">
           <div className="flex flex-col order-last sm:order-none sm:w-3/4">
             <p className="sm:text-[72px] text-[35px]  sm:leading-[74px] leading-[40px] text-green-1">
-              Tranforming your ideas into{" "}
+              Transforming your ideas into{" "}
               <span className="text-secondary">Brand & Products</span>
             </p>
             <p className={`text-green-3 sm:text-xl text-base sm:pt-5 pt-3 ${jarkata.className} `}>
