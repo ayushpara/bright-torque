@@ -8,12 +8,12 @@ const jarkata = Plus_Jakarta_Sans({
 });
 
 const DesignService = () => {
-  const design1 = ["Branding", "Print", "Stratrgy", "Logos", "Consulting"];
+  const design1 = ["Branding", "Print", "strategy", "Logos", "Consulting"];
   const design2 = [
     "Web Design",
     "Illustration",
     "Copywriting",
-    "Developement",
+    "Development",
     "UI/UX",
   ];
   const design3 = ["Product", "Apps", "Icons", "Design Systems", "Prototyping"];
