@@ -22,8 +22,17 @@ import scale3Image from "../static/images/scale3.png";
 
 //projects
 import esgateImage from "../static/images/projects/esgate.png";
+import PathviImage from "../static/images/projects/Patahvi.png";
+import JDPOLYImage from "../static/images/projects/JDoly.png";
+import FalconImage from "../static/images/projects/Falcon.png";
+
+//Falcon.png
+
 import mgamerImage from "../static/images/projects/mgamer.png";
 import studytorchImage from "../static/images/projects/studytorch.png";
+import ParkingEyeImage from "../static/images/projects/ParkingEye.png";
+import TuromImage from "../static/images/projects/turom.png";
+import OctowasteImage from "../static/images/projects/OctowasteImage.png";
 import adGenImage from "../static/images/projects/adGen.png";
 import ayushImage from "../static/images/projects/ayush.png";
 import brandBookImage from "../static/images/projects/brandBook.png";
@@ -55,31 +64,67 @@ export const headerButtons = [
 
 export const homeProjects = [
   {
-    heading: "ESGATE",
-    description: "ESGATE provides investors with detailed ESG data and insights, highlighting the significance of accurate, niche-specific information for sustainable finance.",
-    image: esgateImage,
+    heading: "Patahvi Farms",
+    description: "We designed Pathavi as a transparency-first digital experience, where trust is built through proof, not promises. Every interaction reveals the true journey of the product — from seed to bottle.",
+    image: PathviImage,
     tags: ["Brand", "Web","SaaS"],
   },
   {
-    heading: "mGamer",
-    description: "An App lets users earn money and game credits by completing tasks like watching ads and surveys.",
-    image: mgamerImage,
-    tags: ["Brand", "App","Illustration"],  
+    heading: "Jaldhara Polytubes",
+    description: "We designed this project to showcase our expertise in delivering Industrial Brand design & delivering a stunning web portfolio site. ",
+    image: JDPOLYImage,
+    tags: ["Brand", "Web"],  
   },
   {
-    heading: "StudyTorch",
-    description: "An App for creating, organizing study notes, collections, quizzes, and sharing with friends.",
-    image: studytorchImage,
-    tags: ["Brand","Web"],
+    heading: "Falcon Fitness",
+    description: "We designed and delivered a personalized fitness experience that helps gym members train smarter, stay consistent, and track progress effortlessly.",
+    image: FalconImage,
+    tags: ["Brand","App"],
   },
 ];
 
-export const projects = [
+export const projects = [{
+    heading: "Patahvi Farms",
+    description: "We designed Pathavi as a transparency-first digital experience, where trust is built through proof, not promises. Every interaction reveals the true journey of the product — from seed to bottle.",
+    image: PathviImage,
+    tags: ["Brand", "Web","SaaS"],
+  },
+
+  {
+    heading: "Jaldhara Polytubes",
+    description: "We designed this project to showcase our expertise in delivering Industrial Brand design & delivering a stunning web portfolio site. ",
+    image: JDPOLYImage,
+    tags: ["Brand", "Web"],  
+  },
+  {
+    heading: "Falcon Fitness",
+    description: "We designed and delivered a personalized fitness experience that helps gym members train smarter, stay consistent, and track progress effortlessly.",
+    image: FalconImage,
+    tags: ["Brand","App"],
+  },
+  {
+    heading: "Parking Eye",
+    description: "We designed the Parking Eye project in Australia — a smart app that assists people in booking parking slots seamlessly by scanning QR codes on parking meters.",
+    image: ParkingEyeImage,
+    tags: ["Brand","App"],
+  },
+  {
+    heading:  "Turom",
+    description: "Turom is a creator-first travel platform that turns itineraries into immersive, AI-powered journeys you can’t travel without.",
+    image: TuromImage,
+    tags: ["Brand", "Web", "SaaS"],
+  },
   {
     heading: "ESGATE",
     description: "ESGATE provides investors with detailed ESG data and insights, highlighting the significance of accurate, niche-specific information for sustainable finance.",
     image: esgateImage,
     tags: ["Brand", "Web", "SaaS"],
+  },
+  {
+    heading: "Octowaste",
+    description: "We designed a marketplace for Octowaste, an Australian clean-tech company focused on the responsible exit of solar assets — enabling sustainable, efficient, and transparent solutions for the solar industry.",
+    image : OctowasteImage,
+    tags: ["Brand", "Web"],
   },
   {
     heading: "Launchbees",
@@ -93,7 +138,6 @@ export const projects = [
     image: adGenImage,
     tags: ["Brand", "Web"],
   },
-
   {
     heading: "StudyTorch",
     description: "An App for creating, organizing study notes, collections, quizzes, and sharing with friends.",
@@ -106,7 +150,6 @@ export const projects = [
     image: mgamerImage,
     tags: ["Brand", "App", "Illustration"],
   },
-
   {
     heading: "mPaisa",
     description: "Earn money and gift cards by playing games, completing tasks, and answering surveys.",
