@@ -25,3 +25,19 @@ body {
     text-wrap: balance;
   }
 }
+.editorial-detail{
+color: #000;
+}
+.editorial-detail p {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+}
+.editorial-detail ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+.editorial-detail .styled-text{
+  border-left: 2px solid #175D63;
+  background-color: #175D630D;
+}

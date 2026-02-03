@@ -16,11 +16,14 @@ export const editorials = [
         by: "YASHIKA RATRE",
         in: "DESIGN PROCESS",
         editor: {
-            name: "nikhil",
+               name: "nikhil",
             image: editor,
-            designation: "",
-            linkdien: "",
-            dribble: "",
+            designation: "Software Engineer",
+            linkedin: "/",
+            dribble: "/",
+            figma:"/",
+            behance:"/",
+            email:"nikhil@gmail.com"
         },
         content: `<h3>The Problem : Because Teams Design Journeys They’ve Never Walked</h3>
     <p>There’s a quiet disconnect at the heart of modern product building.</p>
@@ -28,7 +31,7 @@ export const editorials = [
 <p>We talk endlessly about user journeys — we map them, annotate them, color-code them in FigJam and Figma. We build personas, empathy maps, and funnel dashboards. On paper, everything looks thoughtful.</p>
 
 <p>In practice, many of these journeys are imagined.</p>
-<div class="styled-test">
+<div class="styled-text">
 <p>Most product teams today spend more time interpreting users through tools — Jira tickets, analytics dashboards, customer summaries — than experiencing the reality of the people they’re building for. We say “user-first,” but we operate at arm’s length.</p>
 </div>
 <h3>The Illusion of Understanding Users</h3>
@@ -68,7 +71,7 @@ Most PMs spend more time in:
 <p>That gap — between understanding and empathy — is where most products quietly fail.</p>
 <h3>A Principle That Shaped How We Design</h3>
 <p>Early on, we learned something that continues to guide how we approach every product we work on.</p>
-<div class="styled-test">
+<div class="styled-text">
 <p>The most valuable input doesn’t come from long requirement documents or polished briefs. It comes from time spent inside the user’s reality.</p>
 </div>
 
@@ -132,11 +135,14 @@ This principle has shaped our work ever since. Whenever possible, we don’t jus
         by: "YASHIKA RATRE",
         in: "DESIGN PROCESS",
         editor: {
-            name: "nikhil",
+                  name: "nikhil",
             image: editor,
-            designation: "",
-            linkdien: "",
-            dribble: "",
+            designation: "Software Engineer",
+            linkedin: "/",
+            dribble: "/",
+            figma:"/",
+            behance:"/",
+            email:"nikhil@gmail.com"
         },
         content: `<h3>The Problem : Because Teams Design Journeys They’ve Never Walked</h3>
     <p>There’s a quiet disconnect at the heart of modern product building.</p>
@@ -144,7 +150,7 @@ This principle has shaped our work ever since. Whenever possible, we don’t jus
 <p>We talk endlessly about user journeys — we map them, annotate them, color-code them in FigJam and Figma. We build personas, empathy maps, and funnel dashboards. On paper, everything looks thoughtful.</p>
 
 <p>In practice, many of these journeys are imagined.</p>
-<div class="styled-test">
+<div class="styled-text">
 <p>Most product teams today spend more time interpreting users through tools — Jira tickets, analytics dashboards, customer summaries — than experiencing the reality of the people they’re building for. We say “user-first,” but we operate at arm’s length.</p>
 </div>
 <h3>The Illusion of Understanding Users</h3>
@@ -184,7 +190,7 @@ Most PMs spend more time in:
 <p>That gap — between understanding and empathy — is where most products quietly fail.</p>
 <h3>A Principle That Shaped How We Design</h3>
 <p>Early on, we learned something that continues to guide how we approach every product we work on.</p>
-<div class="styled-test">
+<div class="styled-text">
 <p>The most valuable input doesn’t come from long requirement documents or polished briefs. It comes from time spent inside the user’s reality.</p>
 </div>
 
@@ -248,11 +254,14 @@ This principle has shaped our work ever since. Whenever possible, we don’t jus
         by: "YASHIKA RATRE",
         in: "DESIGN PROCESS",
         editor: {
-            name: "nikhil",
+                 name: "nikhil",
             image: editor,
-            designation: "",
-            linkdien: "",
-            dribble: "",
+            designation: "Software Engineer",
+            linkedin: "/",
+            dribble: "/",
+            figma:"/",
+            behance:"/",
+            email:"nikhil@gmail.com"
         },
         content: `<h3>The Problem : Because Teams Design Journeys They’ve Never Walked</h3>
     <p>There’s a quiet disconnect at the heart of modern product building.</p>
@@ -260,7 +269,7 @@ This principle has shaped our work ever since. Whenever possible, we don’t jus
 <p>We talk endlessly about user journeys — we map them, annotate them, color-code them in FigJam and Figma. We build personas, empathy maps, and funnel dashboards. On paper, everything looks thoughtful.</p>
 
 <p>In practice, many of these journeys are imagined.</p>
-<div class="styled-test">
+<div class="styled-text">
 <p>Most product teams today spend more time interpreting users through tools — Jira tickets, analytics dashboards, customer summaries — than experiencing the reality of the people they’re building for. We say “user-first,” but we operate at arm’s length.</p>
 </div>
 <h3>The Illusion of Understanding Users</h3>
@@ -300,7 +309,7 @@ Most PMs spend more time in:
 <p>That gap — between understanding and empathy — is where most products quietly fail.</p>
 <h3>A Principle That Shaped How We Design</h3>
 <p>Early on, we learned something that continues to guide how we approach every product we work on.</p>
-<div class="styled-test">
+<div class="styled-text">
 <p>The most valuable input doesn’t come from long requirement documents or polished briefs. It comes from time spent inside the user’s reality.</p>
 </div>
 
@@ -364,11 +373,14 @@ This principle has shaped our work ever since. Whenever possible, we don’t jus
         by: "YASHIKA RATRE",
         in: "DESIGN PROCESS",
         editor: {
-            name: "nikhil",
+                 name: "nikhil",
             image: editor,
-            designation: "",
-            linkdien: "",
-            dribble: "",
+            designation: "Software Engineer",
+            linkedin: "/",
+            dribble: "/",
+            figma:"/",
+            behance:"/",
+            email:"nikhil@gmail.com"
         },
         content: `<h3>The Problem : Because Teams Design Journeys They’ve Never Walked</h3>
     <p>There’s a quiet disconnect at the heart of modern product building.</p>
@@ -376,7 +388,7 @@ This principle has shaped our work ever since. Whenever possible, we don’t jus
 <p>We talk endlessly about user journeys — we map them, annotate them, color-code them in FigJam and Figma. We build personas, empathy maps, and funnel dashboards. On paper, everything looks thoughtful.</p>
 
 <p>In practice, many of these journeys are imagined.</p>
-<div class="styled-test">
+<div class="styled-text">
 <p>Most product teams today spend more time interpreting users through tools — Jira tickets, analytics dashboards, customer summaries — than experiencing the reality of the people they’re building for. We say “user-first,” but we operate at arm’s length.</p>
 </div>
 <h3>The Illusion of Understanding Users</h3>
@@ -416,7 +428,7 @@ Most PMs spend more time in:
 <p>That gap — between understanding and empathy — is where most products quietly fail.</p>
 <h3>A Principle That Shaped How We Design</h3>
 <p>Early on, we learned something that continues to guide how we approach every product we work on.</p>
-<div class="styled-test">
+<div class="styled-text">
 <p>The most valuable input doesn’t come from long requirement documents or polished briefs. It comes from time spent inside the user’s reality.</p>
 </div>
 
@@ -480,11 +492,14 @@ This principle has shaped our work ever since. Whenever possible, we don’t jus
         by: "YASHIKA RATRE",
         in: "DESIGN PROCESS",
         editor: {
-            name: "nikhil",
+                     name: "nikhil",
             image: editor,
-            designation: "",
-            linkdien: "",
-            dribble: "",
+            designation: "Software Engineer",
+            linkedin: "/",
+            dribble: "/",
+            figma:"/",
+            behance:"/",
+            email:"nikhil@gmail.com"
         },
         content: `<h3>The Problem : Because Teams Design Journeys They’ve Never Walked</h3>
     <p>There’s a quiet disconnect at the heart of modern product building.</p>
@@ -492,7 +507,7 @@ This principle has shaped our work ever since. Whenever possible, we don’t jus
 <p>We talk endlessly about user journeys — we map them, annotate them, color-code them in FigJam and Figma. We build personas, empathy maps, and funnel dashboards. On paper, everything looks thoughtful.</p>
 
 <p>In practice, many of these journeys are imagined.</p>
-<div class="styled-test">
+<div class="styled-text">
 <p>Most product teams today spend more time interpreting users through tools — Jira tickets, analytics dashboards, customer summaries — than experiencing the reality of the people they’re building for. We say “user-first,” but we operate at arm’s length.</p>
 </div>
 <h3>The Illusion of Understanding Users</h3>
@@ -532,7 +547,7 @@ Most PMs spend more time in:
 <p>That gap — between understanding and empathy — is where most products quietly fail.</p>
 <h3>A Principle That Shaped How We Design</h3>
 <p>Early on, we learned something that continues to guide how we approach every product we work on.</p>
-<div class="styled-test">
+<div class="styled-text">
 <p>The most valuable input doesn’t come from long requirement documents or polished briefs. It comes from time spent inside the user’s reality.</p>
 </div>
 
