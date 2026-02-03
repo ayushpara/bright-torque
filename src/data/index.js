@@ -1,4 +1,4 @@
-import { HOME, WORK, CONTACT, ABOUT } from "../contants/routes";
+import { HOME, WORK, CONTACT, ABOUT, EDITORIAL } from "../contants/routes";
 
 import startupIcon from "../static/icons/startup.svg";
 import establishedIcon from "../static/icons/established.svg";
@@ -46,10 +46,15 @@ export const headerButtons = [
     redirect: ABOUT,
     key: 3,
   },
+    {
+    name: "Editorial",
+    redirect: EDITORIAL,
+    key: 4,
+  },
   {
     name: "Contact",
     redirect: CONTACT,
-    key: 4,
+    key: 5,
   },
 ];
 
