@@ -115,7 +115,7 @@ export const projects = [{
   },
   {
     heading:  "Turom",
-    description: "Turom is a creator-first travel platform that turns itineraries into immersive, AI-powered journeys you can’t travel without.",
+    description: "Turom is a creator-first travel platform that turns itineraries into immersive, AI-powered journeys you can not travel without.",
     image: TuromImage,
     tags: ["Brand", "Web", "SaaS"],
   },
