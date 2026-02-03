@@ -2,7 +2,9 @@ import Image from "next/image";
 import startupIcon from "../../static/icons/startup.svg";
 import establishedIcon from "../../static/icons/established.svg";
 import enterpriseIcon from "../../static/icons/enterprise.svg";
+import PartnerImage from "../../static/images/partner_section.png";
 import JoinForces from "../JoinForces";
+
 
 const BusinessPartners = () => {
   const partners = [
@@ -53,7 +55,13 @@ const BusinessPartners = () => {
             </div>
           </div>
 
-          <div className="bg-primary sm:h-[620px] h-[320px] w-full rounded-[24px] sm:rounded-[40px]"></div>
+          <div className="bg-primary sm:h-[620px] h-[320px] w-full rounded-[24px] sm:rounded-[40px]">
+            <Image
+              src={PartnerImage}
+              alt="Our Partners"
+              className="object-cover w-full h-full rounded-[24px] sm:rounded-[40px]"
+            />
+          </div>
         </div>
       </div>
     </div>

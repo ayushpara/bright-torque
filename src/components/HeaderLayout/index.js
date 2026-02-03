@@ -42,6 +42,7 @@ const HeaderLayout = () => {
         <div className="h-[68px] bg-white w-[579px] rounded-[1440px] sm:flex flex-row items-center px-5 justify-between hidden ">
           {headerButtons.map((headerButton, index) => (
             <HeaderButton
+              key={index}
               headerButton={headerButton}
               index={index}
               pathname={pathname}
