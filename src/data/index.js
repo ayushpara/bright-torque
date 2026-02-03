@@ -20,18 +20,16 @@ import scale1Image from "../static/images/scale1.png";
 import scale2Image from "../static/images/scale2.png";
 import scale3Image from "../static/images/scale3.png";
 
-//projects
 import esgateImage from "../static/images/projects/esgate.png";
 import PathviImage from "../static/images/projects/Patahvi.png";
 import JDPOLYImage from "../static/images/projects/JDoly.png";
 import FalconImage from "../static/images/projects/Falcon.png";
 
-//Falcon.png
 
 import mgamerImage from "../static/images/projects/mgamer.png";
 import studytorchImage from "../static/images/projects/studytorch.png";
 import ParkingEyeImage from "../static/images/projects/ParkingEye.png";
-import TuromImage from "../static/images/projects/turom.png";
+//import TuromImage from "../static/images/projects/turom.png";
 import OctowasteImage from "../static/images/projects/OctowasteImage.png";
 import adGenImage from "../static/images/projects/adGen.png";
 import ayushImage from "../static/images/projects/ayush.png";
@@ -107,12 +105,6 @@ export const projects = [{
     description: "We designed the Parking Eye project in Australia — a smart app that assists people in booking parking slots seamlessly by scanning QR codes on parking meters.",
     image: ParkingEyeImage,
     tags: ["Brand","App"],
-  },
-  {
-    heading:  "Turom",
-    description: "Turom is a creator-first travel platform that turns itineraries into immersive, AI-powered journeys you can not travel without.",
-    image: TuromImage,
-    tags: ["Brand", "Web", "SaaS"],
   },
   {
     heading: "ESGATE",
