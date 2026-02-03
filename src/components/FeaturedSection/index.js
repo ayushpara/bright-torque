@@ -12,8 +12,8 @@ const FeaturedSection = ({editorials}) => {
     <div className='w-full rounded-t-[20px] rounded-r-[20px] bg-white -mt-4'>
       <div className='w-full max-w-[1280px] mx-auto pt-16'>
         <div className='flex flex-row gap-4 flex-wrap'>
-          {editorials.slice(0,4).map((editorial)=>(
-            <FeaturedSmallCard imgPath={editorial.headerImage} slug={editorial.slug} title={editorial.title} desc={editorial.description} />
+          {editorials.slice(0,4).map((editorial, index)=>(
+            <FeaturedSmallCard key={index} imgPath={editorial.headerImage} slug={editorial.slug} title={editorial.title} desc={editorial.description} />
           ))}
         </div>
        <div className="flex flex-row sm:mt-10 mt-5 rounded-[20px]">

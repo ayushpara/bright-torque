@@ -41,3 +41,49 @@ color: #000;
   border-left: 2px solid #175D63;
   background-color: #175D630D;
 }
+.clap {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid #bdc3c7;
+  background: none;
+  cursor: pointer;
+}
+
+.clap:hover {
+  border-color: #27ae60;
+}
+
+.clap svg {
+  fill: none;
+  stroke: #27ae60;
+  stroke-width: 2;
+}
+
+.clap svg.checked {
+  fill: #27ae60;
+  stroke: white;
+}
+
+.clap--count {
+  position: absolute;
+  top: -40px;
+  left: 20px;
+  background: #27ae60;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 0.8rem;
+}
+
+.clap--count-total {
+  position: absolute;
+  top: -22px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #bdc3c7;
+}

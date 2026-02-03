@@ -7,7 +7,7 @@ const EditorialDetailBanner = ({editorial}) => {
     <div>
           <p>{breadcrumb}</p>
       <h1>{editorial?.title}</h1>
-      <Image src={editorial.headerImage} />
+      <Image src={editorial?.headerImage} />
     </div>
   )
 }
