@@ -124,7 +124,7 @@ export const projects = [{
     heading: "Octowaste",
     description: "We designed a marketplace for Octowaste, an Australian clean-tech company focused on the responsible exit of solar assets — enabling sustainable, efficient, and transparent solutions for the solar industry.",
     image : OctowasteImage,
-    tags: ["Brand", "Web"],
+    tags: ["Marketplace", "Web"],
   },
   {
     heading: "Launchbees",
