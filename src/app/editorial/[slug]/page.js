@@ -34,7 +34,7 @@ async function Page({ params }) {
       <EditorialDetailBanner editorial={editorial} />
       <div className='w-full p-5 lg:px-[120px] sm:px-[70px]'>
         <div className='flex flex-col md:flex-row gap-8'>
-          <EditorialHtmlContent editorial={editorial?.content} />
+          <EditorialHtmlContent content={editorial?.content} />
           <EditorCard editor={editor} />
         </div>
       </div>
