@@ -1,14 +1,19 @@
 "use client";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import React from 'react'
 import FeaturedSmallCard from '../FeaturedSmallCard'
+import { Plus_Jakarta_Sans } from "next/font/google";
+
+const jarkata = Plus_Jakarta_Sans({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 const FeaturedSection = ({ editorials }) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   return (
-    <div className='pt-8 bg-primary w-full'>
+    <div className={`pt-8 bg-primary w-full ${jarkata.className}`}>
       <div className='w-full rounded-t-[20px] rounded-r-[20px] bg-white -mt-4'>
         <div className='p-5 lg:px-[120px] sm:px-[70px] sm:py-16'>
           <div className='flex flex-row gap-4 flex-wrap'>

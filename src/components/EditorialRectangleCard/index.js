@@ -9,7 +9,7 @@ const EditorialRectangleCard = ({ title, desc, imgPath, slug, explores }) => {
       <Link href={`editorial/${slug}`} prefetch className='flex flex-col-reverse sm:flex-row gap-8'>
         <div className='flex-1'>
           <h3 className='text-2xl sm:text-[40px] leading-8 sm:leading-[3rem] font-bold'>{title}</h3>
-          <p className='text-base leading-6 text-[#001325CC]'>{desc}</p>
+          <p className='text-base leading-6 text-[#001325CC] mt-2'>{desc}</p>
           <EditorialHtmlContent content={explores} id="card-content" />
         </div>
         <div className='flex-1'>
@@ -22,6 +22,7 @@ const EditorialRectangleCard = ({ title, desc, imgPath, slug, explores }) => {
           #card-content ul li{
           font-size:16px;
           line-height:24px;
+          color:#001325CC;
           }
           `
         }
