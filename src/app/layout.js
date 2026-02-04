@@ -75,7 +75,7 @@ export const RootLayout = async ({ children }) => {
               <div className="min-h-screen w-screen flex flex-col bg-white relative">
                 <HeaderLayout />
 
-                <div className="flex  bg-white min-h-screen w-full">
+                <div className="bg-white min-h-screen w-full">
                   {children}
                 </div>
                 <div className="flex w-full ">

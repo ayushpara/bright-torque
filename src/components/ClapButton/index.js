@@ -71,7 +71,7 @@ const ClapButton = () => {
   }
 
   return (
-    <button ref={clapRef} className="clap" onClick={handleClap}>
+    <button ref={clapRef} className="clap flex items-center justify-center fixed bottom-[150px] z-100 left-1/2 -translate-x-1/2" onClick={handleClap}>
       <span>
         <svg
           className={count > 0 ? 'checked' : ''}

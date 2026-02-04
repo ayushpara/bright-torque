@@ -13,8 +13,8 @@ export async function generateStaticParams() {
   }))
 }
 export async function generateMetadata({ params }) {
- const { slug } = await params;
-  const editorial = editorials.find((item) => item.slug === slug )
+  const { slug } = await params;
+  const editorial = editorials.find((item) => item.slug === slug)
   if (!editorial) {
     notFound()
   }
@@ -23,18 +23,20 @@ export async function generateMetadata({ params }) {
     description: editorial?.description
   }
 }
-async function Page ({ params })  {
+async function Page({ params }) {
   const { slug } = await params;
   const editorial = editorials.find((item) => item?.slug === slug)
   const editor = editorial?.editor;
   return (
     <div>
-    <EditorialDetailBanner editorial={editorial}  />
-      <div className='w-full flex flex-row'>
-     <EditorialHtmlContent editorial={editorial} />
-    <EditorCard editor={editor} />
-    <ClapButton />
+      <EditorialDetailBanner editorial={editorial} />
+      <div className='w-full max-w-[1280px] mx-auto flex-1'>
+        <div className='flex '>
+          <EditorialHtmlContent editorial={editorial} />
+          <EditorCard editor={editor} />
+        </div>
       </div>
+      <ClapButton />
     </div>
   )
 }
