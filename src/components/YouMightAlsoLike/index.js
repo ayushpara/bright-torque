@@ -6,7 +6,7 @@ const YouMightAlsoLike = () => {
   return (
     <div className='mb-8'>
       <div className="p-5 lg:px-[120px] sm:px-[70px] sm:py-8">
-        <h3 className='text-[2.5rem]'>
+       <h3 className="text-[#001325F2] font-medium text-[44px] leading-[44px] mb-6">
           You Might Also Like
         </h3>
         <div className='h-1 bg-[#F2F2F2] w-[100%] my-5' />
