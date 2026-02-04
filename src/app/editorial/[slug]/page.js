@@ -1,3 +1,4 @@
+'use server'
 import ClapButton from '@/components/ClapButton'
 import EditorCard from '@/components/EditorCard'
 import EditorialDetailBanner from '@/components/EditorialDetailBanner'
@@ -12,7 +13,8 @@ export async function generateStaticParams() {
   }))
 }
 export async function generateMetadata({ params }) {
-  const editorial = editorials.find((item) => item.slug === params.slug)
+ const { slug } = await params;
+  const editorial = editorials.find((item) => item.slug === slug )
   if (!editorial) {
     notFound()
   }
@@ -21,10 +23,10 @@ export async function generateMetadata({ params }) {
     description: editorial?.description
   }
 }
-const Page = ({ params }) => {
-  const editorial = editorials.find((item) => item?.slug === params.slug)
+async function Page ({ params })  {
+  const { slug } = await params;
+  const editorial = editorials.find((item) => item?.slug === slug)
   const editor = editorial?.editor;
-  
   return (
     <div>
     <EditorialDetailBanner editorial={editorial}  />
@@ -37,4 +39,4 @@ const Page = ({ params }) => {
   )
 }
 
-export default Page
+export default Page;

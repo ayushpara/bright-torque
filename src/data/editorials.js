@@ -53,6 +53,7 @@ Most PMs spend more time in:
 <li>Sprint planning</li>
 <li>Roadmap alignment meeting</li>
 <li>Stakeholder presentations</li>
+<ul>
 
 <p>Very little time is spent watching real users struggle, hesitate, recover from mistakes, or work around limitations. Over time, product decisions drift away from real behavior and move closer to internal assumptions.
 </p>
@@ -64,10 +65,10 @@ Most PMs spend more time in:
 </ul>
 <p>”All of these are useful. None of them are enough.</p>
 <ul>
-<ul>Numbers tell you what happened.</li>
-<ul>Support tickets tell you where it hurts.</li>
-<ul>Neither tells you what it feels like to live inside the problem every day.</li>
-
+<li>Numbers tell you what happened.</li>
+<li>Support tickets tell you where it hurts.</li>
+<li>Neither tells you what it feels like to live inside the problem every day.</li>
+</ul>
 <p>That gap — between understanding and empathy — is where most products quietly fail.</p>
 <h3>A Principle That Shaped How We Design</h3>
 <p>Early on, we learned something that continues to guide how we approach every product we work on.</p>
@@ -172,7 +173,7 @@ Most PMs spend more time in:
 <li>Sprint planning</li>
 <li>Roadmap alignment meeting</li>
 <li>Stakeholder presentations</li>
-
+</ul>
 <p>Very little time is spent watching real users struggle, hesitate, recover from mistakes, or work around limitations. Over time, product decisions drift away from real behavior and move closer to internal assumptions.
 </p>
 <h3>The Comfortable Lie We Tell Ourselves</h3>
@@ -183,9 +184,9 @@ Most PMs spend more time in:
 </ul>
 <p>”All of these are useful. None of them are enough.</p>
 <ul>
-<ul>Numbers tell you what happened.</li>
-<ul>Support tickets tell you where it hurts.</li>
-<ul>Neither tells you what it feels like to live inside the problem every day.</li>
+<li>Numbers tell you what happened.</li>
+<li>Support tickets tell you where it hurts.</li>
+<li>Neither tells you what it feels like to live inside the problem every day.</li>
 
 <p>That gap — between understanding and empathy — is where most products quietly fail.</p>
 <h3>A Principle That Shaped How We Design</h3>
@@ -291,7 +292,7 @@ Most PMs spend more time in:
 <li>Sprint planning</li>
 <li>Roadmap alignment meeting</li>
 <li>Stakeholder presentations</li>
-
+</ul>
 <p>Very little time is spent watching real users struggle, hesitate, recover from mistakes, or work around limitations. Over time, product decisions drift away from real behavior and move closer to internal assumptions.
 </p>
 <h3>The Comfortable Lie We Tell Ourselves</h3>
@@ -302,10 +303,10 @@ Most PMs spend more time in:
 </ul>
 <p>”All of these are useful. None of them are enough.</p>
 <ul>
-<ul>Numbers tell you what happened.</li>
-<ul>Support tickets tell you where it hurts.</li>
-<ul>Neither tells you what it feels like to live inside the problem every day.</li>
-
+<li>Numbers tell you what happened.</li>
+<li>Support tickets tell you where it hurts.</li>
+<li>Neither tells you what it feels like to live inside the problem every day.</li>
+</ul>
 <p>That gap — between understanding and empathy — is where most products quietly fail.</p>
 <h3>A Principle That Shaped How We Design</h3>
 <p>Early on, we learned something that continues to guide how we approach every product we work on.</p>
@@ -410,7 +411,7 @@ Most PMs spend more time in:
 <li>Sprint planning</li>
 <li>Roadmap alignment meeting</li>
 <li>Stakeholder presentations</li>
-
+</ul>
 <p>Very little time is spent watching real users struggle, hesitate, recover from mistakes, or work around limitations. Over time, product decisions drift away from real behavior and move closer to internal assumptions.
 </p>
 <h3>The Comfortable Lie We Tell Ourselves</h3>
@@ -421,9 +422,9 @@ Most PMs spend more time in:
 </ul>
 <p>”All of these are useful. None of them are enough.</p>
 <ul>
-<ul>Numbers tell you what happened.</li>
-<ul>Support tickets tell you where it hurts.</li>
-<ul>Neither tells you what it feels like to live inside the problem every day.</li>
+<li>Numbers tell you what happened.</li>
+<li>Support tickets tell you where it hurts.</li>
+<li>Neither tells you what it feels like to live inside the problem every day.</li>
 
 <p>That gap — between understanding and empathy — is where most products quietly fail.</p>
 <h3>A Principle That Shaped How We Design</h3>
@@ -540,10 +541,10 @@ Most PMs spend more time in:
 </ul>
 <p>”All of these are useful. None of them are enough.</p>
 <ul>
-<ul>Numbers tell you what happened.</li>
-<ul>Support tickets tell you where it hurts.</li>
-<ul>Neither tells you what it feels like to live inside the problem every day.</li>
-
+<li>Numbers tell you what happened.</li>
+<li>Support tickets tell you where it hurts.</li>
+<li>Neither tells you what it feels like to live inside the problem every day.</li>
+</ul>
 <p>That gap — between understanding and empathy — is where most products quietly fail.</p>
 <h3>A Principle That Shaped How We Design</h3>
 <p>Early on, we learned something that continues to guide how we approach every product we work on.</p>

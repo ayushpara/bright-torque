@@ -11,7 +11,7 @@ const EditorialRectangleCard = ({title, desc, imgPath, slug}) => {
             <p className='text-base leading-6'>{desc}</p>
         </div>
         <div className='flex-1'>
-        <Image className='rounded-xl max-h-[480px]' width={640} height={480} src={imgPath} />
+        <Image className='rounded-xl max-h-[480px]' alt="editor" width={640} height={480} src={imgPath} />
         </div>
         </Link>
     </div>

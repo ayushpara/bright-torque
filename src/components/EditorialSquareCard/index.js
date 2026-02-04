@@ -7,7 +7,7 @@ const EditorialSquareCard = ({ title, desc, imgPath, slug, by }) => {
         <div className='w-1/2'>
             <Link href={`editorial/${slug}`} prefetch className='flex flex-col gap-4'>
                 <div className='flex-1'>
-                    <Image className='rounded-xl max-h-[480px] h-[480px] object-cover' width={640} height={480} src={imgPath} />
+                    <Image className='rounded-xl max-h-[480px] h-[480px] object-cover' alt={title} width={640} height={480} src={imgPath} />
                 </div>
                 <div className='flex-1'>
                     <p>BY <span>{by}</span></p>
