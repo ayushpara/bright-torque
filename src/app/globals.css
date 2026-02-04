@@ -131,3 +131,12 @@ margin-top: 0;
   font-size: 0.75rem;
   color: #bdc3c7;
 }
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}

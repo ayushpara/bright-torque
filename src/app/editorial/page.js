@@ -1,3 +1,4 @@
+"use client"
 import EditorialBanner from '@/components/EditorialBannaer'
 import EditorialSquareCardSection from '@/components/EditorialSquareCardSection'
 import FeaturedSection from '@/components/FeaturedSection'

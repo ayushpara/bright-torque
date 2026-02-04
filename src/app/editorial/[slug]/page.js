@@ -4,6 +4,7 @@ import EditorCard from '@/components/EditorCard'
 import EditorialDetailBanner from '@/components/EditorialDetailBanner'
 import EditorialHtmlContent from '@/components/EditorialHtmlContent'
 import LetsChat from '@/components/LetsChat'
+import YouMightAlsoLike from '@/components/YouMightAlsoLike'
 import { editorials } from '@/data/editorials'
 import { notFound } from 'next/navigation'
 import React from 'react'
@@ -33,10 +34,11 @@ async function Page({ params }) {
       <EditorialDetailBanner editorial={editorial} />
       <div className='w-full p-5 lg:px-[120px] sm:px-[70px]'>
         <div className='flex flex-col md:flex-row gap-8'>
-          <EditorialHtmlContent editorial={editorial} />
+          <EditorialHtmlContent editorial={editorial?.content} />
           <EditorCard editor={editor} />
         </div>
       </div>
+      <YouMightAlsoLike />
        <div className="px-5 sm:px-[70px] sm:pb-[70px] py-16 bg-primary">
         <LetsChat />
       </div>

@@ -5,11 +5,13 @@ const jarkata = Plus_Jakarta_Sans({
   weight: "400",
   subsets: ["latin"],
 });
-const EditorialHtmlContent = ({editorial}) => {
+const EditorialHtmlContent = ({content, style, className, id}) => {
   return (
   <div
-  className={`editorial-detail ${jarkata.className}`}
-  dangerouslySetInnerHTML={{ __html: editorial?.content||"" }}
+  className={`editorial-detail ${jarkata.className} ${className}`}
+  dangerouslySetInnerHTML={{ __html: content||"" }}
+  style={style}
+  id={id}
 ></div>
   )
 }

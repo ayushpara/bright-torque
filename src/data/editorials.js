@@ -125,7 +125,15 @@ This principle has shaped our work ever since. Whenever possible, we don’t jus
 <li>Bring real user stories into team discussions — not as anecdotes, but as design inputs</li>
 </ul>
 <p>A few habits that make a real difference</p>
-</div>`
+</div>`,
+explores:`
+<ul>
+<li>Micro-signals users subconsciously look for</li>
+<li>The gap between functional UX and emotional confidence</li>
+<li>How design decisions affect perceived credibility</li>
+<li>Real examples from SaaS / fintech / services</li>
+</ul>
+`
     },
     {
         "slug": 'the_hidden_cost_of_designing_without_a_clear_product_narrative',
@@ -363,7 +371,13 @@ This principle has shaped our work ever since. Whenever possible, we don’t jus
 <li>Bring real user stories into team discussions — not as anecdotes, but as design inputs</li>
 </ul>
 <p>A few habits that make a real difference</p>
-</div>`
+</div>`,
+explores:`<ul>
+<li>What a “product narrative” actually means</li>
+<li>Symptoms of narrative debt (feature clutter, confused users)</li>
+<li>How designers can uncover intent before wireframes</li>
+<li>A simple narrative framework studios can apply</li>
+</ul>`
     },
     {
         "slug": 'why_startups_confuse_peed_with_clarity',
@@ -482,7 +496,11 @@ This principle has shaped our work ever since. Whenever possible, we don’t jus
 <li>Bring real user stories into team discussions — not as anecdotes, but as design inputs</li>
 </ul>
 <p>A few habits that make a real difference</p>
-</div>`
+</div>`,
+explores:`<ul><li>The pressure to “ship fast”</li>
+<li>How rushed design decisions hurt onboarding</li>
+<li>Case patterns you’ve seen repeatedly</li>
+<li>When slowing down actually saves time and money</li></ul>`
     },
     {
         "slug": 'the_importance_of_accessibility_in_modern_design',
@@ -601,6 +619,12 @@ This principle has shaped our work ever since. Whenever possible, we don’t jus
 <li>Bring real user stories into team discussions — not as anecdotes, but as design inputs</li>
 </ul>
 <p>A few habits that make a real difference</p>
-</div>`
+</div>`,
+explores:`<ul>
+<li>Key principles of accessible design</li>
+<li>How inclusivity impacts user engagement and brand perception</li>
+<li>Tools and techniques for implementing accessibility best practices</li>
+</ul>
+`
     }
 ]
