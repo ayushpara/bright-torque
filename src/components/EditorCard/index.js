@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 const EditorCard = ({ editor }) => {
     return (
-        <div className='flex flex-col items-center'>
+        <div className='flex flex-col items-center gap-2'>
             <Image src={editor?.image} alt='editor' />
             <p className='font-semibold'>{editor?.name}</p>
             <p className='font-semibold'>{editor?.designation}</p>
@@ -44,7 +44,7 @@ const EditorCard = ({ editor }) => {
             </div>
             {editor?.email && (
 
-                <Link href={`mailto:${editor?.email}`} className='border border-1 border border-green-1 text-green-1 bg-secondary w-[320px] h-9 rounded-full text-center flex items-center justify-center bg-transparent text-base font-semibold leading-normal'>
+                <Link href={`mailto:${editor?.email}`} className='border border-1 border border-green-1 text-green-1 bg-secondary w-[320px] h-9 rounded-full text-center flex items-center justify-center bg-transparent text-base font-semibold leading-normal mt-2'>
                     Get In Touch
                 </Link>
             )}

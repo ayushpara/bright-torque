@@ -3,6 +3,7 @@ import ClapButton from '@/components/ClapButton'
 import EditorCard from '@/components/EditorCard'
 import EditorialDetailBanner from '@/components/EditorialDetailBanner'
 import EditorialHtmlContent from '@/components/EditorialHtmlContent'
+import LetsChat from '@/components/LetsChat'
 import { editorials } from '@/data/editorials'
 import { notFound } from 'next/navigation'
 import React from 'react'
@@ -30,11 +31,14 @@ async function Page({ params }) {
   return (
     <div>
       <EditorialDetailBanner editorial={editorial} />
-      <div className='w-full max-w-[1280px] mx-auto flex-1'>
-        <div className='flex '>
+      <div className='w-full p-5 lg:px-[120px] sm:px-[70px]'>
+        <div className='flex flex-col md:flex-row gap-8'>
           <EditorialHtmlContent editorial={editorial} />
           <EditorCard editor={editor} />
         </div>
+      </div>
+       <div className="px-5 sm:px-[70px] sm:pb-[70px] py-16 bg-primary">
+        <LetsChat />
       </div>
       <ClapButton />
     </div>
