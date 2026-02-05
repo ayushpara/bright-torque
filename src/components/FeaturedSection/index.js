@@ -17,9 +17,17 @@ const FeaturedSection = ({ editorials }) => {
       <div className='w-full rounded-t-[20px] rounded-r-[20px] bg-white -mt-4'>
         <div className='p-5 lg:px-[120px] sm:px-[70px] sm:py-16'>
           <div className='flex flex-row gap-6 sm:gap-4 flex-wrap'>
-            {editorials.slice(0, 4).map((editorial, index) => (
-              <FeaturedSmallCard key={index} imgPath={editorial.headerImage} slug={editorial.slug} title={editorial.title} desc={editorial.description} />
-            ))}
+           {editorials
+  .filter(item => item.featured === true)
+  .map(editorial => (
+    <FeaturedSmallCard
+      key={editorial.slug}
+      imgPath={editorial.headerImage}
+      slug={editorial.slug}
+      title={editorial.title}
+      desc={editorial.description}
+    />
+  ))}
           </div>
           <div className="flex flex-row sm:mt-10 mt-8 rounded-[20px] overflow-hidden">
             {editorials.slice(0, 4).map((editorial, index) => (
