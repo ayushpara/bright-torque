@@ -53,7 +53,7 @@ Most PMs spend more time in:
 <li>Sprint planning</li>
 <li>Roadmap alignment meeting</li>
 <li>Stakeholder presentations</li>
-<ul>
+</ul>
 
 <p>Very little time is spent watching real users struggle, hesitate, recover from mistakes, or work around limitations. Over time, product decisions drift away from real behavior and move closer to internal assumptions.
 </p>

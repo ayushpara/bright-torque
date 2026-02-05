@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import notFound from "../../static/images/editorial/not_found.png"
 import Link from 'next/link'
-import { Plus_Jakarta_Sans, Satoshi } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 
 const jarkata = Plus_Jakarta_Sans({
   weight: "400",
