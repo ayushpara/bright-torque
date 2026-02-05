@@ -103,23 +103,18 @@ export default function ClapButton() {
 
   return (
     <div className="flex flex-col items-center select-none fixed bottom-[150px] z-[100] left-1/2 -translate-x-1/2">
-      {/* +1 */}
       <span
         ref={plusOneRef}
         className="absolute -top-6 text-base font-semibold flex opacity-0 bg-primary w-10 h-10 rounded-full text-green-1 items-center justify-center"
       >
         +1
       </span>
-
-      {/* TOTAL */}
       <span
         ref={totalRef}
         className="mb-2 text-base text-gray-500"
       >
         {total}
       </span>
-
-      {/* BUTTON */}
       <button
         ref={clapRef}
         className="relative w-14 h-14 rounded-full border border-gray-300 bg-white flex items-center justify-center"
