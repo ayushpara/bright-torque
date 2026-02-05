@@ -13,7 +13,7 @@ const EditorialRectangleCard = ({ title, desc, imgPath, slug, explores }) => {
           <EditorialHtmlContent content={explores} id="card-content" />
         </div>
         <div className='flex-1'>
-          <Image className='rounded-xl max-h-[480px]' alt="editor" width={640} height={480} src={imgPath} />
+          <Image className='rounded-xl max-h-[280px] sm:max-h-[480px] h-[100%] object-cover img-responsive' alt="editor" width={640} height={480} src={imgPath} />
         </div>
       </Link>
       <style global jsx>

@@ -11,7 +11,7 @@ const jarkata = Plus_Jakarta_Sans({
 });
 
 const FeaturedSection = ({ editorials }) => {
-  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [selectedIndex, setSelectedIndex] = useState(-1);
   return (
     <div className={`pt-8 bg-primary w-full ${jarkata.className}`}>
       <div className='w-full rounded-t-[20px] rounded-r-[20px] bg-white -mt-4'>

@@ -12,7 +12,7 @@ const EditorialSquareCard = ({ title, desc, imgPath, slug, by }) => {
         <div className={`${jarkata.className}`}>
             <Link href={`editorial/${slug}`} prefetch className='flex flex-col gap-4'>
                 <div className='flex-1'>
-                    <Image className='rounded-xl max-h-[480px] h-[480px] object-cover' alt={title} width={640} height={480} src={imgPath} />
+                    <Image className='rounded-xl max-h-[280px] sm:max-h-[480px] sm:h-[480px] h-[280px] object-cover' alt={title} width={640} height={480} src={imgPath} />
                 </div>
                 <div className='flex-1'>
                     <p className='text-base'><span className='text-[#9B9B9B]'>BY </span><span>{by}</span></p>
