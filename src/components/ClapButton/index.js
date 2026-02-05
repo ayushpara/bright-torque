@@ -102,7 +102,7 @@ export default function ClapButton() {
   }, []);
 
   return (
-    <div className="flex flex-col items-center select-none fixed bottom-[150px] z-[100] left-1/2 -translate-x-1/2">
+    <div className="flex flex-col items-center select-none fixed bottom-[70px] z-[100] left-1/2 -translate-x-1/2">
       <span
         ref={plusOneRef}
         className="absolute -top-6 text-base font-semibold flex opacity-0 bg-primary w-10 h-10 rounded-full text-green-1 items-center justify-center"
