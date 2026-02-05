@@ -56,6 +56,11 @@ margin-top: 10px;
 .editorial-detail .styled-text p{
 margin-top: 0;
 }
+
+.editorial-detail div{
+  margin: 20px 0;
+}
+
 @media (max-width: 768px) {
   .editorial-detail h3{
 font-size: 24px;
@@ -84,6 +89,9 @@ margin-top: 10px;
 }
 .editorial-detail .styled-text p{
 margin-top: 0;
+}
+.editorial-detail div{
+  margin: 16px 0;
 }
 }
 .clap {

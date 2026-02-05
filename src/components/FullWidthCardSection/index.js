@@ -13,7 +13,7 @@ const FullWidthCardSection = ({ editorials }) => {
            <HeadingWithRuler title="Editorial" />
             <div className='flex flex-row gap-10 flex-wrap'>
                 {editorials.map((editorial, index) => (
-                    <EditorialRectangleCard key={index} explores={editorial.explores} imgPath={editorial.headerImage} slug={editorial.slug} title={editorial.title} desc={editorial.description} />
+                    <EditorialRectangleCard key={index} explores={editorial.explores} imgPath={editorial.headerImage} slug={editorial.slug} title={editorial.title} subHeading={editorial.subHeading} />
                 ))}
             </div>
         </div>
