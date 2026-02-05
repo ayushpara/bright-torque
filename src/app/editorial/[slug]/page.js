@@ -14,17 +14,6 @@ export async function generateStaticParams() {
     slug: editorial.slug,
   }))
 }
-export async function generateMetadata({ params }) {
-  const { slug } = await params;
-  const editorial = editorials.find((item) => item.slug === slug)
-  if (!editorial) {
-    notFound()
-  }
-  return {
-    title: editorial?.title,
-    description: editorial?.description
-  }
-}
 async function Page({ params }) {
   const { slug } = await params;
   const editorial = editorials.find((item) => item?.slug === slug)
@@ -48,3 +37,53 @@ async function Page({ params }) {
 }
 
 export default Page;
+
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const editorial = editorials.find((item) => item.slug === slug)
+  if (!editorial) {
+    notFound()
+  }
+  return {
+  title:editorial.title,
+  description: editorial.description,
+  keywords: ["AI-first product design",
+    "UX for AI products",
+    "human-centered AI design",
+    "enterprise UX modernization",
+    "design systems for scale",
+    "conversion-focused UX design",
+    "product branding agency",
+    "brand identity for SaaS",
+    "startup branding agency",
+    "digital brand design studio",
+    "B2B brand identity design"],
+  authors: [{ name: "Ayush Parashar" }],
+  openGraph: {
+  title:editorial.title,
+  description: editorial.description,
+    url: `https://brightorque.com/editorial/${editorial.slug}`,
+    siteName: "Bright Torque Design Studios",
+    images: [
+      {
+        url: "/Meta_image_Bright_Torque.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+  title:editorial.title,
+  description: editorial.description,
+    images: ["/Meta_image_Bright_Torque.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  viewport: "width=device-width, initial-scale=1",
+}
+}

@@ -31,9 +31,9 @@ export const editorials = [
 <p>We talk endlessly about user journeys — we map them, annotate them, color-code them in FigJam and Figma. We build personas, empathy maps, and funnel dashboards. On paper, everything looks thoughtful.</p>
 
 <p>In practice, many of these journeys are imagined.</p>
-<div class="styled-text">
+<blockquote class="styled-text">
 <p>Most product teams today spend more time interpreting users through tools — Jira tickets, analytics dashboards, customer summaries — than experiencing the reality of the people they’re building for. We say “user-first,” but we operate at arm’s length.</p>
-</div>
+</blockquote>
 <h3>The Illusion of Understanding Users</h3>
 <p>
 Today’s product teams rely heavily on:
@@ -72,9 +72,9 @@ Most PMs spend more time in:
 <p>That gap — between understanding and empathy — is where most products quietly fail.</p>
 <h3>A Principle That Shaped How We Design</h3>
 <p>Early on, we learned something that continues to guide how we approach every product we work on.</p>
-<div class="styled-text">
+<blockquote class="styled-text">
 <p>The most valuable input doesn’t come from long requirement documents or polished briefs. It comes from time spent inside the user’s reality.</p>
-</div>
+</blockquote>
 
 <p>On one of our earliest engagements, instead of starting with wireframes or feature lists, we stepped away from the desk and into the actual day-to-day work of the people the product was meant for.</p>
 <ul>
@@ -159,9 +159,9 @@ explores:`
 <p>We talk endlessly about user journeys — we map them, annotate them, color-code them in FigJam and Figma. We build personas, empathy maps, and funnel dashboards. On paper, everything looks thoughtful.</p>
 
 <p>In practice, many of these journeys are imagined.</p>
-<div class="styled-text">
+<blockquote class="styled-text">
 <p>Most product teams today spend more time interpreting users through tools — Jira tickets, analytics dashboards, customer summaries — than experiencing the reality of the people they’re building for. We say “user-first,” but we operate at arm’s length.</p>
-</div>
+</blockquote>
 <h3>The Illusion of Understanding Users</h3>
 <p>
 Today’s product teams rely heavily on:
@@ -199,9 +199,9 @@ Most PMs spend more time in:
 <p>That gap — between understanding and empathy — is where most products quietly fail.</p>
 <h3>A Principle That Shaped How We Design</h3>
 <p>Early on, we learned something that continues to guide how we approach every product we work on.</p>
-<div class="styled-text">
+<blockquote class="styled-text">
 <p>The most valuable input doesn’t come from long requirement documents or polished briefs. It comes from time spent inside the user’s reality.</p>
-</div>
+</blockquote>
 
 <p>On one of our earliest engagements, instead of starting with wireframes or feature lists, we stepped away from the desk and into the actual day-to-day work of the people the product was meant for.</p>
 <ul>
@@ -278,9 +278,9 @@ This principle has shaped our work ever since. Whenever possible, we don’t jus
 <p>We talk endlessly about user journeys — we map them, annotate them, color-code them in FigJam and Figma. We build personas, empathy maps, and funnel dashboards. On paper, everything looks thoughtful.</p>
 
 <p>In practice, many of these journeys are imagined.</p>
-<div class="styled-text">
+<blockquote class="styled-text">
 <p>Most product teams today spend more time interpreting users through tools — Jira tickets, analytics dashboards, customer summaries — than experiencing the reality of the people they’re building for. We say “user-first,” but we operate at arm’s length.</p>
-</div>
+</blockquote>
 <h3>The Illusion of Understanding Users</h3>
 <p>
 Today’s product teams rely heavily on:
@@ -318,9 +318,9 @@ Most PMs spend more time in:
 <p>That gap — between understanding and empathy — is where most products quietly fail.</p>
 <h3>A Principle That Shaped How We Design</h3>
 <p>Early on, we learned something that continues to guide how we approach every product we work on.</p>
-<div class="styled-text">
+<blockquote class="styled-text">
 <p>The most valuable input doesn’t come from long requirement documents or polished briefs. It comes from time spent inside the user’s reality.</p>
-</div>
+</blockquote>
 
 <p>On one of our earliest engagements, instead of starting with wireframes or feature lists, we stepped away from the desk and into the actual day-to-day work of the people the product was meant for.</p>
 <ul>
@@ -403,9 +403,9 @@ explores:`<ul>
 <p>We talk endlessly about user journeys — we map them, annotate them, color-code them in FigJam and Figma. We build personas, empathy maps, and funnel dashboards. On paper, everything looks thoughtful.</p>
 
 <p>In practice, many of these journeys are imagined.</p>
-<div class="styled-text">
+<blockquote class="styled-text">
 <p>Most product teams today spend more time interpreting users through tools — Jira tickets, analytics dashboards, customer summaries — than experiencing the reality of the people they’re building for. We say “user-first,” but we operate at arm’s length.</p>
-</div>
+</blockquote>
 <h3>The Illusion of Understanding Users</h3>
 <p>
 Today’s product teams rely heavily on:
@@ -443,9 +443,9 @@ Most PMs spend more time in:
 <p>That gap — between understanding and empathy — is where most products quietly fail.</p>
 <h3>A Principle That Shaped How We Design</h3>
 <p>Early on, we learned something that continues to guide how we approach every product we work on.</p>
-<div class="styled-text">
+<blockquote class="styled-text">
 <p>The most valuable input doesn’t come from long requirement documents or polished briefs. It comes from time spent inside the user’s reality.</p>
-</div>
+</blockquote>
 
 <p>On one of our earliest engagements, instead of starting with wireframes or feature lists, we stepped away from the desk and into the actual day-to-day work of the people the product was meant for.</p>
 <ul>
@@ -526,9 +526,9 @@ explores:`<ul><li>The pressure to “ship fast”</li>
 <p>We talk endlessly about user journeys — we map them, annotate them, color-code them in FigJam and Figma. We build personas, empathy maps, and funnel dashboards. On paper, everything looks thoughtful.</p>
 
 <p>In practice, many of these journeys are imagined.</p>
-<div class="styled-text">
+<blockquote class="styled-text">
 <p>Most product teams today spend more time interpreting users through tools — Jira tickets, analytics dashboards, customer summaries — than experiencing the reality of the people they’re building for. We say “user-first,” but we operate at arm’s length.</p>
-</div>
+</blockquote>
 <h3>The Illusion of Understanding Users</h3>
 <p>
 Today’s product teams rely heavily on:
@@ -566,9 +566,9 @@ Most PMs spend more time in:
 <p>That gap — between understanding and empathy — is where most products quietly fail.</p>
 <h3>A Principle That Shaped How We Design</h3>
 <p>Early on, we learned something that continues to guide how we approach every product we work on.</p>
-<div class="styled-text">
+<blockquote class="styled-text">
 <p>The most valuable input doesn’t come from long requirement documents or polished briefs. It comes from time spent inside the user’s reality.</p>
-</div>
+</blockquote>
 
 <p>On one of our earliest engagements, instead of starting with wireframes or feature lists, we stepped away from the desk and into the actual day-to-day work of the people the product was meant for.</p>
 <ul>
