@@ -25,8 +25,8 @@ const Projects = () => {
         </p>
       </div>
       <div className="grid sm:grid-cols-2 sm:gap-20 gap-10 pt-20">
-        {projects.map((project) => (
-          <div className="sm:space-y-3 space-y-2">
+        {projects.map((project, index) => (
+          <div className="sm:space-y-3 space-y-2" key={index}>
             <div className="relative sm:h-[356px] h-[196px] w-full">
               <Image
                 src={project.image}
@@ -41,8 +41,8 @@ const Projects = () => {
               {project.description}
             </p>
             <div className="flex flex-row sm:space-x-5 space-x-3">
-                {project.tags.map(tag=>
-                    <div className="bg-[#F8FBFF] sm:h-[40px] h-[23px] sm:px-5 px-3 flex items-center justify-center rounded-[28px]">
+                {project.tags.map((tag, index)=>
+                    <div className="bg-[#F8FBFF] sm:h-[40px] h-[23px] sm:px-5 px-3 flex items-center justify-center rounded-[28px]" key={index}>
                         <p className=" sm:text-xs text-[11px] text-[#032825] ">{tag}</p>    
                     </div>
                 )}

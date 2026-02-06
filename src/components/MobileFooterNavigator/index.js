@@ -32,7 +32,7 @@ const MobileFooterNavigator=()=>{
           {headerButtons.map((headerButton, index) => (
             <HeaderButton
               headerButton={headerButton}
-              index={index}
+              key={index}
               pathname={pathname}
             />
           ))}

@@ -158,7 +158,7 @@ const BusinessDesignCards = () => {
           >
             {images.map((image, index) => {
               return (
-                <div className="relative">
+                <div className="relative" key={index}>
                   <div className={`${getImageContainerStyles(index)}`}>
                     <div
                       className={`${getImageSize(
@@ -182,7 +182,7 @@ const BusinessDesignCards = () => {
             className="flex flex-row min-w-full overflow-x-auto space-x-3 pl-5 scrollbar-hidden"
           >
             {businessDesigns.map((businessDesign, index) => (
-              <MobileImageConainer businessDesign={businessDesign} />
+              <MobileImageConainer businessDesign={businessDesign} key={index} />
             ))}
           </div>
         )}

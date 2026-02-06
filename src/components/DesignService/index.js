@@ -34,18 +34,18 @@ const DesignService = () => {
             </div>
             <div className="col-span-4 grid sm:grid-cols-3 sm:items-center mt-10">
               <div className="flex flex-col space-y-2">
-                {design1.map((design) => (
-                  <p className="text-lg text-black-3">{design}</p>
+                {design1.map((design, index) => (
+                  <p className="text-lg text-black-3" key={index}>{design}</p>
                 ))}
               </div>
               <div className="flex flex-col space-y-2">
-                {design2.map((design) => (
-                  <p className="text-lg text-black-3">{design}</p>
+                {design2.map((design, index) => (
+                  <p className="text-lg text-black-3" key={index}>{design}</p>
                 ))}
               </div>
               <div className="flex flex-col space-y-2">
-                {design3.map((design) => (
-                  <p className="text-lg text-black-3">{design}</p>
+                {design3.map((design, index) => (
+                  <p className="text-lg text-black-3" key={index}>{design}</p>
                 ))}
               </div>
             </div>
