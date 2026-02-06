@@ -5,12 +5,34 @@ import { useEffect, useRef, useState } from 'react';
 const MAX_CLAPS = 50;
 
 export default function ClapButton() {
+  const [footerVisible, setFooterVisible] = useState(false);
   const clapRef = useRef(null);
   const plusOneRef = useRef(null);
   const totalRef = useRef(null);
   const countRef = useRef(0);
   const initializedRef = useRef(false);
   const [total, setTotal] = useState(267);
+
+
+  useEffect(() => {
+    const footer = document.getElementById("footer");
+    if (!footer) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setFooterVisible(entry.isIntersecting);
+      },
+      {
+        root: null,
+        threshold: 0,
+        rootMargin: "0px 0px -80px 0px",
+      }
+    );
+
+    observer.observe(footer);
+
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
     if (initializedRef.current) return;
@@ -100,7 +122,9 @@ export default function ClapButton() {
       clapRef.current.addEventListener('click', handleClick);
     })();
   }, []);
-
+if(footerVisible){
+  return 
+}
   return (
     <div className="flex flex-col items-center select-none fixed bottom-[100px] sm:bottom-[70px] z-[100] sm:left-1/2 sm:-translate-x-1/2 right-10">
       <span
