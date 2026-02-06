@@ -14,8 +14,8 @@ const YouMightAlsoLike = () => {
       <div className="p-5 !pr-0 lg:pl-[120px] sm:pl-[70px] sm:py-8">
         <div className='flex flex-row overflow-x-auto gap-4 no-scrollbar pr-8'>
           {editorials.map((editorial, index) => (
-            <div className='min-w-[45%]' key={index}>
-              <EditorialSquareCard imgPath={editorial.headerImage} slug={editorial.slug} title={editorial.title} desc={editorial.description} by={editorial.by} />
+            <div className='min-w-[85%] sm:min-w-[45%]' key={index}>
+              <EditorialSquareCard imgPath={editorial.cardImage} slug={editorial.slug} title={editorial.title} desc={editorial.description} by={editorial.by} />
             </div>
           ))}
         </div>

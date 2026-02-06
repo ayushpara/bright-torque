@@ -1,10 +1,12 @@
-import digitalProductsFailImage from "../static/images/editorial/why-most-digital-products-fail.jpg";
-import hiddenCostOfImage from "../static/images/editorial/the_hidden_cost_of_designing_without_a_clear_product_narrative.png";
-import designThatEarnsTrust from "../static/images/editorial/design_that_earn_trust_small.png";
-import whyStartupsConfuseImage from "../static/images/editorial/why_startups_confuse_peed_with_clarity.png";
-import theImportance from "../static/images/editorial/the_importance_of_accessibility_in_modern_design.png";
+import digitalProductsFailImage from "../static/images/editorial/why-most-digital-products-fail.webp";
+import hiddenCostOfImage from "../static/images/editorial/the_hidden_cost_of_designing_without_a_clear_product_narrative.webp";
+import whyStartupsConfuseImage from "../static/images/editorial/why_startups_confuse_peed_with_clarity.webp";
+import theImportance from "../static/images/editorial/the_importance_of_accessibility_in_modern_design.webp";
+import whatFounder from "../static/images/editorial/what_founder_get_wrong_about_design.webp";
+import heroImage from "../static/images/editorial/designBetterHero.webp"
+import cardImage from "../static/images/editorial/designBetterCardImage.webp"
+
 import editor from "../static/images/editorial/editor.png"
-import whatFounder from "../static/images/editorial/what_founder_get_wrong_about_design.png"
 
 export const articles = [
     {
@@ -14,7 +16,8 @@ export const articles = [
         "title": "Why Most Digital Products Fail: Because PMs Forgot to “Live the User Journey”",
         subHeading: `Positioning around credibility, reliability, and long-term value — not just aesthetics.`,
         "description": `"You can't design for a world you haven't stepped into." — Rahul Gujarathi. In today’s digital product world, many PMs rely on Figma screens, personas, or metrics to understand users. But real user experience can’t be captured this way.`,
-        headerImage: digitalProductsFailImage,
+        headerImage: heroImage,
+        cardImage:cardImage,
         by: "YASHIKA RATRE",
         in: "DESIGN PROCESS",
         editor: {
@@ -197,7 +200,8 @@ This principle has shaped our work ever since. Whenever possible, we don’t jus
         subHeading: `Positioning around credibility, reliability, and long-term value — not just aesthetics.`,
         "title": `The Hidden Cost of Designing Without a Clear Product Narrative`,
         "description": `"You can't design for a world you haven't stepped into." — Rahul Gujarathi. In today’s digital product world, many PMs rely on Figma screens, personas, or metrics to understand users. But real user experience can’t be captured this way.`,
-        headerImage: hiddenCostOfImage,
+        headerImage: heroImage,
+        cardImage:cardImage,
         by: "YASHIKA RATRE",
         in: "DESIGN PROCESS",
         editor: {
@@ -372,7 +376,8 @@ This principle has shaped our work ever since. Whenever possible, we don’t jus
         subHeading: `Positioning around credibility, reliability, and long-term value — not just aesthetics.`,
         "title": `The Hidden Cost of Designing Without a Clear Product Narrative`,
         "description": `"You can't design for a world you haven't stepped into." — Rahul Gujarathi. In today’s digital product world, many PMs rely on Figma screens, personas, or metrics to understand users. But real user experience can’t be captured this way.`,
-        headerImage: designThatEarnsTrust,
+               headerImage: heroImage,
+        cardImage:cardImage,
         by: "YASHIKA RATRE",
         in: "DESIGN PROCESS",
         editor: {
@@ -553,7 +558,8 @@ This principle has shaped our work ever since. Whenever possible, we don’t jus
         subHeading: `Positioning around credibility, reliability, and long-term value — not just aesthetics.`,
         "title": `The Hidden Cost of Designing Without a Clear Product Narrative`,
         "description": `"You can't design for a world you haven't stepped into." — Rahul Gujarathi. In today’s digital product world, many PMs rely on Figma screens, personas, or metrics to understand users. But real user experience can’t be captured this way.`,
-        headerImage: whyStartupsConfuseImage,
+        headerImage: heroImage,
+        cardImage:cardImage,
         by: "YASHIKA RATRE",
         in: "DESIGN PROCESS",
         editor: {
@@ -732,7 +738,8 @@ This principle has shaped our work ever since. Whenever possible, we don’t jus
         subHeading: `Positioning around credibility, reliability, and long-term value — not just aesthetics.`,
         "title": `The Hidden Cost of Designing Without a Clear Product Narrative`,
         "description": `"You can't design for a world you haven't stepped into." — Rahul Gujarathi. In today’s digital product world, many PMs rely on Figma screens, personas, or metrics to understand users. But real user experience can’t be captured this way.`,
-        headerImage: theImportance,
+                headerImage: heroImage,
+        cardImage:cardImage,
         by: "YASHIKA RATRE",
         in: "DESIGN PROCESS",
         editor: {
@@ -913,7 +920,8 @@ This principle has shaped our work ever since. Whenever possible, we don’t jus
         subHeading: `Positioning around credibility, reliability, and long-term value — not just aesthetics.`,
         "title": `What Founders Get Wrong About Design ROI`,
         "description": `"You can't design for a world you haven't stepped into." — Rahul Gujarathi. In today’s digital product world, many PMs rely on Figma screens, personas, or metrics to understand users. But real user experience can’t be captured this way.`,
-        headerImage: whatFounder,
+               headerImage: heroImage,
+        cardImage:cardImage,
         by: "YASHIKA RATRE",
         in: "DESIGN PROCESS",
         editor: {

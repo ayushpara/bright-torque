@@ -22,14 +22,14 @@ const FeaturedSection = ({ editorials }) => {
   .map(editorial => (
     <FeaturedSmallCard
       key={editorial.slug}
-      imgPath={editorial.headerImage}
+      imgPath={editorial.cardImage}
       slug={editorial.slug}
       title={editorial.title}
       desc={editorial.description}
     />
   ))}
           </div>
-          <div className="flex flex-row sm:mt-10 mt-8 rounded-[20px] overflow-hidden">
+          <div className="hidden sm:flex flex-col sm:flex-row sm:mt-10 mt-8 rounded-[20px] overflow-hidden">
             {editorials.slice(0, 4).map((editorial, index) => (
               <motion.div
                 key={index}
@@ -38,7 +38,7 @@ const FeaturedSection = ({ editorials }) => {
                 onHoverEnd={() => setSelectedIndex(-1)}
                 style={{
                   // flex: selectedIndex === index ? "5" : "1",
-                  backgroundImage: `url(${editorial.headerImage.src})`,
+                  backgroundImage: `url(${editorial.cardImage.src})`,
                 }}
                 initial={false}
                 animate={{

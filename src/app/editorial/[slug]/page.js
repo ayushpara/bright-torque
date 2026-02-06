@@ -1,4 +1,4 @@
-'use server'
+// 'use server'
 import ClapButton from '@/components/ClapButton'
 import EditorCard from '@/components/EditorCard'
 import EditorialDetailBanner from '@/components/EditorialDetailBanner'
