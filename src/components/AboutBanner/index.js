@@ -24,21 +24,14 @@ const AboutBanner = () => {
               Breaking new ground to transform the industry.
             </p>
           </div>
-          <div className="flex flex-row justify-end items-center flex-1">
+          <div className="flex flex-row justify-end items-center flex-1 relaive">
             <motion.div
               initial="initial"
               animate="animate"
               variants={rotateVariants}
-              className="relative sm:h-[123px] sm:w-[123px] w-[45px] h-[45px]"
-              style={{ transformOrigin: "center center" }}
+              className="relative sm:h-[123px] sm:w-[123px] w-[45px] h-[45px] bg-cover"
+              style={{ transformOrigin: "center center", backgroundImage:`url(${starIcon.src})` }}
             >
-              <Image
-                src={starIcon}
-                alt="star"
-                fill
-                className="object-cover absolute w-full h-full"
-                style={{ borderRadius: '50%' }}
-              />
             </motion.div>
           </div>
         </div>
