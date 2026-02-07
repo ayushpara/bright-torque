@@ -35,7 +35,7 @@ const HeaderLayout = () => {
       <div className="flex flex-row justify-between h-full items-center">
         <div className="flex items-center justify-center hover:cursor-pointer">
           <div className="relative w-[162px] h-[24px] ">
-          <Image src={logoImage} alt="logo" onClick={()=>router.push(HOME)} className="object-cover w-full h-full absolute" />
+          <Image src={logoImage} preload alt="logo" onClick={()=>router.push(HOME)} className="object-cover w-full h-full absolute" />
           </div >
         </div>
 

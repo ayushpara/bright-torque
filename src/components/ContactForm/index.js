@@ -97,11 +97,12 @@ const ContactForm = () => {
               </p>
               <div className="sm:py-10 py-5 w-full">
                 <div className="sm:gap-5 gap-2  flex flex-wrap">
-                  {projectTypes.map((projectType) => (
+                  {projectTypes.map((projectType, index) => (
                     <Tag
                       tag={projectType}
                       type="projectType"
                       onSelectTag={onSelectTag}
+                      key={index}
                       selectedValue={selectedProject}
                     />
                   ))}

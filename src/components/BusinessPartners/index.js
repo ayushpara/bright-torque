@@ -36,8 +36,8 @@ const BusinessPartners = () => {
               </p>
             </div>
             <div className="flex flex-row sm:space-x-16 sm:justify-start justify-between sm:mt-0 mt-8">
-              {partners.map((partner) => (
-                <div className="flex flex-col space-y-2 items-start w-fit">
+              {partners.map((partner, index) => (
+                <div className="flex flex-col space-y-2 items-start w-fit" key={index}>
                   <div className="relative sm:w-[104px] w-[52px] sm:h-[104px] h-[52px]">
                     <Image
                       src={partner.image}

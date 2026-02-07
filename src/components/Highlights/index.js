@@ -30,8 +30,8 @@ const HightLights = () => {
           </div>
           <div className="sm:grid flex flex-col sm:grid-cols-7 sm:mt-20 mt-5 sm:gap-20 gap-5">
             <div className="col-span-4 grid sm:grid-cols-2 sm:gap-20 gap-10 h-fit">
-              {hightlights.map((highlight) => (
-                <div className="">
+              {hightlights.map((highlight, index) => (
+                <div className="" key={index}>
                   <p className="text-[#097B85] text-[32px] leading-[40px] font-bold">
                     {highlight.heading}
                   </p>

@@ -68,7 +68,7 @@ const HomeBanner = () => {
                   style={{ transformOrigin: "center center" }}
                   src={starIcon}
                   alt="star"
-                  layout="fill"
+                  fill
                   className="object-cover absolute w-full h-full"
                 />
               </motion.div>
@@ -131,8 +131,8 @@ const HomeBanner = () => {
                   }`}
                 >
                   <div className="sm:space-x-3 space-x-1 flex flex-row items-center">
-                    {project.tags.map((tag) => (
-                      <div className="bg-black-2 sm:p-2 p-2 rounded-lg sm:h-[32px] h-[8px] justify-center flex items-center ">
+                    {project.tags.map((tag, index) => (
+                      <div className="bg-black-2 sm:p-2 p-2 rounded-lg sm:h-[32px] h-[8px] justify-center flex items-center " key={index}>
                         <p className="sm:text-xs text-[5px] text-white">
                           {tag}
                         </p>

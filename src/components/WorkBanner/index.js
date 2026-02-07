@@ -45,7 +45,7 @@ const WorkBanner = () => {
               <Image
                 src={starIcon}
                 alt="star"
-                layout="fill"
+                fill
                 className="object-cover absolute w-full h-full"
                 style={{ borderRadius: "50%" }}
               />

@@ -5,7 +5,7 @@ import "./globals.css";
 import "../styles/app.scss";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
 import { ConfigProvider } from "antd";
-import { COLOR_PRIMARY, COLOR_SECONDARY } from "../styles/style-constants";
+import { COLOR_SECONDARY } from "../styles/style-constants";
 import HeaderLayout from "@/components/HeaderLayout";
 import FooterLayout from "@/components/FooterLayout";
 import MobileFooterNavigator from "@/components/MobileFooterNavigator";
@@ -16,6 +16,9 @@ const inter = Syne({ subsets: ["latin"] });
 export const metadata = {
   title: "Bright Torque - B2B SaaS Product Design & Branding Agency",
   description: "We design market-ready B2B SaaS products, complex web apps and brand systems. Based in India — portfolio, services, and case studies",
+    metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL ?? "https://brightorque.com"
+  ),
   keywords: ["AI-first product design",
     "UX for AI products",
     "human-centered AI design",
@@ -53,17 +56,19 @@ export const metadata = {
     index: true,
     follow: true,
   },
-  viewport: "width=device-width, initial-scale=1",
+};
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 };
 
-export const RootLayout = async ({ children }) => {
+ const RootLayout = ({ children }) => {
   return (
-    <html lang="en">
-      <Head>
-        <title>Bright Torque</title>
-      </Head>
+    <html lang="en"  className={inter.className}>
 
-      <body className={inter.className}>
+      <body>
         <div className="flex min-h-screen  min-w-screen ">
           <AntdRegistry>
             <ConfigProvider
