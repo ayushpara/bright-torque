@@ -7,7 +7,7 @@ const FeaturedSmallCard = ({imgPath, title, desc, slug}) => {
   return (
         <div className='flex-1 min-w-[280px]'>
             <Link href={`editorial/${slug}`} prefetch className='flex flex-row gap-4'>
-                <Image src={imgPath} width={imgSize} height={imgSize} alt={title||"--"} className={`rounded-[20px] min-w-[86.83984375]`}/>
+                <Image src={imgPath} width={imgSize} height={imgSize} preload alt={title||"--"} className={`rounded-[20px] min-w-[86.83984375]`}/>
                 <div className='h-auto my-auto'>
                     <h3 className='text-sm font-semibold line-clamp-1 leading-6'>
                         {title||"--"}

@@ -30,7 +30,7 @@ const Footer = () => {
                 </div>
                 <div className='w-full sm:w-auto mt-6 sm:mt-0'>
                     <button  onClick={()=> router.push(CONTACT,{ scroll: true })} className='text-green-1 bg-secondary w-full px-6 py-6 h-9 rounded-full text-center flex items-center justify-center bg-white text-base font-semibold leading-normal mt-2 w-full sm:w-[183px]'>
-                        Chat with us <Image src={Arrow} width={20} height={20} className='ml-2' />
+                        Chat with us <Image src={Arrow} alt="arrow" width={20} height={20} className='ml-2' />
                     </button>
                 </div>
             </div>
