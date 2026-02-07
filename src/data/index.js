@@ -235,7 +235,7 @@ export const accordionItems = [
   {
     key: '1',
     label: 'Generative UI',
-    children: <div className={`${jarkata.className}`}>
+    children: <div className={`${jarkata.className} text-sm leading-6 !pl-0`}>
       <p>
         We build adaptive interfaces that evolve based on user intent and context. Moving beyond static screens to fluid, intelligent experiences.
       </p>
@@ -246,7 +246,7 @@ export const accordionItems = [
   {
     key: '2',
     label: 'System Architecture',
-    children: <div className={`${jarkata.className}`}>
+    children: <div className={`${jarkata.className} text-sm leading-6 !pl-0`}>
       <p>
         Creating robust design systems that scale with AI. We define the tokens, rules, and constraints that allow agents to build consistent UI
       </p>
@@ -257,7 +257,7 @@ export const accordionItems = [
   {
     key: '3',
     label: 'Neural UX',
-    children: <div className={`${jarkata.className}`}>
+    children: <div className={`${jarkata.className} text-sm leading-6 !pl-0`}>
       <p>
         Optimizing the interaction layer between human cognition and artificial intelligence. Making complex models accessible and intuitive.
       </p>
@@ -268,7 +268,7 @@ export const accordionItems = [
   {
     key: '4',
     label: 'Product Strategy',
-    children: <div className={`${jarkata.className}`}>
+    children: <div className={`${jarkata.className} text-sm leading-6 !pl-0`}>
       <p>
         Defining the role of AI in your product lifecycle. From feature discovery to deployment, we map the path to intelligent utility.
       </p>
