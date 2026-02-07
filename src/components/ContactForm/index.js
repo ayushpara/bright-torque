@@ -64,7 +64,7 @@ const ContactForm = () => {
     };
     setLoading(true);
     axios
-      .post("https://formspree.io/f/xrgnaydz", payload)
+      .post(" https://formspree.io/f/xeeljkag", payload)
       .then((response) => {
         setLoading(false);
         form.resetFields();
