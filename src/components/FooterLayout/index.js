@@ -11,6 +11,7 @@ const FooterLayout = () => {
   return (
     <div
       className={`relative sm:py-12 p-5 bg-green-1 flex flex-col items-center justify-center w-full ${jarkata.className}`}
+      id="footer"
     >
       <div className="flex sm:flex-row flex-col sm:px-[20px] lg:px-[120px] sm:space-y-0 space-y-4 items-center justify-between w-full sm:my-0 my-5 ">
         <p className="sm:text-[20px] lg:text-[24px]] text-base text-white items-center  flex">

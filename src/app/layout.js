@@ -9,6 +9,7 @@ import { COLOR_PRIMARY, COLOR_SECONDARY } from "../styles/style-constants";
 import HeaderLayout from "@/components/HeaderLayout";
 import FooterLayout from "@/components/FooterLayout";
 import MobileFooterNavigator from "@/components/MobileFooterNavigator";
+import Footer from "@/components/Footer";
 const inter = Syne({ subsets: ["latin"] });
 
 
@@ -75,12 +76,13 @@ export const RootLayout = async ({ children }) => {
               <div className="min-h-screen w-screen flex flex-col bg-white relative">
                 <HeaderLayout />
 
-                <div className="flex  bg-white min-h-screen w-full">
+                <div className="bg-white min-h-screen w-full">
                   {children}
                 </div>
                 <div className="flex w-full ">
                   <FooterLayout />
                 </div>
+                  <Footer/>
                 <div className="sm:hidden sticky bottom-0 z-50 ">
                   <MobileFooterNavigator />
                 </div>
