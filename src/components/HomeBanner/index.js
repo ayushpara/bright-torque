@@ -7,6 +7,7 @@ import viewArrowIcon from "../../static/icons/viewArrow.svg";
 import { homeProjects } from "@/data";
 import { rotateVariants } from "@/utilities/helpers";
 import { Plus_Jakarta_Sans } from "next/font/google";
+import OurStats from "../OurStats";
 
 const jarkata = Plus_Jakarta_Sans({
   weight: "400",
@@ -25,24 +26,20 @@ const HomeBanner = () => {
               Design Experts.
             </p>
             <p className="sm:text-[72px] text-[31px]  sm:leading-[84px] leading-[40px] text-secondary text-green-2 ">
-              Helping Mission-Focused
+              Design Decisions, Made Visible.
             </p>
-            <p className="sm:text-[72px] text-[31px]  sm:leading-[84px] leading-[40px] text-green-1 ">
+            {/* <p className="sm:text-[72px] text-[31px]  sm:leading-[84px] leading-[40px] text-green-1 ">
               Zero-to-One Startups.
-            </p>
+            </p> */}
             <p
               className={`text-green-3 sm:text-xl text-base mt-5 ${jarkata.className} sm:block hidden `}
             >
-              We’re a Product Design & Branding Agency <br />
-              who specializes in B2B SaaS platforms, complex Web Apps <br />
-              and diverse UI/UX design projects. Based in India...
+              We’re a Product Design & Branding Agency  who specializes in B2B SaaS,<br /> Ecommerce platforms, complex web apps and diverse UI/UX design projects.
             </p>
             <p
               className={`text-green-3 sm:text-xl text-base mt-5 ${jarkata.className} sm:hidden  `}
             >
-              We’re a Product Design & Branding Agency who specializes in B2B
-              SaaS platforms, complex Web Apps and diverse UI/UX design
-              projects. Based in India...
+              We’re a Product Design & Branding<br /> Agency  who specializes in B2B SaaS,<br /> Ecommerce platforms, complex web apps and<br /> diverse UI/UX design projects.
             </p>
           </div>
           <div className="flex flex-row justify-end items-center">
@@ -156,6 +153,7 @@ const HomeBanner = () => {
             ))}
           </div>
         </div>
+          <OurStats/>
       </div>
     </div>
   );
