@@ -36,7 +36,12 @@ import ayushImage from "../static/images/projects/ayush.png";
 import brandBookImage from "../static/images/projects/brandBook.png";
 import mealqImage from "../static/images/projects/mealq.png";
 import mPaisaImage from "../static/images/projects/mPaisa.png";
+import { Plus_Jakarta_Sans } from "next/font/google";
 
+const jarkata = Plus_Jakarta_Sans({
+  weight: "400",
+  subsets: ["latin"],
+});
 export const headerButtons = [
   {
     name: "Home",
@@ -53,7 +58,7 @@ export const headerButtons = [
     redirect: ABOUT,
     key: 3,
   },
-    {
+  {
     name: "Editorial",
     redirect: EDITORIAL,
     key: 4,
@@ -70,101 +75,101 @@ export const homeProjects = [
     heading: "Patahvi Farms",
     description: "We designed Pathavi as a transparency-first digital experience, where trust is built through proof, not promises. Every interaction reveals the true journey of the product — from seed to bottle.",
     image: PathviImage,
-    tags: ["Brand", "Web","SaaS"],
+    tags: ["Brand", "Web", "SaaS"],
   },
   {
     heading: "Jaldhara Polytubes",
     description: "We designed this project to showcase our expertise in delivering Industrial Brand design & delivering a stunning web portfolio site. ",
     image: JDPOLYImage,
-    tags: ["Brand", "Web"],  
+    tags: ["Brand", "Web"],
   },
   {
     heading: "Falcon Fitness",
     description: "We designed and delivered a personalized fitness experience that helps gym members train smarter, stay consistent, and track progress effortlessly.",
     image: FalconImage,
-    tags: ["Brand","App"],
+    tags: ["Brand", "App"],
   },
 ];
 
 export const projects = [{
-    heading: "Patahvi Farms",
-    description: "We designed Pathavi as a transparency-first digital experience, where trust is built through proof, not promises. Every interaction reveals the true journey of the product — from seed to bottle.",
-    image: PathviImage,
-    tags: ["Brand", "Web","SaaS"],
-  },
+  heading: "Patahvi Farms",
+  description: "We designed Pathavi as a transparency-first digital experience, where trust is built through proof, not promises. Every interaction reveals the true journey of the product — from seed to bottle.",
+  image: PathviImage,
+  tags: ["Brand", "Web", "SaaS"],
+},
 
-  {
-    heading: "Jaldhara Polytubes",
-    description: "We designed this project to showcase our expertise in delivering Industrial Brand design & delivering a stunning web portfolio site. ",
-    image: JDPOLYImage,
-    tags: ["Brand", "Web"],  
-  },
-  {
-    heading: "Falcon Fitness",
-    description: "We designed and delivered a personalized fitness experience that helps gym members train smarter, stay consistent, and track progress effortlessly.",
-    image: FalconImage,
-    tags: ["Brand","App"],
-  },
-  {
-    heading: "Parking Eye",
-    description: "We designed the Parking Eye project in Australia — a smart app that assists people in booking parking slots seamlessly by scanning QR codes on parking meters.",
-    image: ParkingEyeImage,
-    tags: ["Brand","App"],
-  },
-  {
-    heading: "ESGATE",
-    description: "ESGATE provides investors with detailed ESG data and insights, highlighting the significance of accurate, niche-specific information for sustainable finance.",
-    image: esgateImage,
-    tags: ["Brand", "Web", "SaaS"],
-  },
-  {
-    heading: "Octowaste",
-    description: "We designed a marketplace for Octowaste, an Australian clean-tech company focused on the responsible exit of solar assets — enabling sustainable, efficient, and transparent solutions for the solar industry.",
-    image : OctowasteImage,
-    tags: ["Marketplace", "Web"],
-  },
-  {
-    heading: "Launchbees",
-    description: "Efficiently manage feature releases, upsells, and configurations without redeploying code.",
-    image: brandBookImage,
-    tags: ["Brand", "Web", "SaaS"],
-  },
-  {
-    heading: "AdGen",
-    description: "Convert inactive users into revenue leads with simple tasks and rewards.",
-    image: adGenImage,
-    tags: ["Brand", "Web"],
-  },
-  {
-    heading: "StudyTorch",
-    description: "An App for creating, organizing study notes, collections, quizzes, and sharing with friends.",
-    image: studytorchImage,
-    tags: ["Brand", "Web", "SaaS"],
-  },
-  {
-    heading: "mGamer",
-    description: "An App lets users earn money and game credits by completing tasks like watching ads and surveys.",
-    image: mgamerImage,
-    tags: ["Brand", "App", "Illustration"],
-  },
-  {
-    heading: "mPaisa",
-    description: "Earn money and gift cards by playing games, completing tasks, and answering surveys.",
-    image: mPaisaImage,
-    tags: ["Brand", "Web", "Illustration"],
-  },
-  {
-    heading: "Revu",
-    description: "Revu is a revolutionary learning tool that intelligently leverages the concepts of spaced repetition",
-    image: ayushImage,
-    tags: ["Brand", "App"],
-  },
-  {
-    heading: "MealQ",
-    description: "MealsQ is a quick food ordering App specifically designed for the Australian users.",
-    image: mealqImage,
-    tags: ["Brand", "Web"],
-  },
+{
+  heading: "Jaldhara Polytubes",
+  description: "We designed this project to showcase our expertise in delivering Industrial Brand design & delivering a stunning web portfolio site. ",
+  image: JDPOLYImage,
+  tags: ["Brand", "Web"],
+},
+{
+  heading: "Falcon Fitness",
+  description: "We designed and delivered a personalized fitness experience that helps gym members train smarter, stay consistent, and track progress effortlessly.",
+  image: FalconImage,
+  tags: ["Brand", "App"],
+},
+{
+  heading: "Parking Eye",
+  description: "We designed the Parking Eye project in Australia — a smart app that assists people in booking parking slots seamlessly by scanning QR codes on parking meters.",
+  image: ParkingEyeImage,
+  tags: ["Brand", "App"],
+},
+{
+  heading: "ESGATE",
+  description: "ESGATE provides investors with detailed ESG data and insights, highlighting the significance of accurate, niche-specific information for sustainable finance.",
+  image: esgateImage,
+  tags: ["Brand", "Web", "SaaS"],
+},
+{
+  heading: "Octowaste",
+  description: "We designed a marketplace for Octowaste, an Australian clean-tech company focused on the responsible exit of solar assets — enabling sustainable, efficient, and transparent solutions for the solar industry.",
+  image: OctowasteImage,
+  tags: ["Marketplace", "Web"],
+},
+{
+  heading: "Launchbees",
+  description: "Efficiently manage feature releases, upsells, and configurations without redeploying code.",
+  image: brandBookImage,
+  tags: ["Brand", "Web", "SaaS"],
+},
+{
+  heading: "AdGen",
+  description: "Convert inactive users into revenue leads with simple tasks and rewards.",
+  image: adGenImage,
+  tags: ["Brand", "Web"],
+},
+{
+  heading: "StudyTorch",
+  description: "An App for creating, organizing study notes, collections, quizzes, and sharing with friends.",
+  image: studytorchImage,
+  tags: ["Brand", "Web", "SaaS"],
+},
+{
+  heading: "mGamer",
+  description: "An App lets users earn money and game credits by completing tasks like watching ads and surveys.",
+  image: mgamerImage,
+  tags: ["Brand", "App", "Illustration"],
+},
+{
+  heading: "mPaisa",
+  description: "Earn money and gift cards by playing games, completing tasks, and answering surveys.",
+  image: mPaisaImage,
+  tags: ["Brand", "Web", "Illustration"],
+},
+{
+  heading: "Revu",
+  description: "Revu is a revolutionary learning tool that intelligently leverages the concepts of spaced repetition",
+  image: ayushImage,
+  tags: ["Brand", "App"],
+},
+{
+  heading: "MealQ",
+  description: "MealsQ is a quick food ordering App specifically designed for the Australian users.",
+  image: mealqImage,
+  tags: ["Brand", "Web"],
+},
 ];
 
 export const businerssPartners = [
@@ -225,6 +230,52 @@ export const budgets = [
   { label: "$2.5 - $5k", value: "2.5-5" },
   { label: "$5k - $10k", value: "5-10" },
   { label: "$10k - $15k", value: "10-15" },
+];
+export const accordionItems = [
+  {
+    key: '1',
+    label: 'Generative UI',
+    children: <div className={`${jarkata.className}`}>
+      <p>
+        We build adaptive interfaces that evolve based on user intent and context. Moving beyond static screens to fluid, intelligent experiences.
+      </p>
+      <br />
+      <p><span>Dynamic Components</span> <span>Generative Prompts</span> <spna>Real time Wireframes</spna></p>
+    </div>,
+  },
+  {
+    key: '2',
+    label: 'System Architecture',
+    children: <div className={`${jarkata.className}`}>
+      <p>
+        Creating robust design systems that scale with AI. We define the tokens, rules, and constraints that allow agents to build consistent UI
+      </p>
+      <br />
+      <p><span>Tokens</span> <span>Guidlines</span> <spna>Scalability</spna></p>
+    </div>,
+  },
+  {
+    key: '3',
+    label: 'Neural UX',
+    children: <div className={`${jarkata.className}`}>
+      <p>
+        Optimizing the interaction layer between human cognition and artificial intelligence. Making complex models accessible and intuitive.
+      </p>
+      <br />
+      <p><span>Tokens</span> <span>Guidlines</span> <spna>Scalability</spna></p>
+    </div>,
+  },
+  {
+    key: '4',
+    label: 'Product Strategy',
+    children: <div className={`${jarkata.className}`}>
+      <p>
+        Defining the role of AI in your product lifecycle. From feature discovery to deployment, we map the path to intelligent utility.
+      </p>
+      <br />
+      <p><span>Roadmap Discovery</span> <span>UX Direction</span> <spna>PMF(Product Market Fit)</spna></p>
+    </div>,
+  },
 ];
 
 //about
