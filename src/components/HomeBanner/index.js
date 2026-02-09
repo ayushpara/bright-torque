@@ -7,6 +7,7 @@ import viewArrowIcon from "../../static/icons/viewArrow.svg";
 import { homeProjects } from "@/data";
 import { rotateVariants } from "@/utilities/helpers";
 import { Plus_Jakarta_Sans } from "next/font/google";
+import OurStats from "../OurStats";
 
 const jarkata = Plus_Jakarta_Sans({
   weight: "400",
@@ -20,59 +21,23 @@ const HomeBanner = () => {
     <div className="w-full bg-primary">
       <div className="p-5 lg:px-[120px] sm:px-[70px] sm:py-16">
         <div className="w-full grid flex-row sm:grid-cols-4">
-          <div className="sm:col-span-3 flex flex-col order-last sm:order-none">
+          <div className="sm:col-span-4 flex flex-col order-last sm:order-none">
             <p className="sm:text-[72px] text-[31px] sm:leading-[84px] leading-[40px] text-green-1 ">
               Design Experts.
             </p>
             <p className="sm:text-[72px] text-[31px]  sm:leading-[84px] leading-[40px] text-secondary text-green-2 ">
-              Helping Mission-Focused
-            </p>
-            <p className="sm:text-[72px] text-[31px]  sm:leading-[84px] leading-[40px] text-green-1 ">
-              Zero-to-One Startups.
+              Design Decisions, Made Visible.
             </p>
             <p
               className={`text-green-3 sm:text-xl text-base mt-5 ${jarkata.className} sm:block hidden `}
             >
-              We’re a Product Design & Branding Agency <br />
-              who specializes in B2B SaaS platforms, complex Web Apps <br />
-              and diverse UI/UX design projects. Based in India...
+              We’re a Product Design & Branding Agency  who specializes in B2B SaaS,<br /> Ecommerce platforms, complex web apps and diverse UI/UX design projects.
             </p>
             <p
               className={`text-green-3 sm:text-xl text-base mt-5 ${jarkata.className} sm:hidden  `}
             >
-              We’re a Product Design & Branding Agency who specializes in B2B
-              SaaS platforms, complex Web Apps and diverse UI/UX design
-              projects. Based in India...
+              We’re a Product Design & Branding<br /> Agency  who specializes in B2B SaaS,<br /> Ecommerce platforms, complex web apps and<br /> diverse UI/UX design projects.
             </p>
-          </div>
-          <div className="flex flex-row justify-end items-center">
-            <motion.div
-              initial="initial"
-              animate="animate"
-              variants={rotateVariants}
-              className="sm:col-span-1 justify-end items-center flex sm:h-[123px] sm:w-[123px] w-[45px] h-[45px]"
-              style={{ transformOrigin: "center center" }}
-            >
-              <motion.div
-                className="absolute  "
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  borderRadius: "50%",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                <Image
-                  style={{ transformOrigin: "center center" }}
-                  src={starIcon}
-                  alt="star"
-                  fill
-                  className="object-cover absolute w-full h-full"
-                />
-              </motion.div>
-            </motion.div>
           </div>
         </div>
       </div>
@@ -156,6 +121,7 @@ const HomeBanner = () => {
             ))}
           </div>
         </div>
+          <OurStats/>
       </div>
     </div>
   );
