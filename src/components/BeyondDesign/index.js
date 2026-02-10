@@ -27,8 +27,9 @@ const BeyondDesign = () => {
           </div>
         </div>
         <div className="sm:py-0 py-5">
-          <p className="sm:text-[120px] sm:leading-[150px] leading-[40px] text-[32px] sm:text-right text-black-3 sm:font-normal font-medium ">
-            Beyond <br /> Design
+          <p className="sm:text-[80px] sm:leading-[120px] tracking-[-1.4px] leading-[40px] text-[32px] sm:text-right text-black-3 sm:font-normal font-medium ">
+            Thinking Just<br/> 
+ Beyond Design
           </p>
         </div>
       </div>

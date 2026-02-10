@@ -11,6 +11,9 @@ import discover3Image from "../static/images/discover3.png";
 import transform1Image from "../static/images/transform1.png";
 import transform2Image from "../static/images/transform2.png";
 import transform3Image from "../static/images/transform3.png";
+import inLove from "../static/images/in-love.svg";
+import thumbUp from "../static/images/thumb-up.svg";
+import clientImage from "../static/images/clientImage.svg"
 
 import design1Image from "../static/images/design1.png";
 import design2Image from "../static/images/design2.png";
@@ -37,6 +40,14 @@ import brandBookImage from "../static/images/projects/brandBook.png";
 import mealqImage from "../static/images/projects/mealq.png";
 import mPaisaImage from "../static/images/projects/mPaisa.png";
 import { Plus_Jakarta_Sans } from "next/font/google";
+import calendar from "../static/icons/calendar.svg";
+import leads from "../static/icons/leads.svg";
+import rocket from "../static/icons/rocket.svg";
+import instapop from "../static/stats/instapop.svg";
+import toast from "../static/stats/toast.svg";
+import wordofMouth from "../static/stats/wordofme.svg";
+import falconFitness from "../static/stats/falconfitness.svg";
+import jaldhara from "../static/stats/jaldhara.svg"
 
 const jarkata = Plus_Jakarta_Sans({
   weight: "400",
@@ -356,3 +367,92 @@ export const hightlights = [
     description: "Certified UI/UX design",
   },
 ];
+
+export const testimonials = [
+  {
+    message: "Your designers bring so many mind-project. I’m very impressed!",
+    client: {
+      name: "Jatin from Toast",
+      feedbackImage:inLove,
+      clientImage: clientImage,
+      clientLogo:toast
+    }
+  },
+ {
+    message: "Your designers bring so many mind-project. I’m very impressed!",
+    client: {
+      name: "Jatin from instapop",
+      feedbackImage:thumbUp,
+      clientImage: clientImage,
+     clientLogo:instapop
+    }
+  },
+   {
+    message: "Your designers bring so many mind-project. I’m very impressed!",
+    client: {
+      name: "Jatin from wordofMouth",
+      feedbackImage:inLove,
+      clientImage: clientImage,
+      clientLogo:wordofMouth
+    }
+  },
+     {
+    message: "Your designers bring so many mind-project. I’m very impressed!",
+    client: {
+      name: "Jatin from falcon Fitness",
+      feedbackImage:thumbUp,
+      clientImage: clientImage,
+      clientLogo:falconFitness
+    }
+  },
+      {
+    message: "Your designers bring so many mind-project. I’m very impressed!",
+    client: {
+      name: "Jatin from jaldhara polytubes",
+      feedbackImage:inLove,
+      clientImage: jaldhara,
+      clientLogo:falconFitness
+    }
+  },
+];
+
+export const stats = [
+    {
+        title: "100+",
+        subTitle: "Projects Designed",
+        image: rocket
+    },
+    {
+        title: "25%",
+        subTitle: "Average increase in leads",
+        image: leads
+    },
+    {
+        title: "5 weeks",
+        subTitle: "Average Design time",
+        image: calendar
+    }
+];
+
+export const clients = [
+    {
+        alt: "instapop",
+        image: instapop
+    },
+    {
+        alt: "toast",
+        image: toast,
+    },
+    {
+        alt: "word of mouth",
+        image: wordofMouth,
+    },
+    {
+        alt: "jaldhara polytubes",
+        image: jaldhara
+    },
+    {
+        alt: "falcon fitness",
+        image: falconFitness
+    }
+]

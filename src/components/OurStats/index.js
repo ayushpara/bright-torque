@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { Plus_Jakarta_Sans } from 'next/font/google';
 import { motion } from 'framer-motion';
-import { stats, projects } from '@/data/ourStats';
+import { stats, clients } from '@/data';
 
 const jarkata = Plus_Jakarta_Sans({
     weight: "400",
@@ -41,7 +41,7 @@ const OurStats = () => {
                             ease: 'linear',
                         }}
                     >
-                        {[...projects, ...projects].map((item, index) => (
+                        {[...clients, ...clients].map((item, index) => (
                             <div
                                 key={index}
                                 className="w-[130px] h-[50px] bg-contain bg-no-repeat bg-center flex-shrink-0"

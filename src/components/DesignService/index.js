@@ -1,6 +1,7 @@
 import { Plus_Jakarta_Sans } from "next/font/google";
 import BeyondDesign from "../BeyondDesign";
 import LetsChat from "../LetsChat";
+import Testimonials from "../Testimonials";
 
 const jarkata = Plus_Jakarta_Sans({
   weight: "400",
@@ -19,7 +20,11 @@ const DesignService = () => {
   const design3 = ["Product", "Apps", "Icons", "Design Systems", "Prototyping"];
   return (
     <div className={`bg-secondary ${jarkata.className} `}>
+      <div className="bg-primary sm:pl-[70px] p-5 sm:pr-0 hidden sm:block">
+         <Testimonials />
+      </div>
       <div className="bg-primary sm:px-[70px] p-5 rounded-b-[64px] ">
+       
         <div className="bg-white sm:rounded-[48px] rounded-[24px] sm:p-10 sm:py-28 p-5 py-10 ">
           <div className="grid sm:grid-cols-7 sm:gap-10">
             <div className="col-span-3">
