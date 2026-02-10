@@ -7,7 +7,7 @@ import { testimonials } from '@/data';
 import Image from 'next/image';
 const settings = {
     dots: false,
-    infinite: false,
+    infinite: true,
     speed: 500,
     autoplay: true,
     speed: 2000,

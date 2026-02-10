@@ -15,7 +15,7 @@ const OurStats = () => {
         <div className={`border border-1 border-[#90CCD4] w-full rounded rounded-[30px] overflow-hidden ${jarkata.className} mt-6`}>
             <div className='w-full flex flex-col sm:flex-row flex-wrap'>
                 {stats.map((item, index) => (
-                    <div className={`flex-1  ${index === stats.length - 1 ? "" : 'border border-r-1 border-r-[#90CCD4]'}  flex justify-between px-6 py-8`}>
+                    <div className={`flex-1  ${index === stats.length - 1 ? "" : 'border border-r-1 border-r-[#90CCD4]'}  flex justify-between px-6 py-8`} key={index}>
                         <div className='flex flex-col items-start'>
                             <p className='text-5xl sm:text-6xl leading-[66px] text-green-1 font-medium'>{item.title}</p>
                             <p className='text-sm sm:text-lg text-green-1 leading-[27px]'>{item.subTitle}</p>

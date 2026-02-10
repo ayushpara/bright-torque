@@ -1,12 +1,10 @@
 "use client";
 import Image from "next/image";
-import { useState, useRef } from "react";
 import { businessDesigns } from "@/data";
-import { scrollContainer } from "@/utilities/helpers";
 import LetsChat from "../LetsChat";
 import useMediaQuery from "../useMedia";
-
 import { Plus_Jakarta_Sans } from "next/font/google";
+import Faq from "../Faq";
 
 const jarkata = Plus_Jakarta_Sans({
   weight: "400",
@@ -17,25 +15,36 @@ const jarkata = Plus_Jakarta_Sans({
 const BusinessDesignCard = ({
   businessDesign,
   index,
-  selectedDesign,
-  onChangeDesign,
 }) => {
   return (
     <div
-      className={` justify-between flex flex-col space-y-8 hover:cursor-pointer sm:w-full ${jarkata.className} `}
-      onClick={() => onChangeDesign(index)}
+      className={`justify-between items-center flex flex-col sm:flex-row space-y-8 hover:cursor-pointer sm:w-full ${jarkata.className} `}
+      // onClick={() => onChangeDesign(index)}
     >
-      <div className="space-y-3 flex flex-col">
+      <div className="flex flex-col">
         <p className="text-white text-[32px]">{businessDesign.heading}</p>
         <p className="text-white text-sm ">
           {businessDesign.description}
         </p>
+        <p className="text-white text-sm mt-[30px]">
+          What you get
+        </p>
+        <p className="text-white text-sm ">
+          {businessDesign.whatYouget.map((item, index)=>(
+            <span key={index}>{item} {index!== businessDesign.whatYouget.length-1?<span > | </span>:""}</span>
+          ))}
+        </p>
+        <div className="gap-4 flex flex-col mt-[80px]">
+          <p className="text-white text-sm ">Tools we use</p>
+          <div className="gap-4 flex">
+
+          {businessDesign.imagesToolsWeUse.map((item, index)=>(
+            <div className="p-4 rounded-full border text-white border-1 border-[#16CCEA] flex items-center justify-center text-base" key={index}>{item}</div>
+          ))}
+          </div>
+        </div>
       </div>
-      <div
-        className={`w-full h-[2px]  ${
-          selectedDesign === index ? "bg-[#EDB757]" : "bg-white"
-        } `}
-      />
+      <Image src={businessDesign.cardImage} width={250} height={300} alt="discover" className="w-[50%] h-[100%]" />
     </div>
   );
 };
@@ -70,87 +79,27 @@ const MobileImageConainer = ({ businessDesign }) => {
 
 const BusinessDesignCards = () => {
   const isMobile = useMediaQuery("(max-width: 767px)");
-  const [selectedDesign, setSelectedDesign] = useState(0);
-  const images = businessDesigns.flatMap((item) => item.images);
-
-  const containerRef = useRef(null);
-  const businessContainerRef = useRef(null);
-
-  const getImageSize = (index) => {
-    const imagePosition = index + 1;
-    if (imagePosition % 3 === 1) return "min-w-[132px] min-h-[132px]";
-    if (imagePosition % 3 === 2)
-      return "sm:w-[295px] sm:h-[295px] min-w-[187px] min-h-[187px] item-center flex justify-center ";
-    if (imagePosition % 3 === 0) return "min-w-[185px] min-h-[185px]";
-  };
-
-  const getImageContainerStyles = (index) => {
-    const imagePosition = index + 1;
-    const startIndex = selectedDesign * 3;
-    const endIndex = startIndex + 3;
-    if (imagePosition % 3 === 1)
-      return `flex items-start ${
-        startIndex <= index && index < endIndex ? "" : "opacity-45"
-      }`;
-    if (imagePosition % 3 === 2)
-      return `flex sm:items-center ${
-        startIndex <= index && index < endIndex ? "" : "opacity-45"
-      }`;
-    if (imagePosition % 3 === 0)
-      return `flex sm:items-end sm:relative absolute bottom-0 left-0 ${
-        startIndex <= index && index < endIndex ? "" : "opacity-45"
-      }`;
-  };
-
-  const onChangeDesign = (val) => {
-    if (isMobile) {
-      if (val > selectedDesign) {
-        scrollContainer(isMobile ? 400 : 500, containerRef);
-        isMobile && scrollContainer(300, businessContainerRef);
-      } else {
-        scrollContainer(isMobile ? -400 : -500, containerRef);
-        isMobile && scrollContainer(-300, businessContainerRef);
-      }
-      setSelectedDesign(val);
-      return;
-    }
-
-    const container = containerRef.current;
-    const totalScrollWidth = container.scrollWidth - container.clientWidth;
-    if (val === 0) {
-      scrollContainer(-container.scrollLeft, containerRef);
-    } else if (val === 3) {
-      scrollContainer(totalScrollWidth, containerRef);
-    } else {
-      const scrollPosition = (totalScrollWidth / 4) * (val + 1);
-      scrollContainer(scrollPosition - container.scrollLeft, containerRef);
-    }
-
-    setSelectedDesign(val);
-  };
 
   return (
     <div className=" flex flex-col sm:w-full w-screen">
       <div
-        ref={businessContainerRef}
-        className="order-2 sm:order-1 sm:grid sm:grid-cols-4 flex flex-row gap-10 sm:px-20 px-5 sm:mb-0 mb-5 overflow-x-auto scrollbar-hidden "
+        className="flex flex-row gap-10 sm:px-20 px-5 sm:mb-0 mb-5 overflow-x-auto scrollbar-hidden"
       >
         {businessDesigns.map((businessDesign, index) => (
           <div
-            className="flex justify-center  min-w-[75%] sm:w-auto"
+            className="flex justify-center  min-w-[80%] sm:w-auto"
             key={index}
           >
             <BusinessDesignCard
               businessDesign={businessDesign}
               index={index}
-              onChangeDesign={onChangeDesign}
-              selectedDesign={selectedDesign}
+          
             />
           </div>
         ))}
       </div>
 
-      <div className=" order-1 sm:order-2 sm:py-20 py-5">
+      {/* <div className=" order-1 sm:order-2 sm:py-20 py-5">
         {!isMobile ? (
           <div
             className="scrollbar-hidden flex sm:space-x-7 space-x-7 overflow-x-auto sm:h-[316px] h-[330px] pl-5 relative w-full"
@@ -186,8 +135,12 @@ const BusinessDesignCards = () => {
             ))}
           </div>
         )}
-      </div>
+      </div> */}
       <div className="sm:px-20 px-5 order-3 sm:pb-20 pb-5">
+      <div className="w-full rounded-[20px] h-[5px] bg-[#FFFFFF1A] my-16">
+        <div className="w-[310px] bg-[#FFEA5A] h-[5px] rounded-[20px]" />
+      </div>
+      <Faq/>
         <LetsChat />
       </div>
     </div>
