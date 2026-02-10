@@ -7,23 +7,24 @@ import { testimonials } from '@/data';
 import Image from 'next/image';
 const settings = {
     dots: false,
-    infinite: true,
+    infinite: false,
     speed: 500,
-    slidesToShow: 2.5,
-    slidesToScroll: 1,
     autoplay: true,
     speed: 2000,
     autoplaySpeed: 2000,
     cssEase: "linear",
     arrows: false,
-    pauseOnHover: true
+    pauseOnHover: true,
+     slidesToShow: 1,
+    slidesToScroll: 1,
+    variableWidth: true
 };
 const Testimonials = () => {
     return (
             <div>
                 <Slider {...settings}>
                     {testimonials.map((item, index) => (
-                        <div className='p-4 '>
+                        <div className='p-4 min-w-[540px]'>
 
                             <div className='bg-white rounded-[20px] h-[320px] p-8 pr-0 pb-0 flex flex-col gap-4'>
                                 <p>
