@@ -211,6 +211,7 @@ export const businerssPartners = [
 export const businessDesigns = [
   {
     heading: "Discover & Ideate with AI",
+    mobileHeading:"Deliver",
     description:
       "We start by understanding your product, business goals, and vision. From there, we conduct thorough research to identify gaps and challenges, turning our findings into actionable insights and clear goals.",
     whatYouget:['User Personas', "UX Research","UX Blueprints"],
@@ -218,7 +219,7 @@ export const businessDesigns = [
       </p>, "FigJam", "Product Research"],
     cardImage:discover,
   },
-  {
+  {mobileHeading:"Faster",
     heading: "Plan Smarter, Faster",
     description:
       "We create an information architecture to guide seamless end-user navigation, focusing on innovative features for an ideal experience. Finally, we wireframe, prototype, and test the product with real users.",
@@ -228,6 +229,7 @@ export const businessDesigns = [
     cardImage:discover,
   },
  {
+  mobileHeading:"Faster",
     heading: "Plan Smarter, Faster",
     description:
       "We create an information architecture to guide seamless end-user navigation, focusing on innovative features for an ideal experience. Finally, we wireframe, prototype, and test the product with real users.",
@@ -236,6 +238,7 @@ export const businessDesigns = [
     cardImage:discover,
   },
  {
+  mobileHeading:"Faster",
     heading: "Plan Smarter, Faster",
     description:
       "We create an information architecture to guide seamless end-user navigation, focusing on innovative features for an ideal experience. Finally, we wireframe, prototype, and test the product with real users.",
