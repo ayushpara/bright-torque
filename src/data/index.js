@@ -201,7 +201,6 @@ export const businerssPartners = [
 export const businessDesigns = [
   {
     heading: "Discover & Ideate with AI",
-    mobileHeading:"Deliver",
     description:
       "We start by gaining insights into your users and objectives, improving the discovery phase with AI. Our AI-driven tools provide user insights, behavioral patterns, and identify competitive gaps. With AI-assisted diagrams, we outline user journeys and information architecture, guaranteeing a clear path from the beginning.",
     whatYouget:['User Personas', "UX Research","UX Blueprints"],
@@ -211,7 +210,6 @@ export const businessDesigns = [
   },
   {
     heading: "Plan Smarter, Faster",
-    mobileHeading:"Faster",
     description:
       "We design an information architecture that facilitates smooth navigation for users, emphasizing innovative features for an optimal experience. By automatically generating user flows and screen designs, we create clickable, no-code prototypes that allow us to validate authentic user experiences and gather valuable feedback quickly. ",
       whatYouget:['Interactive Mockups', "Validated Flows","Early User Feedback"],
@@ -220,21 +218,19 @@ export const businessDesigns = [
     cardImage:prototype,
   },
  {
-  mobileHeading:"Faster",
     heading: "AI-Supported, Human-Led",
     description:
       "We create an information architecture to guide seamless end-user navigation, focusing on innovative features for an ideal experience. Finally, we wireframe, prototype, and test the product with real users.",
-      whatYouget:['Interactive Mockups', "Validated Flows","Early User Feedback"],
-    imagesToolsWeUse:[<Image src={uiZard} width={30} height={30} />,<SiFramer/>,<Image src={veed} width={30} height={30} />,  <RiNotionFill />, "FigJam", "Product Research"],
+      whatYouget:['Polished UI Screens', "Reusable Design Components","Scalable Design System"],
+    imagesToolsWeUse:[<p className="text-2xl"><SiFramer/></p>,<Image src={uiZard} width={30} height={30} />,, "Figma AI", "Midjourney"],
     cardImage:design,
   },
  {
-  mobileHeading:"Faster",
     heading: "Deliver",
     description:
       "We create an information architecture to guide seamless end-user navigation, focusing on innovative features for an ideal experience. Finally, we wireframe, prototype, and test the product with real users.",
-      whatYouget:['Interactive Mockups', "Validated Flows","Early User Feedback"],
-    imagesToolsWeUse:[<Image src={lovableLogo} width={30} height={30} />,<SiFramer/>,<Image src={veed} width={30} height={30} />,  <RiNotionFill />, "FigJam", "Product Research"],
+      whatYouget:['Source Code', "Style Guide","Handoff Files"],
+    imagesToolsWeUse:[<p className="text-2xl"><RiNotionFill /></p>,<p className="text-2xl"><FaFigma /></p>, "Figma Dev Mode"],
     cardImage:deliver,
   },
 ];
