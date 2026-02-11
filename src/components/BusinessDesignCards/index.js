@@ -14,37 +14,48 @@ const jarkata = Plus_Jakarta_Sans({
 
 const BusinessDesignCard = ({
   businessDesign,
-  index,isMobile
+  index, isMobile
 }) => {
   return (
     <div
-      className={`justify-between items-center flex flex-col sm:flex-row space-y-8 hover:cursor-pointer sm:w-full ${jarkata.className} `}
+      className={`flex flex-col sm:w-full ${jarkata.className} `}
     // onClick={() => onChangeDesign(index)}
     >
-      <div className="flex flex-col">
-        <p className="text-white text-[32px]">{isMobile?businessDesign.mobileHeading:businessDesign.heading}</p>
-        <p className="text-white text-sm ">
-          {businessDesign.description}
-        </p>
-        <p className="text-white text-sm mt-[30px]">
-          What you get
-        </p>
-        <p className="text-white text-sm mt-4 sm:mt-6">
-          {businessDesign.whatYouget.map((item, index) => (
-            <span key={index}>{item} {index !== businessDesign.whatYouget.length - 1 ? <span > | </span> : ""}</span>
-          ))}
-        </p>
-        <div className="gap-4 flex flex-col mt-6 sm:mt-[80px]">
-          <p className="text-white text-sm ">Tools we use</p>
-          <div className="gap-4 flex flex-wrap">
-
-            {businessDesign.imagesToolsWeUse.map((item, index) => (
-              <div className="p-4 rounded-full border text-white border-1 border-[#16CCEA] flex items-center justify-center text-base" key={index}>{item}</div>
+      <div className="flex flex-col sm:flex-row">
+        <div className="flex flex-col w-[100%] sm:w-[60%]">
+          <p className="text-white text-[32px]">{businessDesign.heading}</p>
+          <p className="text-white text-sm mt-6">
+            {businessDesign.description}
+          </p>
+          <p className="text-white text-sm mt-[30px]">
+            What you get
+          </p>
+          <div className="text-white text-sm mt-4 sm:mt-6 flex gap-2 flex-wrap">
+            {businessDesign.whatYouget.map((item, index) => (
+              <span key={index} >{item} {index !== businessDesign.whatYouget.length - 1 ? <span className="ml-2" > | </span> : ""}</span>
             ))}
           </div>
+          <div className="gap-4 flex flex-col mt-6 sm:mt-[80px] sm:hidden">
+            <p className="text-white text-sm ">Tools we use</p>
+            <div className="gap-4 flex flex-wrap">
+
+              {businessDesign.imagesToolsWeUse.map((item, index) => (
+                <div className="p-4 rounded-full border text-white border-1 border-[#16CCEA] flex items-center justify-center text-base" key={index}>{item}</div>
+              ))}
+            </div>
+          </div>
+        </div>
+        <Image src={businessDesign.cardImage} width={250} height={300} alt="discover" className=" w-[100%] sm:w-[40%] h-[100%] max-h-[250px] object-contian" />
+      </div>
+      <div className="gap-4 sm:flex flex-col mt-6 hidden">
+        <p className="text-white text-sm ">Tools we use</p>
+        <div className="gap-4 flex flex-wrap">
+
+          {businessDesign.imagesToolsWeUse.map((item, index) => (
+            <div className="p-4 rounded-full border text-white border-1 border-[#16CCEA] flex items-center justify-center text-base" key={index}>{item}</div>
+          ))}
         </div>
       </div>
-      <Image src={businessDesign.cardImage} width={250} height={300} alt="discover" className="w-[50%] h-[100%] min-h-[250px] object-contian" />
     </div>
   );
 };

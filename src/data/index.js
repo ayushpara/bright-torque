@@ -22,7 +22,7 @@ import design3Image from "../static/images/design3.png";
 import scale1Image from "../static/images/scale1.png";
 import scale2Image from "../static/images/scale2.png";
 import scale3Image from "../static/images/scale3.png";
-
+import uiZard from "../static/icons/uizard.svg"
 import esgateImage from "../static/images/projects/esgate.png";
 import PathviImage from "../static/images/projects/Patahvi.png";
 import JDPOLYImage from "../static/images/projects/JDoly.png";
@@ -37,6 +37,9 @@ import OctowasteImage from "../static/images/projects/OctowasteImage.png";
 import adGenImage from "../static/images/projects/adGen.png";
 import ayushImage from "../static/images/projects/ayush.png";
 import discover from "../static/images/discover.svg"
+import prototype from "../static/images/prototype.svg"
+import deliver from "../static/images/deliver.svg";
+import design from "../static/images/design.svg"
 import brandBookImage from "../static/images/projects/brandBook.png";
 import mealqImage from "../static/images/projects/mealq.png";
 import mPaisaImage from "../static/images/projects/mPaisa.png";
@@ -51,7 +54,7 @@ import falconFitness from "../static/stats/falconfitness.svg";
 import veed from "../static/icons/icon.svg";
 import lovableLogo from "../static/icons/lovable.svg"
 import jaldhara from "../static/stats/jaldhara.svg"
-import { SiOpenai } from "react-icons/si";
+import { SiOpenai, SiReplit } from "react-icons/si";
 import { SiPerplexity } from "react-icons/si";
 import { FaFigma } from "react-icons/fa";
 import { RiNotionFill } from "react-icons/ri";
@@ -213,38 +216,39 @@ export const businessDesigns = [
     heading: "Discover & Ideate with AI",
     mobileHeading:"Deliver",
     description:
-      "We start by understanding your product, business goals, and vision. From there, we conduct thorough research to identify gaps and challenges, turning our findings into actionable insights and clear goals.",
+      "We start by gaining insights into your users and objectives, improving the discovery phase with AI. Our AI-driven tools provide user insights, behavioral patterns, and identify competitive gaps. With AI-assisted diagrams, we outline user journeys and information architecture, guaranteeing a clear path from the beginning.",
     whatYouget:['User Personas', "UX Research","UX Blueprints"],
     imagesToolsWeUse:[<p className="text-2xl"><SiOpenai /></p>, <p className="text-2xl"><SiPerplexity/></p>, <p className="text-2xl"><FaFigma /></p>, <p className="text-2xl"><RiNotionFill />
       </p>, "FigJam", "Product Research"],
     cardImage:discover,
   },
-  {mobileHeading:"Faster",
+  {
     heading: "Plan Smarter, Faster",
+    mobileHeading:"Faster",
     description:
-      "We create an information architecture to guide seamless end-user navigation, focusing on innovative features for an ideal experience. Finally, we wireframe, prototype, and test the product with real users.",
+      "We design an information architecture that facilitates smooth navigation for users, emphasizing innovative features for an optimal experience. By automatically generating user flows and screen designs, we create clickable, no-code prototypes that allow us to validate authentic user experiences and gather valuable feedback quickly. ",
       whatYouget:['Interactive Mockups', "Validated Flows","Early User Feedback"],
-    imagesToolsWeUse:[<Image src={lovableLogo} width={30} height={30} />,<p className="text-2xl"><SiFramer/>
+    imagesToolsWeUse:[<Image src={lovableLogo} width={30} height={30} />,<p className="text-2xl"><SiReplit/>
       </p>,<Image src={veed} width={30} height={30} />,<p className="text-2xl"><RiNotionFill /></p>, "FigJam", "Product Research"],
-    cardImage:discover,
+    cardImage:prototype,
   },
  {
   mobileHeading:"Faster",
-    heading: "Plan Smarter, Faster",
+    heading: "AI-Supported, Human-Led",
+    description:
+      "We create an information architecture to guide seamless end-user navigation, focusing on innovative features for an ideal experience. Finally, we wireframe, prototype, and test the product with real users.",
+      whatYouget:['Interactive Mockups', "Validated Flows","Early User Feedback"],
+    imagesToolsWeUse:[<Image src={uiZard} width={30} height={30} />,<SiFramer/>,<Image src={veed} width={30} height={30} />,  <RiNotionFill />, "FigJam", "Product Research"],
+    cardImage:design,
+  },
+ {
+  mobileHeading:"Faster",
+    heading: "Deliver",
     description:
       "We create an information architecture to guide seamless end-user navigation, focusing on innovative features for an ideal experience. Finally, we wireframe, prototype, and test the product with real users.",
       whatYouget:['Interactive Mockups', "Validated Flows","Early User Feedback"],
     imagesToolsWeUse:[<Image src={lovableLogo} width={30} height={30} />,<SiFramer/>,<Image src={veed} width={30} height={30} />,  <RiNotionFill />, "FigJam", "Product Research"],
-    cardImage:discover,
-  },
- {
-  mobileHeading:"Faster",
-    heading: "Plan Smarter, Faster",
-    description:
-      "We create an information architecture to guide seamless end-user navigation, focusing on innovative features for an ideal experience. Finally, we wireframe, prototype, and test the product with real users.",
-      whatYouget:['Interactive Mockups', "Validated Flows","Early User Feedback"],
-    imagesToolsWeUse:[<Image src={lovableLogo} width={30} height={30} />,<SiFramer/>,<Image src={veed} width={30} height={30} />,  <RiNotionFill />, "FigJam", "Product Research"],
-    cardImage:discover,
+    cardImage:deliver,
   },
 ];
 
