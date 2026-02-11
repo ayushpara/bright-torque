@@ -18,8 +18,8 @@ const HomeAccordion = () => {
 
     return (
         <div className={`${jarkata.className}`}>
-            <div className='flex flex-col sm:flex-row'>
-                <div className='flex-1 flex items-start sm:items-center justify-start sm:justify-center'>
+            <div className='flex flex-col sm:flex-row sm:px-[70px] p-5'>
+                <div className='flex-1 flex items-center'>
                     <div className='max-w-[330px]'>
                         <h3 className={`text-[44px] leading-[54px] ${syne.className}`}>
                             Core AI Capabilities
@@ -55,11 +55,12 @@ const HomeAccordion = () => {
                                 >
                                     <span>
                                         {item.label}
-                                    </span>  {activeKey === item.key ? (
-                                        <div className='text-xl py-2 px-3 rounded-full border border-1 border-[#E6F4F4]'><MinusOutlined size={24} /></div>
-                                    ) : (
-                                        <div className='text-xl py-2 px-3 rounded-full border border-1 border-[#E6F4F4]'><PlusOutlined size={24} /></div>
-                                    )}
+                                    </span>    <PlusOutlined
+                                        style={{
+                                            transform: activeKey === item.key ? "rotate(45deg)" : "rotate(0deg)",
+                                            transition: "transform 0.3s ease"
+                                        }}
+                                    />
                                 </div>
                             ),
                         }))}
@@ -80,10 +81,10 @@ const HomeAccordion = () => {
                     }
                     `}
             </style>
-            <div className="sm:px-[70px] p-5 hidden sm:block">
+            <div className="sm:px-[70px] p-0 py-5 block">
                 <ClientSay />
                 <div>
-                    <h3 className='sm:text-[44px] sm:leading-[64px] tracking-[-1.68px]'>
+                    <h3 className='text-[2rem] leading-[40px] sm:text-[44px] sm:leading-[64px]'>
                         Our Clients Can’t Say Enough About Us...
                     </h3>
                 </div>

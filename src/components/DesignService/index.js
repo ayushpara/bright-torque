@@ -20,7 +20,7 @@ const DesignService = () => {
   const design3 = ["Product", "Apps", "Icons", "Design Systems", "Prototyping"];
   return (
     <div className={`bg-secondary ${jarkata.className} `}>
-      <div className="bg-primary sm:pl-[70px] p-5 sm:pr-0 hidden sm:block">
+      <div className="bg-primary sm:pl-[70px] p-5 sm:pr-0">
          <Testimonials />
       </div>
       <div className="bg-primary sm:px-[70px] p-5 rounded-b-[64px] ">

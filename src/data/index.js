@@ -469,8 +469,7 @@ export const clients = [
 
 export const faqs =[
   {  key: '1',
-    label: <div className={`text-white text-sm py-5 flex gap-4 ${jarkata.className}`}>
-      <FiArrowUpRight className='text-[#3BADE2]' color='#3BADE2' size={20} /> <p>What's unique about Nebula?</p></div>,
+    label: "What's unique about Nebula?",
     children: <div className={`${jarkata.className} text-sm leading-6 !pl-0 text-white text-sm`}>
       <p>
         We build adaptive interfaces that evolve based on user intent and context. Moving beyond static screens to fluid, intelligent experiences.
@@ -480,7 +479,7 @@ export const faqs =[
     </div>,
     },
      {  key: '2',
-    label: <div className={`text-white text-sm py-5 flex gap-4 ${jarkata.className}`}><FiArrowUpRight className='text-[#3BADE2]' color='#3BADE2' size={20} /><p> How many builds can I request each month?</p></div>,
+    label: "How many builds can I request each month?",
     children: <div className={`${jarkata.className} text-sm leading-6 !pl-0 text-white text-sm`}>
       <p>
         We build adaptive interfaces that evolve based on user intent and context. Moving beyond static screens to fluid, intelligent experiences.
@@ -490,9 +489,7 @@ export const faqs =[
     </div>,
     },
       {  key: '3',
-    label: <div className={`text-white text-sm py-5 flex gap-4 ${jarkata.className}`}>
-
-    <FiArrowUpRight className='text-[#3BADE2]' color='#3BADE2' size={20} /> <p>Can I cancel my subscription at any time?</p></div>,
+    label:'Can I cancel my subscription at any time?',
     children: <div className={`${jarkata.className} text-sm leading-6 !pl-0 text-white text-sm`}>
       <p>
         We build adaptive interfaces that evolve based on user intent and context. Moving beyond static screens to fluid, intelligent experiences.
@@ -502,7 +499,7 @@ export const faqs =[
     </div>,
     },
           {  key: '4',
-    label: <div className={`text-white text-sm py-5 flex gap-4 ${jarkata.className}`}><FiArrowUpRight className='text-[#3BADE2]' color='#3BADE2' size={20} /> <p>How secure are your solutions?</p></div>,
+    label: 'How secure are your solutions?',
     children: <div className={`${jarkata.className} text-sm leading-6 !pl-0 text-white text-sm`}>
       <p>
         We build adaptive interfaces that evolve based on user intent and context. Moving beyond static screens to fluid, intelligent experiences.
@@ -512,7 +509,7 @@ export const faqs =[
     </div>,
     },
           {  key: '5',
-    label: <div className={`text-white text-sm py-5 flex gap-4 ${jarkata.className}`}><FiArrowUpRight className='text-[#3BADE2]' color='#3BADE2' size={20} /> <p>Can your solutions scale with my business growth?</p></div>,
+    label: 'Can your solutions scale with my business growth?',
     children: <div className={`${jarkata.className} text-sm leading-6 !pl-0 text-white text-sm`}>
       <p>
         We build adaptive interfaces that evolve based on user intent and context. Moving beyond static screens to fluid, intelligent experiences.
