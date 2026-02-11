@@ -25,8 +25,11 @@ const HomeBanner = () => {
             <p className="sm:text-[72px] text-[31px] sm:leading-[84px] leading-[40px] text-green-1 ">
               Design Experts.
             </p>
-            <p className="sm:text-[72px] text-[31px]  sm:leading-[84px] leading-[40px] text-secondary text-green-2 ">
+            <p className="sm:text-[72px] text-[31px]  sm:leading-[84px] leading-[40px] text-secondary text-green-2 sm:block hidden">
               Design Decisions, Made Visible.
+            </p>
+              <p className="sm:text-[72px] text-[31px]  sm:leading-[84px] leading-[40px] text-secondary text-green-2 block sm:hidden">
+              Design Decisions, <br />Made Visible.
             </p>
             <p
               className={`text-green-3 sm:text-xl text-base mt-5 ${jarkata.className} sm:block hidden `}

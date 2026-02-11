@@ -9,7 +9,7 @@ export const HeaderButton = ({ headerButton, pathname }) => {
         onClick={() => router.push(headerButton.redirect)}
         className={`${
            headerButton.redirect === pathname ? "bg-secondary" :headerButton.redirect ==="/editorial"&&pathname.includes(headerButton.redirect)? "bg-secondary":"bg-white"
-        }  h-[32px] w-fit py-1 px-4 rounded-3xl items-center justify-center flex hover:cursor-pointer`}
+        }  h-[32px] w-fit py-1 px-2 rounded-3xl items-center justify-center flex hover:cursor-pointer`}
       > 
         <p
           className={`${
