@@ -23,20 +23,20 @@ const BusinessDesignCard = ({
     >
       <div className="flex flex-col sm:flex-row">
         <div className="flex flex-col w-[100%] sm:w-[60%]">
-          <p className="text-white text-[32px]">{businessDesign.heading}</p>
-          <p className="text-white text-sm mt-6">
+          <p className="text-white text-[32px] font-semibold sm:font-bold">{businessDesign.heading}</p>
+          <p className="text-white text-sm mt-6 font-medium leading-5">
             {businessDesign.description}
           </p>
-          <p className="text-white text-sm mt-[30px]">
+          <p className="text-white text-base leading-7 mt-[30px]">
             What you get
           </p>
-          <div className="text-white text-sm mt-4 sm:mt-6 flex gap-2 flex-wrap">
+          <div className="text-white text-base leading-7 mt-4 sm:mt-6 flex gap-2 flex-wrap">
             {businessDesign.whatYouget.map((item, index) => (
               <span key={index} >{item} {index !== businessDesign.whatYouget.length - 1 ? <span className="ml-2" > | </span> : ""}</span>
             ))}
           </div>
           <div className="gap-4 flex flex-col mt-6 sm:mt-[80px] sm:hidden">
-            <p className="text-white text-sm ">Tools we use</p>
+            <p className="text-white text-base leading-7 ">Tools we use</p>
             <div className="gap-4 flex flex-wrap">
 
               {businessDesign.imagesToolsWeUse.map((item, index) => (
@@ -52,7 +52,7 @@ const BusinessDesignCard = ({
         <div className="gap-4 flex flex-wrap">
 
           {businessDesign.imagesToolsWeUse.map((item, index) => (
-            <div className="p-4 rounded-full border text-white border-1 border-[#16CCEA] flex items-center justify-center text-base" key={index}>{item}</div>
+            <div className="p-4 rounded-full border text-white border-1 border-[#16CCEA] flex items-center justify-center text-base leading-7" key={index}>{item}</div>
           ))}
         </div>
       </div>

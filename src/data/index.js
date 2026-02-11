@@ -4,24 +4,11 @@ import startupIcon from "../static/icons/startup.svg";
 import establishedIcon from "../static/icons/established.svg";
 import enterpriseIcon from "../static/icons/enterprise.svg";
 
-import discover1Image from "../static/images/discover1.png";
-import discover2Image from "../static/images/discover2.png";
-import discover3Image from "../static/images/discover3.png";
 
-import transform1Image from "../static/images/transform1.png";
-import transform2Image from "../static/images/transform2.png";
-import transform3Image from "../static/images/transform3.png";
 import inLove from "../static/images/in-love.svg";
 import thumbUp from "../static/images/thumb-up.svg";
 import clientImage from "../static/images/clientImage.svg"
 
-import design1Image from "../static/images/design1.png";
-import design2Image from "../static/images/design2.png";
-import design3Image from "../static/images/design3.png";
-
-import scale1Image from "../static/images/scale1.png";
-import scale2Image from "../static/images/scale2.png";
-import scale3Image from "../static/images/scale3.png";
 import uiZard from "../static/icons/uizard.svg"
 import esgateImage from "../static/images/projects/esgate.png";
 import PathviImage from "../static/images/projects/Patahvi.png";
@@ -486,7 +473,7 @@ export const clients = [
 
 export const faqs =[
   {  key: '1',
-    label: <div className="text-white text-sm py-5 flex gap-4">
+    label: <div className={`text-white text-sm py-5 flex gap-4 ${jarkata.className}`}>
       <FiArrowUpRight className='text-[#3BADE2]' color='#3BADE2' size={20} /> <p>What's unique about Nebula?</p></div>,
     children: <div className={`${jarkata.className} text-sm leading-6 !pl-0 text-white text-sm`}>
       <p>
@@ -497,7 +484,7 @@ export const faqs =[
     </div>,
     },
      {  key: '2',
-    label: <div className="text-white text-sm py-5 flex gap-4"><FiArrowUpRight className='text-[#3BADE2]' color='#3BADE2' size={20} /><p> How many builds can I request each month?</p></div>,
+    label: <div className={`text-white text-sm py-5 flex gap-4 ${jarkata.className}`}><FiArrowUpRight className='text-[#3BADE2]' color='#3BADE2' size={20} /><p> How many builds can I request each month?</p></div>,
     children: <div className={`${jarkata.className} text-sm leading-6 !pl-0 text-white text-sm`}>
       <p>
         We build adaptive interfaces that evolve based on user intent and context. Moving beyond static screens to fluid, intelligent experiences.
@@ -507,7 +494,7 @@ export const faqs =[
     </div>,
     },
       {  key: '3',
-    label: <div className="text-white text-sm flex gap-4 py-5">
+    label: <div className={`text-white text-sm py-5 flex gap-4 ${jarkata.className}`}>
 
     <FiArrowUpRight className='text-[#3BADE2]' color='#3BADE2' size={20} /> <p>Can I cancel my subscription at any time?</p></div>,
     children: <div className={`${jarkata.className} text-sm leading-6 !pl-0 text-white text-sm`}>
@@ -519,7 +506,7 @@ export const faqs =[
     </div>,
     },
           {  key: '4',
-    label: <div className="text-white text-sm flex gap-4 py-5"><FiArrowUpRight className='text-[#3BADE2]' color='#3BADE2' size={20} /> <p>How secure are your solutions?</p></div>,
+    label: <div className={`text-white text-sm py-5 flex gap-4 ${jarkata.className}`}><FiArrowUpRight className='text-[#3BADE2]' color='#3BADE2' size={20} /> <p>How secure are your solutions?</p></div>,
     children: <div className={`${jarkata.className} text-sm leading-6 !pl-0 text-white text-sm`}>
       <p>
         We build adaptive interfaces that evolve based on user intent and context. Moving beyond static screens to fluid, intelligent experiences.
@@ -529,7 +516,7 @@ export const faqs =[
     </div>,
     },
           {  key: '5',
-    label: <div className="text-white text-sm flex gap-4 py-5"><FiArrowUpRight className='text-[#3BADE2]' color='#3BADE2' size={20} /> <p>Can your solutions scale with my business growth?</p></div>,
+    label: <div className={`text-white text-sm py-5 flex gap-4 ${jarkata.className}`}><FiArrowUpRight className='text-[#3BADE2]' color='#3BADE2' size={20} /> <p>Can your solutions scale with my business growth?</p></div>,
     children: <div className={`${jarkata.className} text-sm leading-6 !pl-0 text-white text-sm`}>
       <p>
         We build adaptive interfaces that evolve based on user intent and context. Moving beyond static screens to fluid, intelligent experiences.
