@@ -1,10 +1,12 @@
 "use client";
+import { useRef } from "react";
 import Image from "next/image";
 import { businessDesigns } from "@/data";
 import LetsChat from "../LetsChat";
 import useMediaQuery from "../useMedia";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import Faq from "../Faq";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 const jarkata = Plus_Jakarta_Sans({
   weight: "400",
@@ -14,7 +16,6 @@ const jarkata = Plus_Jakarta_Sans({
 
 const BusinessDesignCard = ({
   businessDesign,
-  index, isMobile
 }) => {
   return (
     <div
@@ -61,35 +62,66 @@ const BusinessDesignCard = ({
 };
 
 const BusinessDesignCards = () => {
-  const isMobile = useMediaQuery("(max-width: 767px)");
+  const sectionRef = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["center end", "center start"]
+  });
+
+  // Move from -30% to +30% of its width
+  const xMove = useTransform(scrollYProgress, [0, 1], ["200%", "-450%"]);
+  const barMove = useTransform(scrollYProgress, [0, 1], ["-150%", "300%"]);
+
 
   return (
-    <div className="flex flex-col sm:w-full w-screen">
-      <div
-        className="flex flex-row gap-10 sm:px-20 px-5 sm:mb-0 mb-5 overflow-x-auto scrollbar-hidden"
+    <div className="flex flex-col w-full overflow-hidden">
+
+      {/* Scroll Section */}
+      <section
+        ref={sectionRef}
+        className="relative flex flex-col justify-center overflow-hidden mb-10"
       >
-        {businessDesigns.map((businessDesign, index) => (
-          <div
-            className="flex justify-center  min-w-[80%] sm:w-auto"
-            key={index}
+        {/* Mask wrapper prevents horizontal scrollbar */}
+        <div className="overflow-hidden">
+
+          {/* Cards */}
+          <motion.div
+            style={{ x: xMove }}
+            className="flex flex-row gap-10 sm:px-20 px-5"
           >
-            <BusinessDesignCard
-              businessDesign={businessDesign}
-              index={index}
-              isMobile={isMobile}
+            {businessDesigns.map((businessDesign, index) => (
+              <div
+                className="flex justify-center min-w-[80%] sm:w-auto"
+                key={index}
+              >
+                <BusinessDesignCard businessDesign={businessDesign} />
+              </div>
+            ))}
+          </motion.div>
+
+        </div>
+
+        {/* Progress Bar */}
+        <div className="sm:px-20 px-5 mt-20">
+          <div className="w-full rounded-[20px] h-[5px] bg-[#FFFFFF1A] relative overflow-hidden">
+            <motion.div
+              style={{ x: barMove }}
+              className="w-[25%] bg-[#FFEA5A] h-[5px] rounded-[20px]"
             />
           </div>
-        ))}
-      </div>
-      <div className="sm:px-20 px-5 order-3 sm:pb-20 pb-5 flex flex-col">
-        <div className="w-full rounded-[20px] h-[5px] bg-[#FFFFFF1A] my-16">
-          <div className="w-20 sm:w-[310px] bg-[#FFEA5A] h-[5px] rounded-[20px]" />
         </div>
+      </section>
+
+      {/* Rest of page */}
+      <div className="sm:px-20 px-5 sm:pb-20 pb-5 flex flex-col">
         <Faq />
         <LetsChat />
       </div>
+
     </div>
   );
 };
+
 
 export default BusinessDesignCards;
