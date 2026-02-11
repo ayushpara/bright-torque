@@ -4,22 +4,12 @@ import startupIcon from "../static/icons/startup.svg";
 import establishedIcon from "../static/icons/established.svg";
 import enterpriseIcon from "../static/icons/enterprise.svg";
 
-import discover1Image from "../static/images/discover1.png";
-import discover2Image from "../static/images/discover2.png";
-import discover3Image from "../static/images/discover3.png";
 
-import transform1Image from "../static/images/transform1.png";
-import transform2Image from "../static/images/transform2.png";
-import transform3Image from "../static/images/transform3.png";
+import inLove from "../static/images/in-love.svg";
+import thumbUp from "../static/images/thumb-up.svg";
+import clientImage from "../static/images/clientImage.svg"
 
-import design1Image from "../static/images/design1.png";
-import design2Image from "../static/images/design2.png";
-import design3Image from "../static/images/design3.png";
-
-import scale1Image from "../static/images/scale1.png";
-import scale2Image from "../static/images/scale2.png";
-import scale3Image from "../static/images/scale3.png";
-
+import uiZard from "../static/icons/uizard.svg"
 import esgateImage from "../static/images/projects/esgate.png";
 import PathviImage from "../static/images/projects/Patahvi.png";
 import JDPOLYImage from "../static/images/projects/JDoly.png";
@@ -33,10 +23,31 @@ import ParkingEyeImage from "../static/images/projects/ParkingEye.png";
 import OctowasteImage from "../static/images/projects/OctowasteImage.png";
 import adGenImage from "../static/images/projects/adGen.png";
 import ayushImage from "../static/images/projects/ayush.png";
+import discover from "../static/images/discover.svg"
+import prototype from "../static/images/prototype.svg"
+import deliver from "../static/images/deliver.svg";
+import design from "../static/images/design.svg"
 import brandBookImage from "../static/images/projects/brandBook.png";
 import mealqImage from "../static/images/projects/mealq.png";
 import mPaisaImage from "../static/images/projects/mPaisa.png";
 import { Plus_Jakarta_Sans } from "next/font/google";
+import calendar from "../static/icons/calendar.svg";
+import leads from "../static/icons/leads.svg";
+import rocket from "../static/icons/rocket.svg";
+import instapop from "../static/stats/instapop.svg";
+import toast from "../static/stats/toast.svg";
+import wordofMouth from "../static/stats/wordofme.svg";
+import falconFitness from "../static/stats/falconfitness.svg";
+import veed from "../static/icons/icon.svg";
+import lovableLogo from "../static/icons/lovable.svg"
+import jaldhara from "../static/stats/jaldhara.svg"
+import { SiOpenai, SiReplit } from "react-icons/si";
+import { SiPerplexity } from "react-icons/si";
+import { FaFigma } from "react-icons/fa";
+import { RiNotionFill } from "react-icons/ri";
+import { SiFramer } from "react-icons/si";
+import Image from "next/image";
+import { FiArrowUpRight } from "react-icons/fi";
 
 const jarkata = Plus_Jakarta_Sans({
   weight: "400",
@@ -189,28 +200,38 @@ export const businerssPartners = [
 
 export const businessDesigns = [
   {
-    heading: "Discover",
+    heading: "Discover & Ideate with AI",
     description:
-      "We start by understanding your product, business goals, and vision. From there, we conduct thorough research to identify gaps and challenges, turning our findings into actionable insights and clear goals.",
-    images: [discover1Image, discover2Image, discover3Image],
+      "We start by gaining insights into your users and objectives, improving the discovery phase with AI. Our AI-driven tools provide user insights, behavioral patterns, and identify competitive gaps. With AI-assisted diagrams, we outline user journeys and information architecture, guaranteeing a clear path from the beginning.",
+    whatYouget:['User Personas', "UX Research","UX Blueprints"],
+    imagesToolsWeUse:[<p className="text-2xl"><SiOpenai /></p>, <p className="text-2xl"><SiPerplexity/></p>, <p className="text-2xl"><FaFigma /></p>, <p className="text-2xl"><RiNotionFill />
+      </p>, "FigJam", "Product Research"],
+    cardImage:discover,
   },
   {
-    heading: "Transform",
+    heading: "Plan Smarter, Faster",
+    description:
+      "We design an information architecture that facilitates smooth navigation for users, emphasizing innovative features for an optimal experience. By automatically generating user flows and screen designs, we create clickable, no-code prototypes that allow us to validate authentic user experiences and gather valuable feedback quickly. ",
+      whatYouget:['Interactive Mockups', "Validated Flows","Early User Feedback"],
+    imagesToolsWeUse:[<Image src={lovableLogo} width={30} height={30} />,<p className="text-2xl"><SiReplit/>
+      </p>,<Image src={veed} width={30} height={30} />,<p className="text-2xl"><RiNotionFill /></p>, "FigJam", "Product Research"],
+    cardImage:prototype,
+  },
+ {
+    heading: "AI-Supported, Human-Led",
     description:
       "We create an information architecture to guide seamless end-user navigation, focusing on innovative features for an ideal experience. Finally, we wireframe, prototype, and test the product with real users.",
-    images: [transform1Image, transform2Image, transform3Image],
+      whatYouget:['Polished UI Screens', "Reusable Design Components","Scalable Design System"],
+    imagesToolsWeUse:[<p className="text-2xl"><SiFramer/></p>,<Image src={uiZard} width={30} height={30} />,, "Figma AI", "Midjourney"],
+    cardImage:design,
   },
-  {
-    heading: "Design for impact",
+ {
+    heading: "Deliver",
     description:
-      "UI design is more than just adding visuals; it’s about bringing experiences to life. We carefully craft each element to deliver a consistent and engaging visual experience.",
-    images: [design1Image, design2Image, design3Image],
-  },
-  {
-    heading: "Scale for growth",
-    description:
-      "We build custom front-end projects and work with no-code platforms like Webflow. If development isn’t handled by us, our project manager supports your dev team with any questions or concerns.",
-    images: [scale1Image, scale2Image, scale3Image],
+      "We create an information architecture to guide seamless end-user navigation, focusing on innovative features for an ideal experience. Finally, we wireframe, prototype, and test the product with real users.",
+      whatYouget:['Source Code', "Style Guide","Handoff Files"],
+    imagesToolsWeUse:[<p className="text-2xl"><RiNotionFill /></p>,<p className="text-2xl"><FaFigma /></p>, "Figma Dev Mode"],
+    cardImage:deliver,
   },
 ];
 
@@ -356,3 +377,148 @@ export const hightlights = [
     description: "Certified UI/UX design",
   },
 ];
+
+export const testimonials = [
+  {
+    message: "Your designers bring so many mind-project. I’m very impressed!",
+    client: {
+      name: "Jatin from Toast",
+      feedbackImage:inLove,
+      clientImage: clientImage,
+      clientLogo:toast
+    }
+  },
+ {
+    message: "Your designers bring so many mind-project. I’m very impressed!",
+    client: {
+      name: "Jatin from instapop",
+      feedbackImage:thumbUp,
+      clientImage: clientImage,
+     clientLogo:instapop
+    }
+  },
+   {
+    message: "Your designers bring so many mind-project. I’m very impressed!",
+    client: {
+      name: "Jatin from wordofMouth",
+      feedbackImage:inLove,
+      clientImage: clientImage,
+      clientLogo:wordofMouth
+    }
+  },
+     {
+    message: "Your designers bring so many mind-project. I’m very impressed!",
+    client: {
+      name: "Jatin from falcon Fitness",
+      feedbackImage:thumbUp,
+      clientImage: clientImage,
+      clientLogo:falconFitness
+    }
+  },
+      {
+    message: "Your designers bring so many mind-project. I’m very impressed!",
+    client: {
+      name: "Jatin from jaldhara polytubes",
+      feedbackImage:inLove,
+      clientImage: jaldhara,
+      clientLogo:falconFitness
+    }
+  },
+];
+
+export const stats = [
+    {
+        title: "100+",
+        subTitle: "Projects Designed",
+        image: rocket
+    },
+    {
+        title: "25%",
+        subTitle: "Average increase in leads",
+        image: leads
+    },
+    {
+        title: "5 weeks",
+        subTitle: "Average Design time",
+        image: calendar
+    }
+];
+
+export const clients = [
+    {
+        alt: "instapop",
+        image: instapop
+    },
+    {
+        alt: "toast",
+        image: toast,
+    },
+    {
+        alt: "word of mouth",
+        image: wordofMouth,
+    },
+    {
+        alt: "jaldhara polytubes",
+        image: jaldhara
+    },
+    {
+        alt: "falcon fitness",
+        image: falconFitness
+    }
+]
+
+export const faqs =[
+  {  key: '1',
+    label: <div className={`text-white text-sm py-5 flex gap-4 ${jarkata.className}`}>
+      <FiArrowUpRight className='text-[#3BADE2]' color='#3BADE2' size={20} /> <p>What's unique about Nebula?</p></div>,
+    children: <div className={`${jarkata.className} text-sm leading-6 !pl-0 text-white text-sm`}>
+      <p>
+        We build adaptive interfaces that evolve based on user intent and context. Moving beyond static screens to fluid, intelligent experiences.
+      </p>
+      <br />
+      <p><span>Dynamic Components</span> <span>Generative Prompts</span> <spna>Real time Wireframes</spna></p>
+    </div>,
+    },
+     {  key: '2',
+    label: <div className={`text-white text-sm py-5 flex gap-4 ${jarkata.className}`}><FiArrowUpRight className='text-[#3BADE2]' color='#3BADE2' size={20} /><p> How many builds can I request each month?</p></div>,
+    children: <div className={`${jarkata.className} text-sm leading-6 !pl-0 text-white text-sm`}>
+      <p>
+        We build adaptive interfaces that evolve based on user intent and context. Moving beyond static screens to fluid, intelligent experiences.
+      </p>
+      <br />
+      <p><span>Dynamic Components</span> <span>Generative Prompts</span> <spna>Real time Wireframes</spna></p>
+    </div>,
+    },
+      {  key: '3',
+    label: <div className={`text-white text-sm py-5 flex gap-4 ${jarkata.className}`}>
+
+    <FiArrowUpRight className='text-[#3BADE2]' color='#3BADE2' size={20} /> <p>Can I cancel my subscription at any time?</p></div>,
+    children: <div className={`${jarkata.className} text-sm leading-6 !pl-0 text-white text-sm`}>
+      <p>
+        We build adaptive interfaces that evolve based on user intent and context. Moving beyond static screens to fluid, intelligent experiences.
+      </p>
+      <br />
+      <p><span>Dynamic Components</span> <span>Generative Prompts</span> <spna>Real time Wireframes</spna></p>
+    </div>,
+    },
+          {  key: '4',
+    label: <div className={`text-white text-sm py-5 flex gap-4 ${jarkata.className}`}><FiArrowUpRight className='text-[#3BADE2]' color='#3BADE2' size={20} /> <p>How secure are your solutions?</p></div>,
+    children: <div className={`${jarkata.className} text-sm leading-6 !pl-0 text-white text-sm`}>
+      <p>
+        We build adaptive interfaces that evolve based on user intent and context. Moving beyond static screens to fluid, intelligent experiences.
+      </p>
+      <br />
+      <p><span>Dynamic Components</span> <span>Generative Prompts</span> <spna>Real time Wireframes</spna></p>
+    </div>,
+    },
+          {  key: '5',
+    label: <div className={`text-white text-sm py-5 flex gap-4 ${jarkata.className}`}><FiArrowUpRight className='text-[#3BADE2]' color='#3BADE2' size={20} /> <p>Can your solutions scale with my business growth?</p></div>,
+    children: <div className={`${jarkata.className} text-sm leading-6 !pl-0 text-white text-sm`}>
+      <p>
+        We build adaptive interfaces that evolve based on user intent and context. Moving beyond static screens to fluid, intelligent experiences.
+      </p>
+      <br />
+      <p><span>Dynamic Components</span> <span>Generative Prompts</span> <spna>Real time Wireframes</spna></p>
+    </div>,
+    },
+]

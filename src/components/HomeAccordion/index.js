@@ -5,6 +5,7 @@ import { PlusOutlined, MinusOutlined } from '@ant-design/icons'
 import { useState } from 'react'
 import { accordionItems } from '@/data'
 import { Plus_Jakarta_Sans, Syne } from "next/font/google";
+import ClientSay from '../ClientsSay'
 
 const jarkata = Plus_Jakarta_Sans({
     weight: "400",
@@ -46,7 +47,7 @@ const HomeAccordion = () => {
                         }}
                         items={accordionItems.map((item) => ({
                             ...item,
-                            onHeaderClick: () => setActiveKey(item.key),
+                            // onHeaderClick: () => setActiveKey(item.key),
                             label: (
                                 <div
                                     onMouseEnter={() => setActiveKey(item.key)}
@@ -79,6 +80,14 @@ const HomeAccordion = () => {
                     }
                     `}
             </style>
+            <div className="sm:px-[70px] p-5 hidden sm:block">
+                <ClientSay />
+                <div>
+                    <h3 className='sm:text-[44px] sm:leading-[64px] tracking-[-1.68px]'>
+                        Our Clients Can’t Say Enough About Us...
+                    </h3>
+                </div>
+            </div>
         </div>
     )
 }
