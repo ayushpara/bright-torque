@@ -24,7 +24,7 @@ const BusinessDesignCard = ({
       <div className="flex flex-col sm:flex-row justfiy-between">
         <div className="flex flex-col w-[100%] sm:w-[60%]">
           <p className="text-white text-2xl sm:text-[32px] font-semibold sm:font-bold">{businessDesign.heading}</p>
-          <p className="text-white text-sm mt-6 font-medium leading-5 hidden sm:block">
+          <p className="text-white text-sm mt-6 font-medium leading-5">
             {businessDesign.description}
           </p>
           <p className="text-white text-sm sm:text-base leading-7 mt-3 sm:mt-[30px]">
