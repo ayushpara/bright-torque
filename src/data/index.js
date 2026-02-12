@@ -47,7 +47,6 @@ import { FaFigma } from "react-icons/fa";
 import { RiNotionFill } from "react-icons/ri";
 import { SiFramer } from "react-icons/si";
 import Image from "next/image";
-import { FiArrowUpRight } from "react-icons/fi";
 
 const jarkata = Plus_Jakarta_Sans({
   weight: "400",
