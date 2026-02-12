@@ -26,7 +26,7 @@ const Testimonials = () => {
                     {testimonials.map((item, index) => (
                         <div className='p-2 sm:p-4 max-w-[280px] sm:max-w-[540px] w-full'>
 
-                            <div className='bg-white rounded-[20px] h-[180px] sm:h-[320px] p-4 sm:p-8 pr-0 pb-0 flex flex-col gap-4'>
+                            <div className='bg-white rounded-[20px] h-[180px] sm:h-[320px] p-4 sm:p-8 !pr-0 pb-0 flex flex-col gap-4'>
                                 <p className='text-xs sm:text-lg leading-[14px] sm:leading-8'>
                                     "{item.message}"
                                 </p>
