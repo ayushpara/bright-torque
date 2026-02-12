@@ -55,12 +55,12 @@ const HomeAccordion = () => {
                                 >
                                     <span>
                                         {item.label}
-                                    </span>    <PlusOutlined
+                                    </span>     <div className='text-xl py-2 px-3 rounded-full border border-1 border-[#E6F4F4]'><PlusOutlined
                                         style={{
                                             transform: activeKey === item.key ? "rotate(45deg)" : "rotate(0deg)",
                                             transition: "transform 0.3s ease"
                                         }}
-                                    />
+                                    /></div>
                                 </div>
                             ),
                         }))}

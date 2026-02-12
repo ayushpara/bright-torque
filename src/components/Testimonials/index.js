@@ -36,7 +36,7 @@ const Testimonials = () => {
                                 </div>
                                 <div className='flex flex-row justify-between items-end mt-auto'>
                                     <div className='pb-8'>
-                                        <Image src={item.client.clientLogo} width={150} height={35} className='object-contain object-center max-w-[50px] sm:max-w-[150px] max-h-[17px] sm:max-h-[35px]' />
+                                        <Image src={item.client.clientLogo} width={150} height={35} className='object-contain object-center max-w-[50px] sm:max-w-[150px] max-h-[17px] sm:max-h-[35px]' alt='client logo' />
                                     </div>
                                     <div>
                                         <Image alt="feedback image" src={item.client.feedbackImage} width={130} height={160} className='max-w-[80px] sm:max-w-[130px] object-contain h-[80px] sm:h-[160px]' />

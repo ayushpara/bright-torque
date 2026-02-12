@@ -198,13 +198,15 @@ export const businerssPartners = [
   },
 ];
 
+const textStyle = "text-base sm:text-2xl"
+const imageClass = "max-w-[15px] max-h-[15px] sm:max-w-[30px] sm:max-h-[30px] w-[15px] h-[15px] sm:w-[30px] sm:h-[30px]"
 export const businessDesigns = [
   {
     heading: "Discover & Ideate with AI",
     description:
       "We start by gaining insights into your users and objectives, improving the discovery phase with AI. Our AI-driven tools provide user insights, behavioral patterns, and identify competitive gaps. With AI-assisted diagrams, we outline user journeys and information architecture, guaranteeing a clear path from the beginning.",
     whatYouget:['User Personas', "UX Research","UX Blueprints"],
-    imagesToolsWeUse:[<p className="text-2xl"><SiOpenai /></p>, <p className="text-2xl"><SiPerplexity/></p>, <p className="text-2xl"><FaFigma /></p>, <p className="text-2xl"><RiNotionFill />
+    imagesToolsWeUse:[<p className={`${textStyle}`}><SiOpenai /></p>, <p className={`${textStyle}`}><SiPerplexity/></p>, <p className={`${textStyle}`}><FaFigma /></p>, <p className={`${textStyle}`}><RiNotionFill />
       </p>, "FigJam", "Product Research"],
     cardImage:discover,
   },
@@ -213,8 +215,8 @@ export const businessDesigns = [
     description:
       "We design an information architecture that facilitates smooth navigation for users, emphasizing innovative features for an optimal experience. By automatically generating user flows and screen designs, we create clickable, no-code prototypes that allow us to validate authentic user experiences and gather valuable feedback quickly. ",
       whatYouget:['Interactive Mockups', "Validated Flows","Early User Feedback"],
-    imagesToolsWeUse:[<Image src={lovableLogo} width={30} height={30} />,<p className="text-2xl"><SiReplit/>
-      </p>,<Image src={veed} width={30} height={30} />,<p className="text-2xl"><RiNotionFill /></p>, "FigJam", "Product Research"],
+    imagesToolsWeUse:[<Image alt="loveable" src={lovableLogo} width={30} height={30} className={`${imageClass}`} />,<p className={`${textStyle}`}><SiReplit/>
+      </p>,<Image src={veed} width={30} height={30} className={`${imageClass}`} />,<p className={`${textStyle}`}><RiNotionFill /></p>, "FigJam", "Product Research"],
     cardImage:prototype,
   },
  {
@@ -222,7 +224,7 @@ export const businessDesigns = [
     description:
       "We create an information architecture to guide seamless end-user navigation, focusing on innovative features for an ideal experience. Finally, we wireframe, prototype, and test the product with real users.",
       whatYouget:['Polished UI Screens', "Reusable Design Components","Scalable Design System"],
-    imagesToolsWeUse:[<p className="text-2xl"><SiFramer/></p>,<Image src={uiZard} width={30} height={30} />,, "Figma AI", "Midjourney"],
+    imagesToolsWeUse:[<p className={`${textStyle}`}><SiFramer/></p>,<Image alt="uizard" src={uiZard} width={30} height={30} className={`${imageClass}`} />,, "Figma AI", "Midjourney"],
     cardImage:design,
   },
  {
@@ -230,7 +232,7 @@ export const businessDesigns = [
     description:
       "We create an information architecture to guide seamless end-user navigation, focusing on innovative features for an ideal experience. Finally, we wireframe, prototype, and test the product with real users.",
       whatYouget:['Source Code', "Style Guide","Handoff Files"],
-    imagesToolsWeUse:[<p className="text-2xl"><RiNotionFill /></p>,<p className="text-2xl"><FaFigma /></p>, "Figma Dev Mode"],
+    imagesToolsWeUse:[<p className={`${textStyle}`}><RiNotionFill /></p>,<p className={`${textStyle}`}><FaFigma /></p>, "Figma Dev Mode"],
     cardImage:deliver,
   },
 ];

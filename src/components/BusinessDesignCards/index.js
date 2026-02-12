@@ -13,47 +13,48 @@ const jarkata = Plus_Jakarta_Sans({
   subsets: ["latin"],
 });
 
-
 const BusinessDesignCard = ({
   businessDesign,
 }) => {
   return (
     <div
-      className={`flex flex-col sm:w-full ${jarkata.className} `}
+      className={`flex flex-col sm:w-full ${jarkata.className} pt-8 sm:pt-0`}
     // onClick={() => onChangeDesign(index)}
     >
-      <div className="flex flex-col sm:flex-row">
+      <div className="flex flex-col sm:flex-row justfiy-between">
         <div className="flex flex-col w-[100%] sm:w-[60%]">
-          <p className="text-white text-[32px] font-semibold sm:font-bold">{businessDesign.heading}</p>
-          <p className="text-white text-sm mt-6 font-medium leading-5">
+          <p className="text-white text-2xl sm:text-[32px] font-semibold sm:font-bold">{businessDesign.heading}</p>
+          <p className="text-white text-sm mt-6 font-medium leading-5 hidden sm:block">
             {businessDesign.description}
           </p>
-          <p className="text-white text-base leading-7 mt-[30px]">
+          <p className="text-white text-sm sm:text-base leading-7 mt-3 sm:mt-[30px]">
             What you get
           </p>
-          <div className="text-white text-base leading-7 mt-4 sm:mt-6 flex gap-2 flex-wrap">
+          <div className="text-white text-sm sm:text-base leading-7 mt-4 sm:mt-6 flex gap-1 sm:gap-2 flex-wrap">
             {businessDesign.whatYouget.map((item, index) => (
-              <span key={index} >{item} {index !== businessDesign.whatYouget.length - 1 ? <span className="ml-2" > | </span> : ""}</span>
+              <span key={index} >{item} {index !== businessDesign.whatYouget.length - 1 ? <span className="ml-0 sm:ml-2" >|</span> : ""}</span>
             ))}
           </div>
+          {/* Mobile tools we use */}
           <div className="gap-4 flex flex-col mt-6 sm:mt-[80px] sm:hidden">
-            <p className="text-white text-base leading-7 ">Tools we use</p>
-            <div className="gap-4 flex flex-wrap">
+            <p className="text-white text-sm sm:text-base leading-7 ">Tools we use</p>
+            <div className="gap-4 flex flex-wrap h-[50px] sm:h-[70px] sm:h-auto overflow-hidden sm:overflow-visible">
 
               {businessDesign.imagesToolsWeUse.map((item, index) => (
-                <div className="p-4 rounded-full border text-white border-1 border-[#16CCEA] flex items-center justify-center text-base" key={index}>{item}</div>
+                <div className="px-3 py-3 sm:p-4 rounded-full border text-white border-1 border-[#16CCEA] flex items-center justify-center text-sm text-base" key={index}>{item}</div>
               ))}
             </div>
           </div>
         </div>
         <Image src={businessDesign.cardImage} width={250} height={300} alt="discover" className=" w-[100%] sm:w-[40%] h-[100%] max-h-[250px] object-contian" />
       </div>
-      <div className="gap-4 sm:flex flex-col mt-6 hidden">
-        <p className="text-white text-sm ">Tools we use</p>
-        <div className="gap-4 flex flex-wrap">
+      {/* Desktop tools we use */}
+      <div className="gap-2 sm:gap-4 sm:flex flex-col mt-6 hidden">
+        <p className="text-white text-sm sm:text-base">Tools we use</p>
+        <div className="gap-4 flex flex-wrap overflow-hidden sm:overflow-visible">
 
           {businessDesign.imagesToolsWeUse.map((item, index) => (
-            <div className="p-4 rounded-full border text-white border-1 border-[#16CCEA] flex items-center justify-center text-base leading-7" key={index}>{item}</div>
+            <div className="p-4 rounded-full border text-white border-1 border-[#16CCEA] flex items-center justify-center text-sm sm:text-base leading-7" key={index}>{item}</div>
           ))}
         </div>
       </div>
@@ -66,59 +67,43 @@ const BusinessDesignCards = () => {
 
   const { scrollYProgress } = useScroll({
     target: sectionRef,
-    offset: ["center end", "center start"]
+    offset: ["start start", "end end"],
   });
 
-  // Move from -30% to +30% of its width
-  const xMove = useTransform(scrollYProgress, [0, 1], ["200%", "-450%"]);
-  const barMove = useTransform(scrollYProgress, [0, 1], ["-150%", "300%"]);
-
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-75%"]);
 
   return (
-    <div className="flex flex-col w-full overflow-hidden">
-
-      {/* Scroll Section */}
-      <section
-        ref={sectionRef}
-        className="relative flex flex-col justify-center overflow-hidden mb-10"
-      >
-        {/* Mask wrapper prevents horizontal scrollbar */}
-        <div className="overflow-hidden">
-
-          {/* Cards */}
+    <div className="flex flex-col w-full">
+      <section ref={sectionRef} className="relative h-[300vh]">
+        <div className="sticky top-0 h-screen flex items-center overflow-hidden w-full">
           <motion.div
-            style={{ x: xMove }}
-            className="flex flex-row gap-10 sm:px-20 px-5"
+            style={{ x }}
+            className="flex flex-row gap-[30px] px-5 sm:px-20"
           >
             {businessDesigns.map((businessDesign, index) => (
               <div
-                className="flex justify-center min-w-[80%] sm:w-auto"
                 key={index}
+                className="w-[85vw] sm:w-[60vw] flex-shrink-0"
               >
                 <BusinessDesignCard businessDesign={businessDesign} />
               </div>
             ))}
           </motion.div>
-
-        </div>
-
-        {/* Progress Bar */}
-        <div className="sm:px-20 px-5 mt-20">
+        <div className="absolute bottom-10 left-0 w-full px-5 sm:px-20">
           <div className="w-full rounded-[20px] h-[5px] bg-[#FFFFFF1A] relative overflow-hidden">
             <motion.div
-              style={{ x: barMove }}
-              className="w-[25%] bg-[#FFEA5A] h-[5px] rounded-[20px]"
+              style={{ scaleX: scrollYProgress }}
+              className="absolute left-0 top-0 bottom-0 w-full bg-[#FFEA5A] origin-left"
             />
           </div>
         </div>
+        </div>
       </section>
 
-      {/* Rest of page */}
       <div className="sm:px-20 px-5 sm:pb-20 pb-5 flex flex-col">
         <Faq />
         <LetsChat />
       </div>
-
     </div>
   );
 };
