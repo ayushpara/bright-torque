@@ -51,16 +51,16 @@ const HomeAccordion = () => {
                             label: (
                                 <div
                                     onMouseEnter={() => setActiveKey(item.key)}
-                                    className="cursor-pointer font-medium text-2xl leading-[40px] sm:text-[2rem] flex items-center justify-between py-4 pl-0 sm:pl-0"
+                                    className={`cursor-pointer font-medium text-2xl leading-[40px] sm:text-[2rem] flex items-center justify-between py-4 pl-0 sm:pl-0 ${syne.className}`}
                                 >
                                     <span>
                                         {item.label}
-                                    </span>    <PlusOutlined
+                                    </span>     <div className='text-xl py-2 px-3 rounded-full border border-1 border-[#E6F4F4]'><PlusOutlined
                                         style={{
                                             transform: activeKey === item.key ? "rotate(45deg)" : "rotate(0deg)",
                                             transition: "transform 0.3s ease"
                                         }}
-                                    />
+                                    /></div>
                                 </div>
                             ),
                         }))}
@@ -84,7 +84,7 @@ const HomeAccordion = () => {
             <div className="sm:px-[70px] p-0 py-5 block">
                 <ClientSay />
                 <div>
-                    <h3 className='text-[2rem] leading-[40px] sm:text-[44px] sm:leading-[64px]'>
+                    <h3 className={`text-[2rem] leading-[40px] sm:text-[44px] sm:leading-[64px] ${syne.className}`}>
                         Our Clients Can’t Say Enough About Us...
                     </h3>
                 </div>

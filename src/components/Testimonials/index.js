@@ -26,7 +26,7 @@ const Testimonials = () => {
                     {testimonials.map((item, index) => (
                         <div className='p-2 sm:p-4 max-w-[280px] sm:max-w-[540px] w-full'>
 
-                            <div className='bg-white rounded-[20px] h-[180px] sm:h-[320px] p-4 sm:p-8 pr-0 pb-0 flex flex-col gap-4'>
+                            <div className='bg-white rounded-[20px] h-[180px] sm:h-[320px] p-4 sm:p-8 !pr-0 pb-0 flex flex-col gap-4'>
                                 <p className='text-xs sm:text-lg leading-[14px] sm:leading-8'>
                                     "{item.message}"
                                 </p>
@@ -36,7 +36,7 @@ const Testimonials = () => {
                                 </div>
                                 <div className='flex flex-row justify-between items-end mt-auto'>
                                     <div className='pb-8'>
-                                        <Image src={item.client.clientLogo} width={150} height={35} className='object-contain object-center max-w-[50px] sm:max-w-[150px] max-h-[17px] sm:max-h-[35px]' />
+                                        <Image src={item.client.clientLogo} width={150} height={35} className='object-contain object-center max-w-[50px] sm:max-w-[150px] max-h-[17px] sm:max-h-[35px]' alt='client logo' />
                                     </div>
                                     <div>
                                         <Image alt="feedback image" src={item.client.feedbackImage} width={130} height={160} className='max-w-[80px] sm:max-w-[130px] object-contain h-[80px] sm:h-[160px]' />
