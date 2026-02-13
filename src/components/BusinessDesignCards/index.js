@@ -9,14 +9,14 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import useMediaQuery from "../useMedia";
 
 const jarkata = Plus_Jakarta_Sans({
-  weight: "400",
+  weight: ["400","500","600"],
   subsets: ["latin"],
 });
 
 const BusinessDesignCard = ({
   businessDesign,
 }) => {
-    const isMobile = useMediaQuery("(max-width: 767px)");
+  const isMobile = useMediaQuery("(max-width: 767px)");
   return (
     <div
       className={`flex flex-col sm:w-full ${jarkata.className} pt-8 sm:pt-0 h-full`}
@@ -27,7 +27,7 @@ const BusinessDesignCard = ({
           <p className="text-white text-sm mt-6 font-medium leading-5">
             {businessDesign.description}
           </p>
-          <p className="text-white text-sm sm:text-base leading-7 mt-3 sm:mt-[30px]">
+          <p className="text-white text-sm sm:text-base leading-7 mt-3 sm:mt-[30px] font-semibold">
             What you get
           </p>
           <div className="text-white text-sm sm:text-base leading-7 mt-4 sm:mt-6 flex gap-1 sm:gap-2 flex-wrap">
@@ -37,28 +37,28 @@ const BusinessDesignCard = ({
           </div>
           {/* Mobile tools we use */}
           <div className="gap-4 flex flex-col mt-6 sm:mt-[80px] sm:hidden">
-            <p className="text-white text-sm sm:text-base leading-7 ">Tools we use</p>
+            <p className="text-white text-sm sm:text-base leading-7 font-semibold">Tools we use</p>
             <div className="gap-4 flex flex-wrap h-[50px] sm:h-[70px] sm:h-auto overflow-hidden sm:overflow-visible">
 
               {businessDesign.imagesToolsWeUse.map((item, index) => {
-                if(item.image){
-                  return(
-  <div
-  tabIndex={0}
-  className="group relative w-12 h-12 sm:w-14 sm:h-14
+                if (item.image) {
+                  return (
+                    <div
+                      tabIndex={0}
+                      className="group relative w-12 h-12 sm:w-14 sm:h-14
              rounded-full border border-[#16CCEA]
              flex items-center justify-center"
-  key={index}
->
-  <Image
-    src={item.image}
-    alt={item.title}
-    height={isMobile ? 15 : 30}
-    width={isMobile ? 15 : 30}
-  />
+                      key={index}
+                    >
+                      <Image
+                        src={item.image}
+                        alt={item.title}
+                        height={isMobile ? 15 : 30}
+                        width={isMobile ? 15 : 30}
+                      />
 
-  <div
-    className="absolute -top-10 left-1/2 -translate-x-1/2
+                      <div
+                        className="absolute -top-10 left-1/2 -translate-x-1/2
                whitespace-nowrap
                bg-black text-white text-xs
                px-3 py-1 rounded-md
@@ -67,21 +67,21 @@ const BusinessDesignCard = ({
                group-focus:opacity-100
                transition-opacity duration-200
                pointer-events-none"
-  >
-    {item.title}
-  </div>
-</div>
+                      >
+                        {item.title}
+                      </div>
+                    </div>
 
                   )
-                }else{
-                  return(
+                } else {
+                  return (
                     <div className="px-3 py-3 sm:p-4 rounded-full border text-white border-1 border-[#16CCEA] flex items-center justify-center text-sm text-base" key={index}>
-<p>{item.text}</p>
+                      <p>{item.text}</p>
                     </div>
                   )
                 }
               }
-               
+
               )}
             </div>
           </div>
@@ -91,49 +91,49 @@ const BusinessDesignCard = ({
       </div>
       {/* Desktop tools we use */}
       <div className="gap-2 sm:gap-4 sm:flex flex-col mt-6 hidden">
-        <p className="text-white text-sm sm:text-base">Tools we use</p>
+        <p className="text-white text-sm sm:text-base font-semibold">Tools we use</p>
         <div className="gap-4 flex flex-wrap overflow-hidden sm:overflow-visible">
 
-            {businessDesign.imagesToolsWeUse.map((item, index) => {
-                if(item.image){
-                  return(
-                  <div
-  className="group relative w-12 h-12 sm:w-14 sm:h-14
+          {businessDesign.imagesToolsWeUse.map((item, index) => {
+            if (item.image) {
+              return (
+                <div
+                  className="group relative w-12 h-12 sm:w-14 sm:h-14
              rounded-full border border-[#16CCEA]
              flex items-center justify-center"
-  key={index}
->
-  <Image
-    src={item.image}
-    alt={item.title}
-    height={isMobile ? 15 : 30}
-    width={isMobile ? 15 : 30}
-  />
+                  key={index}
+                >
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    height={isMobile ? 15 : 30}
+                    width={isMobile ? 15 : 30}
+                  />
 
-  {/* Tooltip */}
-  <div
-    className="absolute -top-10 left-1/2 -translate-x-1/2
+                  {/* Tooltip */}
+                  <div
+                    className="absolute -top-10 left-1/2 -translate-x-1/2
                whitespace-nowrap
                bg-black-3 text-white text-xs
                px-3 py-1 rounded-md
                opacity-0 group-hover:opacity-100
                transition-opacity duration-200
                pointer-events-none"
-  >
-    {item.title}
-  </div>
-</div>
-                  )
-                }else{
-                  return(
-                    <div className="px-3 py-3 sm:p-4 rounded-full border text-white border-1 border-[#16CCEA] flex items-center justify-center text-sm text-base" key={index}>
-<p>{item.text}</p>
-                    </div>
-                  )
-                }
-              }
-               
-              )}
+                  >
+                    {item.title}
+                  </div>
+                </div>
+              )
+            } else {
+              return (
+                <div className="px-3 py-3 sm:p-4 rounded-full border text-white border-1 border-[#16CCEA] flex items-center justify-center text-sm text-base" key={index}>
+                  <p>{item.text}</p>
+                </div>
+              )
+            }
+          }
+
+          )}
         </div>
       </div>
     </div>
@@ -167,14 +167,14 @@ const BusinessDesignCards = () => {
               </div>
             ))}
           </motion.div>
-        <div className="absolute bottom-10 left-0 w-full px-5 sm:px-20">
-          <div className="w-full rounded-[20px] h-[5px] bg-[#FFFFFF1A] relative overflow-hidden">
-            <motion.div
-              style={{ scaleX: scrollYProgress }}
-              className="absolute left-0 top-0 bottom-0 w-full bg-[#FFEA5A] origin-left"
-            />
+          <div className="absolute bottom-10 left-0 w-full px-5 sm:px-20">
+            <div className="w-full rounded-[20px] h-[5px] bg-[#FFFFFF1A] relative overflow-hidden">
+              <motion.div
+                style={{ scaleX: scrollYProgress }}
+                className="absolute left-0 top-0 bottom-0 w-full bg-[#FFEA5A] origin-left"
+              />
+            </div>
           </div>
-        </div>
         </div>
       </section>
 
