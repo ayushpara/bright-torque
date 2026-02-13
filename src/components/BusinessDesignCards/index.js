@@ -43,7 +43,8 @@ const BusinessDesignCard = ({
               {businessDesign.imagesToolsWeUse.map((item, index) => {
                 if(item.image){
                   return(
-                   <div
+  <div
+  tabIndex={0}
   className="group relative w-12 h-12 sm:w-14 sm:h-14
              rounded-full border border-[#16CCEA]
              flex items-center justify-center"
@@ -56,19 +57,21 @@ const BusinessDesignCard = ({
     width={isMobile ? 15 : 30}
   />
 
-  {/* Tooltip */}
   <div
     className="absolute -top-10 left-1/2 -translate-x-1/2
                whitespace-nowrap
-               bg-black-3 text-white text-xs
+               bg-black text-white text-xs
                px-3 py-1 rounded-md
-               opacity-0 group-hover:opacity-100
+               opacity-0 
+               group-hover:opacity-100 
+               group-focus:opacity-100
                transition-opacity duration-200
                pointer-events-none"
   >
     {item.title}
   </div>
 </div>
+
                   )
                 }else{
                   return(
