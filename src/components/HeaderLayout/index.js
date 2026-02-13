@@ -4,10 +4,13 @@ import { usePathname, useRouter } from "next/navigation";
 import logoImage from "../../static/images/logo.png";
 import { headerButtons } from "@/data";
 import { HOME } from "@/contants/routes";
+import { Plus_Jakarta_Sans } from "next/font/google";
 
+const jarkata = Plus_Jakarta_Sans({
+  weight: "400",
+  subsets: ["latin"],
+});
 const HeaderButton = ({ headerButton, pathname, router }) => {
-  
-
   return (
     <div
       onClick={() => router.push(headerButton.redirect)}
@@ -31,7 +34,7 @@ const HeaderLayout = () => {
   const router = useRouter();
 
   return (
-    <div className=" bg-primary sm:h-[95px] h-[71px] w-full lg:px-[120px] sm:px-[70px] px-5 header-layout">
+    <div className={`bg-primary sm:h-[95px] h-[71px] w-full lg:px-[120px] sm:px-[70px] px-5 header-layout ${jarkata.className}`}>
       <div className="flex flex-row justify-between h-full items-center">
         <div className="flex items-center justify-center hover:cursor-pointer">
           <div className="relative w-[162px] h-[24px] ">
@@ -39,7 +42,7 @@ const HeaderLayout = () => {
           </div >
         </div>
 
-        <div className="h-[68px] bg-white w-[579px] rounded-[1440px] sm:flex flex-row items-center px-5 justify-between hidden ">
+        <div className="h-[68px] bg-white w-[479px] rounded-[1440px] sm:flex flex-row items-center px-5 justify-between hidden ">
           {headerButtons.map((headerButton, index) => (
             <HeaderButton
               key={index}

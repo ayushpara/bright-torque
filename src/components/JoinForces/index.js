@@ -21,7 +21,7 @@ const JoinForces = () => {
           </p>
         </div>
         <Button href= "mailto:ayush@visao.io" className="flex min-h-[37px]" type="primary" style={{borderRadius:48}}>
-          Let's Chat
+         Let’s Start a project
         </Button>
       </div>
   );
