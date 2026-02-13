@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { Plus_Jakarta_Sans } from 'next/font/google';
 import { motion } from 'framer-motion';
 import { stats, clients } from '@/data';
+import useMediaQuery from '../useMedia';
 
 const jarkata = Plus_Jakarta_Sans({
     weight: "400",
@@ -11,6 +12,7 @@ const jarkata = Plus_Jakarta_Sans({
 
 
 const OurStats = () => {
+    const isMobile = useMediaQuery("(max-width: 767px)");
     return (
         <div className={`border border-1 border-[#90CCD4] w-full rounded rounded-[30px] overflow-hidden ${jarkata.className} mt-6`}>
             <div className='w-full flex flex-col sm:flex-row flex-wrap'>
@@ -27,12 +29,12 @@ const OurStats = () => {
                 ))}
             </div>
             <div className='w-full flex-col sm:flex-row flex items-center sm:border-t sm:border-t-1 sm:border-t-[#90CCD4]'>
-                <div className='bg-green-1 w-full sm:w-[380px] text-white flex items-center pl-4 relative z-[2] h-[70px]'>
+                <div className='bg-green-1 w-full sm:w-[380px] text-white flex items-center pl-4 relative z-[2] h-[70px] sm:h-[95px]'>
                     Trusted by B2B leaders
                 </div>
                 <div className="sm:w-[80%] overflow-hidden mx-auto">
                     <motion.div
-                        className="flex gap-8 flex-1 py-4 sm:py-0"
+                        className="flex gap-16 flex-1 py-4 sm:py-0"
                         animate={{ x: ['0%', '-50%'] }}
                         transition={{
                             repeat: Infinity,
@@ -42,12 +44,7 @@ const OurStats = () => {
                         }}
                     >
                         {[...clients, ...clients].map((item, index) => (
-                            <div
-                                key={index}
-                                className="w-[130px] h-[50px] bg-contain bg-no-repeat bg-center flex-shrink-0"
-                                style={{ backgroundImage: `url(${item.image.src})` }}
-                                aria-label={item.alt}
-                            />
+                            <Image src={item.image} alt={item.alt} width={200} height={isMobile?34:45} className='object-contain object-center max-h-[44px] w-auto' />
                         ))}
                     </motion.div>
                 </div>

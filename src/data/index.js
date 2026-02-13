@@ -9,12 +9,25 @@ import inLove from "../static/images/in-love.svg";
 import thumbUp from "../static/images/thumb-up.svg";
 import clientImage from "../static/images/clientImage.svg"
 
-import uiZard from "../static/icons/uizard.svg"
 import esgateImage from "../static/images/projects/esgate.png";
 import PathviImage from "../static/images/projects/Patahvi.png";
 import JDPOLYImage from "../static/images/projects/JDoly.png";
 import FalconImage from "../static/images/projects/Falcon.png";
 
+// businessDesign Cards
+import chatgpt from "../static/icons/chat-gpt.svg";
+import figma from "../static/icons/figma-logo.svg";
+import framer from "../static/icons/framer.svg";
+import lovable from "../static/icons/lovable-logo.svg";
+import notion from "../static/icons/notion-logo.svg";
+import perplexity from "../static/icons/perplexity.svg";
+import replit from "../static/icons/replit.svg";
+import uizard from "../static/icons/uizard.svg";
+import v0 from "../static/icons/v0-logo.svg";
+import discover from "../static/images/discover-ideate.svg";
+import deliver from "../static/images/deliver.svg";
+import design from "../static/images/design.svg";
+import prototype from "../static/images/prototype-smarter-faster.svg"
 
 import mgamerImage from "../static/images/projects/mgamer.png";
 import studytorchImage from "../static/images/projects/studytorch.png";
@@ -23,10 +36,6 @@ import ParkingEyeImage from "../static/images/projects/ParkingEye.png";
 import OctowasteImage from "../static/images/projects/OctowasteImage.png";
 import adGenImage from "../static/images/projects/adGen.png";
 import ayushImage from "../static/images/projects/ayush.png";
-import discover from "../static/images/discover.svg"
-import prototype from "../static/images/prototype.svg"
-import deliver from "../static/images/deliver.svg";
-import design from "../static/images/design.svg"
 import brandBookImage from "../static/images/projects/brandBook.png";
 import mealqImage from "../static/images/projects/mealq.png";
 import mPaisaImage from "../static/images/projects/mPaisa.png";
@@ -34,19 +43,15 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import calendar from "../static/icons/calendar.svg";
 import leads from "../static/icons/leads.svg";
 import rocket from "../static/icons/rocket.svg";
+// clients images
 import instapop from "../static/stats/instapop.svg";
 import toast from "../static/stats/toast.svg";
-import wordofMouth from "../static/stats/wordofme.svg";
+import wordofMouth from "../static/stats/wordofmouth.svg";
 import falconFitness from "../static/stats/falconfitness.svg";
-import veed from "../static/icons/icon.svg";
-import lovableLogo from "../static/icons/lovable.svg"
 import jaldhara from "../static/stats/jaldhara.svg"
-import { SiOpenai, SiReplit } from "react-icons/si";
-import { SiPerplexity } from "react-icons/si";
-import { FaFigma } from "react-icons/fa";
-import { RiNotionFill } from "react-icons/ri";
-import { SiFramer } from "react-icons/si";
-import Image from "next/image";
+import pathviFarms from "../static/stats/PF.svg";
+import wishit from "../static/stats/wishIt.svg";
+import visao from "../static/stats/visao.svg";
 
 const jarkata = Plus_Jakarta_Sans({
   weight: "400",
@@ -69,14 +74,9 @@ export const headerButtons = [
     key: 3,
   },
   {
-    name: "Editorial",
-    redirect: EDITORIAL,
-    key: 4,
-  },
-  {
     name: "Contact",
     redirect: CONTACT,
-    key: 5,
+    key: 4,
   },
 ];
 
@@ -197,16 +197,13 @@ export const businerssPartners = [
   },
 ];
 
-const textStyle = "text-base sm:text-2xl"
-const imageClass = "max-w-[15px] max-h-[15px] sm:max-w-[30px] sm:max-h-[30px] w-[15px] h-[15px] sm:w-[30px] sm:h-[30px]"
 export const businessDesigns = [
   {
     heading: "Discover & Ideate with AI",
     description:
       "We start by gaining insights into your users and objectives, improving the discovery phase with AI. Our AI-driven tools provide user insights, behavioral patterns, and identify competitive gaps. With AI-assisted diagrams, we outline user journeys and information architecture, guaranteeing a clear path from the beginning.",
     whatYouget:['User Personas', "UX Research","UX Blueprints"],
-    imagesToolsWeUse:[<p className={`${textStyle}`}><SiOpenai /></p>, <p className={`${textStyle}`}><SiPerplexity/></p>, <p className={`${textStyle}`}><FaFigma /></p>, <p className={`${textStyle}`}><RiNotionFill />
-      </p>, "FigJam", "Product Research"],
+    imagesToolsWeUse:[{image:chatgpt, title:"ChatGpt"},{image:perplexity, title:"Perplexity"},{image:figma, title:"Figma"}, {image:notion, title:"Notion"}, {text:"FigJam"}, {text:"Product Research"}],
     cardImage:discover,
   },
   {
@@ -214,8 +211,7 @@ export const businessDesigns = [
     description:
       "We design an information architecture that facilitates smooth navigation for users, emphasizing innovative features for an optimal experience. By automatically generating user flows and screen designs, we create clickable, no-code prototypes that allow us to validate authentic user experiences and gather valuable feedback quickly. ",
       whatYouget:['Interactive Mockups', "Validated Flows","Early User Feedback"],
-    imagesToolsWeUse:[<Image alt="loveable" src={lovableLogo} width={30} height={30} className={`${imageClass}`} />,<p className={`${textStyle}`}><SiReplit/>
-      </p>,<Image src={veed} width={30} height={30} className={`${imageClass}`} />,<p className={`${textStyle}`}><RiNotionFill /></p>, "FigJam", "Product Research"],
+    imagesToolsWeUse:[{image:lovable, title:"Loveable"},{image:replit,title:"Replit"},{image:v0, title:"V0"},{image:notion, title:"Notion"}, {text:"FigJam"}, {text:"Product Research"}],
     cardImage:prototype,
   },
  {
@@ -223,7 +219,7 @@ export const businessDesigns = [
     description:
       "We create an information architecture to guide seamless end-user navigation, focusing on innovative features for an ideal experience. Finally, we wireframe, prototype, and test the product with real users.",
       whatYouget:['Polished UI Screens', "Reusable Design Components","Scalable Design System"],
-    imagesToolsWeUse:[<p className={`${textStyle}`}><SiFramer/></p>,<Image alt="uizard" src={uiZard} width={30} height={30} className={`${imageClass}`} />,, "Figma AI", "Midjourney"],
+    imagesToolsWeUse:[{image:framer, title:"Framer"},{image:uizard, title:"UiZard"}, {text:"Figma AI"}, {text:"Midjourney"}],
     cardImage:design,
   },
  {
@@ -231,7 +227,7 @@ export const businessDesigns = [
     description:
       "We create an information architecture to guide seamless end-user navigation, focusing on innovative features for an ideal experience. Finally, we wireframe, prototype, and test the product with real users.",
       whatYouget:['Source Code', "Style Guide","Handoff Files"],
-    imagesToolsWeUse:[<p className={`${textStyle}`}><RiNotionFill /></p>,<p className={`${textStyle}`}><FaFigma /></p>, "Figma Dev Mode"],
+    imagesToolsWeUse:[{image:notion, title:"Notion"},{image:figma, title:"Figma"}, {text:"Figma Dev Mode"}],
     cardImage:deliver,
   },
 ];
@@ -465,7 +461,15 @@ export const clients = [
     {
         alt: "falcon fitness",
         image: falconFitness
-    }
+    },
+    {
+      alt:"Pathavi Farms",
+      image:pathviFarms
+    },
+    {alt:"WishIt", 
+      image:wishit,
+    },
+    {alt:"Visao",image:visao}
 ]
 
 export const faqs =[

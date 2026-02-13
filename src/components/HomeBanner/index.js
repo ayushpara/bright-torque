@@ -6,13 +6,14 @@ import starIcon from "../../static/icons/star.svg";
 import viewArrowIcon from "../../static/icons/viewArrow.svg";
 import { homeProjects } from "@/data";
 import { rotateVariants } from "@/utilities/helpers";
-import { Plus_Jakarta_Sans } from "next/font/google";
+import { Plus_Jakarta_Sans, Syne } from "next/font/google";
 import OurStats from "../OurStats";
 
 const jarkata = Plus_Jakarta_Sans({
   weight: "400",
   subsets: ["latin"],
 });
+const syne = Syne({ subsets: ["latin"] });
 
 const HomeBanner = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -22,13 +23,13 @@ const HomeBanner = () => {
       <div className="p-5 lg:px-[120px] sm:px-[70px] sm:py-16">
         <div className="w-full grid flex-row sm:grid-cols-4">
           <div className="sm:col-span-4 flex flex-col order-last sm:order-none">
-            <p className="sm:text-[72px] text-[31px] sm:leading-[84px] leading-[40px] text-green-1 ">
+            <p className={`sm:text-[72px] text-[31px] sm:leading-[84px] leading-[40px] text-green-1  ${syne.className}`}>
               Design Experts.
             </p>
-            <p className="sm:text-[72px] text-[31px]  sm:leading-[84px] leading-[40px] text-secondary text-green-2 sm:block hidden">
+            <p className={`sm:text-[72px] text-[31px]  sm:leading-[84px] leading-[40px] text-secondary text-green-2 sm:block hidden ${syne.className}`}>
               Design Decisions, Made Visible.
             </p>
-              <p className="sm:text-[72px] text-[31px]  sm:leading-[84px] leading-[40px] text-secondary text-green-2 block sm:hidden">
+              <p className={`sm:text-[72px] text-[31px]  sm:leading-[84px] leading-[40px] text-secondary text-green-2 block sm:hidden ${syne.className}`}>
               Design Decisions, <br />Made Visible.
             </p>
             <p
