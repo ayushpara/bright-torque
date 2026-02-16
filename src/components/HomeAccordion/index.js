@@ -47,7 +47,6 @@ const HomeAccordion = () => {
                         }}
                         items={accordionItems.map((item) => ({
                             ...item,
-                            // onHeaderClick: () => setActiveKey(item.key),
                             label: (
                                 <div
                                     onMouseEnter={() => setActiveKey(item.key)}
