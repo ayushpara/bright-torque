@@ -4,20 +4,23 @@ import { usePathname, useRouter } from "next/navigation";
 import logoImage from "../../static/images/logo.png";
 import { headerButtons } from "@/data";
 import { HOME } from "@/contants/routes";
+import { Plus_Jakarta_Sans } from "next/font/google";
 
+const jarkata = Plus_Jakarta_Sans({
+  weight: "400",
+  subsets: ["latin"],
+});
 const HeaderButton = ({ headerButton, pathname, router }) => {
-  
-
   return (
     <div
       onClick={() => router.push(headerButton.redirect)}
       className={`${
-        headerButton.redirect === pathname ? "bg-secondary" : "bg-white"
+        headerButton.redirect === pathname ? "bg-secondary" :headerButton.redirect ==="/editorial"&&pathname.includes(headerButton.redirect)? "bg-secondary":"bg-white"
       }  h-[44px] py-1 px-6 rounded-3xl items-center justify-center flex hover:cursor-pointer`}
     >
       <p
         className={`${
-          headerButton.redirect === pathname ? "text-white" : "text-black-1"
+          headerButton.redirect === pathname ? "text-white" :headerButton.redirect ==="/editorial"&&pathname.includes(headerButton.redirect)?"text-white": "text-black-1"
         } text-xl`}
       >
         {headerButton.name}
@@ -31,11 +34,11 @@ const HeaderLayout = () => {
   const router = useRouter();
 
   return (
-    <div className=" bg-primary sm:h-[95px] h-[71px] w-full lg:px-[120px] sm:px-[70px] px-5 header-layout">
+    <div className={`bg-primary sm:h-[95px] h-[71px] w-full lg:px-[120px] sm:px-[70px] px-5 header-layout ${jarkata.className}`}>
       <div className="flex flex-row justify-between h-full items-center">
         <div className="flex items-center justify-center hover:cursor-pointer">
           <div className="relative w-[162px] h-[24px] ">
-          <Image src={logoImage} alt="logo" onClick={()=>router.push(HOME)} className="object-cover w-full h-full absolute" />
+          <Image src={logoImage} preload alt="logo" onClick={()=>router.push(HOME)} className="object-cover w-full h-full absolute" />
           </div >
         </div>
 

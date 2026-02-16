@@ -8,12 +8,12 @@ export const HeaderButton = ({ headerButton, pathname }) => {
       <div
         onClick={() => router.push(headerButton.redirect)}
         className={`${
-          headerButton.redirect === pathname ? "bg-secondary" : "bg-white"
+           headerButton.redirect === pathname ? "bg-secondary" :headerButton.redirect ==="/editorial"&&pathname.includes(headerButton.redirect)? "bg-secondary":"bg-white"
         }  h-[32px] w-fit py-1 px-4 rounded-3xl items-center justify-center flex hover:cursor-pointer`}
       > 
         <p
           className={`${
-            headerButton.redirect === pathname ? "text-white" : "text-black-1"
+             headerButton.redirect === pathname ? "text-white" :headerButton.redirect ==="/editorial"&&pathname.includes(headerButton.redirect)?"text-white": "text-black-1"
           } text-xs`}
         >
           {headerButton.name}
@@ -32,7 +32,7 @@ const MobileFooterNavigator=()=>{
           {headerButtons.map((headerButton, index) => (
             <HeaderButton
               headerButton={headerButton}
-              index={index}
+              key={index}
               pathname={pathname}
             />
           ))}

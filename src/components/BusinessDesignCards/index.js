@@ -1,197 +1,190 @@
 "use client";
+import { useRef } from "react";
 import Image from "next/image";
-import { useState, useRef } from "react";
 import { businessDesigns } from "@/data";
-import { scrollContainer } from "@/utilities/helpers";
 import LetsChat from "../LetsChat";
+import { Plus_Jakarta_Sans } from "next/font/google";
+import Faq from "../Faq";
+import { motion, useScroll, useTransform } from "framer-motion";
 import useMediaQuery from "../useMedia";
 
-import { Plus_Jakarta_Sans } from "next/font/google";
-
 const jarkata = Plus_Jakarta_Sans({
-  weight: "400",
+  weight: ["400","500","600"],
   subsets: ["latin"],
 });
 
-
 const BusinessDesignCard = ({
   businessDesign,
-  index,
-  selectedDesign,
-  onChangeDesign,
 }) => {
+  const isMobile = useMediaQuery("(max-width: 767px)");
   return (
     <div
-      className={` justify-between flex flex-col space-y-8 hover:cursor-pointer sm:w-full ${jarkata.className} `}
-      onClick={() => onChangeDesign(index)}
+      className={`flex flex-col sm:w-full ${jarkata.className} pt-8 sm:pt-0 h-full`}
     >
-      <div className="space-y-3 flex flex-col">
-        <p className="text-white text-[32px]">{businessDesign.heading}</p>
-        <p className="text-white text-sm ">
-          {businessDesign.description}
-        </p>
-      </div>
-      <div
-        className={`w-full h-[2px]  ${
-          selectedDesign === index ? "bg-[#EDB757]" : "bg-white"
-        } `}
-      />
-    </div>
-  );
-};
+      <div className="flex flex-col sm:flex-row justify-between h-full pt-6 pb-10">
+        <div className="flex flex-col w-[100%] sm:w-[60%]">
+          <p className="text-white text-2xl sm:text-[32px] font-semibold sm:font-bold">{businessDesign.heading}</p>
+          <p className="text-white text-sm mt-6 font-medium leading-5">
+            {businessDesign.description}
+          </p>
+          <p className="text-white text-sm sm:text-base leading-7 mt-3 sm:mt-[30px] font-semibold">
+            What you get
+          </p>
+          <div className="text-white text-sm sm:text-base leading-7 mt-4 sm:mt-6 flex gap-1 sm:gap-2 flex-wrap">
+            {businessDesign.whatYouget.map((item, index) => (
+              <span key={index} >{item} {index !== businessDesign.whatYouget.length - 1 ? <span className="ml-0 sm:ml-2" >|</span> : ""}</span>
+            ))}
+          </div>
+          {/* Mobile tools we use */}
+          <div className="gap-4 flex flex-col mt-6 sm:mt-[80px] sm:hidden">
+            <p className="text-white text-sm sm:text-base leading-7 font-semibold">Tools we use</p>
+            <div className="gap-4 flex flex-wrap h-[50px] sm:h-[70px] sm:h-auto overflow-hidden sm:overflow-visible">
 
-const MobileImageConainer = ({ businessDesign }) => {
-  return (
-    <div className="relative min-w-full h-[316px]">
-      <Image
-        width={132}
-        height={132}
-        src={businessDesign.images[0]}
-        alt="image"
-        className=" absolute "
-      />
-      <Image
-        width={187}
-        height={187}
-        src={businessDesign.images[1]}
-        alt="image"
-        className="absolute top-0 right-0 "
-      />
-      <Image
-        width={187}
-        height={187}
-        src={businessDesign.images[2]}
-        alt="image"
-        className="absolute left-[10%] bottom-0 "
-      />
+              {businessDesign.imagesToolsWeUse.map((item, index) => {
+                if (item.image) {
+                  return (
+                    <div
+                      tabIndex={0}
+                      className="group relative w-12 h-12 sm:w-14 sm:h-14
+             rounded-full border border-[#16CCEA]
+             flex items-center justify-center"
+                      key={index}
+                    >
+                      <Image
+                        src={item.image}
+                        alt={item.title}
+                        height={isMobile ? 15 : 30}
+                        width={isMobile ? 15 : 30}
+                      />
+
+                      <div
+                        className="absolute -top-10 left-1/2 -translate-x-1/2
+               whitespace-nowrap
+               bg-black text-white text-xs
+               px-3 py-1 rounded-md
+               opacity-0 
+               group-hover:opacity-100 
+               group-focus:opacity-100
+               transition-opacity duration-200
+               pointer-events-none"
+                      >
+                        {item.title}
+                      </div>
+                    </div>
+
+                  )
+                } else {
+                  return (
+                    <div className="px-3 py-3 sm:p-4 rounded-full border text-white border-1 border-[#16CCEA] flex items-center justify-center text-sm text-base" key={index}>
+                      <p>{item.text}</p>
+                    </div>
+                  )
+                }
+              }
+
+              )}
+            </div>
+          </div>
+        </div>
+
+        <Image src={businessDesign.cardImage} width={250} height={300} alt="discover" className=" w-[100%] sm:w-[40%] h-[100%] max-h-[250px] object-contian" />
+      </div>
+      {/* Desktop tools we use */}
+      <div className="gap-2 sm:gap-4 sm:flex flex-col mt-6 hidden">
+        <p className="text-white text-sm sm:text-base font-semibold">Tools we use</p>
+        <div className="gap-4 flex flex-wrap overflow-hidden sm:overflow-visible">
+
+          {businessDesign.imagesToolsWeUse.map((item, index) => {
+            if (item.image) {
+              return (
+                <div
+                  className="group relative w-12 h-12 sm:w-14 sm:h-14
+             rounded-full border border-[#16CCEA]
+             flex items-center justify-center"
+                  key={index}
+                >
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    height={isMobile ? 15 : 30}
+                    width={isMobile ? 15 : 30}
+                  />
+
+                  {/* Tooltip */}
+                  <div
+                    className="absolute -top-10 left-1/2 -translate-x-1/2
+               whitespace-nowrap
+               bg-black-3 text-white text-xs
+               px-3 py-1 rounded-md
+               opacity-0 group-hover:opacity-100
+               transition-opacity duration-200
+               pointer-events-none"
+                  >
+                    {item.title}
+                  </div>
+                </div>
+              )
+            } else {
+              return (
+                <div className="px-3 py-3 sm:p-4 rounded-full border text-white border-1 border-[#16CCEA] flex items-center justify-center text-sm text-base" key={index}>
+                  <p>{item.text}</p>
+                </div>
+              )
+            }
+          }
+
+          )}
+        </div>
+      </div>
     </div>
   );
 };
 
 const BusinessDesignCards = () => {
-  const isMobile = useMediaQuery("(max-width: 767px)");
-  const [selectedDesign, setSelectedDesign] = useState(0);
-  const images = businessDesigns.flatMap((item) => item.images);
+  const sectionRef = useRef(null);
 
-  const containerRef = useRef(null);
-  const businessContainerRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start start", "end end"],
+  });
 
-  const getImageSize = (index) => {
-    const imagePosition = index + 1;
-    if (imagePosition % 3 === 1) return "min-w-[132px] min-h-[132px]";
-    if (imagePosition % 3 === 2)
-      return "sm:w-[295px] sm:h-[295px] min-w-[187px] min-h-[187px] item-center flex justify-center ";
-    if (imagePosition % 3 === 0) return "min-w-[185px] min-h-[185px]";
-  };
-
-  const getImageContainerStyles = (index) => {
-    const imagePosition = index + 1;
-    const startIndex = selectedDesign * 3;
-    const endIndex = startIndex + 3;
-    if (imagePosition % 3 === 1)
-      return `flex items-start ${
-        startIndex <= index && index < endIndex ? "" : "opacity-45"
-      }`;
-    if (imagePosition % 3 === 2)
-      return `flex sm:items-center ${
-        startIndex <= index && index < endIndex ? "" : "opacity-45"
-      }`;
-    if (imagePosition % 3 === 0)
-      return `flex sm:items-end sm:relative absolute bottom-0 left-0 ${
-        startIndex <= index && index < endIndex ? "" : "opacity-45"
-      }`;
-  };
-
-  const onChangeDesign = (val) => {
-    if (isMobile) {
-      if (val > selectedDesign) {
-        scrollContainer(isMobile ? 400 : 500, containerRef);
-        isMobile && scrollContainer(300, businessContainerRef);
-      } else {
-        scrollContainer(isMobile ? -400 : -500, containerRef);
-        isMobile && scrollContainer(-300, businessContainerRef);
-      }
-      setSelectedDesign(val);
-      return;
-    }
-
-    const container = containerRef.current;
-    const totalScrollWidth = container.scrollWidth - container.clientWidth;
-    if (val === 0) {
-      scrollContainer(-container.scrollLeft, containerRef);
-    } else if (val === 3) {
-      scrollContainer(totalScrollWidth, containerRef);
-    } else {
-      const scrollPosition = (totalScrollWidth / 4) * (val + 1);
-      scrollContainer(scrollPosition - container.scrollLeft, containerRef);
-    }
-
-    setSelectedDesign(val);
-  };
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-75%"]);
 
   return (
-    <div className=" flex flex-col sm:w-full w-screen">
-      <div
-        ref={businessContainerRef}
-        className="order-2 sm:order-1 sm:grid sm:grid-cols-4 flex flex-row gap-10 sm:px-20 px-5 sm:mb-0 mb-5 overflow-x-auto scrollbar-hidden "
-      >
-        {businessDesigns.map((businessDesign, index) => (
-          <div
-            className="flex justify-center  min-w-[75%] sm:w-auto"
-            key={index}
-          >
-            <BusinessDesignCard
-              businessDesign={businessDesign}
-              index={index}
-              onChangeDesign={onChangeDesign}
-              selectedDesign={selectedDesign}
-            />
-          </div>
-        ))}
-      </div>
-
-      <div className=" order-1 sm:order-2 sm:py-20 py-5">
-        {!isMobile ? (
-          <div
-            className="scrollbar-hidden flex sm:space-x-7 space-x-7 overflow-x-auto sm:h-[316px] h-[330px] pl-5 relative w-full"
-            ref={containerRef}
-          >
-            {images.map((image, index) => {
-              return (
-                <div className="relative">
-                  <div className={`${getImageContainerStyles(index)}`}>
-                    <div
-                      className={`${getImageSize(
-                        index
-                      )} relative rounded-full w-full flex `}
-                    >
-                      <Image
-                        src={image}
-                        alt="image"
-                        className="absolute w-full h-full"
-                      />
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        ) : (
-          <div
-            ref={containerRef}
-            className="flex flex-row min-w-full overflow-x-auto space-x-3 pl-5 scrollbar-hidden"
+    <div className="flex flex-col w-full">
+      <section ref={sectionRef} className="relative h-[300vh]">
+        <div className="sticky top-0 h-screen flex items-center overflow-hidden w-full">
+          <motion.div
+            style={{ x }}
+            className="flex flex-row gap-[30px] px-5 sm:px-20"
           >
             {businessDesigns.map((businessDesign, index) => (
-              <MobileImageConainer businessDesign={businessDesign} />
+              <div
+                key={index}
+                className="w-[85vw] sm:w-[60vw] flex-shrink-0"
+              >
+                <BusinessDesignCard businessDesign={businessDesign} />
+              </div>
             ))}
+          </motion.div>
+          <div className="absolute bottom-10 left-0 w-full px-5 sm:px-20">
+            <div className="w-full rounded-[20px] h-[5px] bg-[#FFFFFF1A] relative overflow-hidden">
+              <motion.div
+                style={{ scaleX: scrollYProgress }}
+                className="absolute left-0 top-0 bottom-0 w-full bg-[#FFEA5A] origin-left"
+              />
+            </div>
           </div>
-        )}
-      </div>
-      <div className="sm:px-20 px-5 order-3 sm:pb-20 pb-5">
+        </div>
+      </section>
+
+      <div className="sm:px-20 px-5 sm:pb-20 pb-5 flex flex-col">
+        <Faq />
         <LetsChat />
       </div>
     </div>
   );
 };
+
 
 export default BusinessDesignCards;

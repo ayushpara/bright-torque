@@ -1,10 +1,11 @@
 import { Button } from "antd";
 import Image from "next/image";
 import arrowIcon from "../../static/icons/arrow.svg";
-
+import { Syne } from "next/font/google";
+const syne = Syne({ subsets: ["latin"] });
 const JoinForces = () => {
   return (
-      <div className="flex items-center justify-center flex-col sm:space-y-10 space-y-5 ">
+      <div className={`flex items-center justify-center flex-col sm:space-y-10 space-y-5 ${syne.className}`}>
         <div className="sm:w-[84px] sm:h-[84px] h-[32px] w-[32px] relative">
           <Image
             src={arrowIcon}
@@ -21,7 +22,7 @@ const JoinForces = () => {
           </p>
         </div>
         <Button href= "mailto:ayush@visao.io" className="flex min-h-[37px]" type="primary" style={{borderRadius:48}}>
-          Let's Chat
+         Let’s Start a project
         </Button>
       </div>
   );

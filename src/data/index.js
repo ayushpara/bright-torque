@@ -1,30 +1,33 @@
-import { HOME, WORK, CONTACT, ABOUT } from "../contants/routes";
+import { HOME, WORK, CONTACT, ABOUT, EDITORIAL } from "../contants/routes";
 
 import startupIcon from "../static/icons/startup.svg";
 import establishedIcon from "../static/icons/established.svg";
 import enterpriseIcon from "../static/icons/enterprise.svg";
 
-import discover1Image from "../static/images/discover1.png";
-import discover2Image from "../static/images/discover2.png";
-import discover3Image from "../static/images/discover3.png";
 
-import transform1Image from "../static/images/transform1.png";
-import transform2Image from "../static/images/transform2.png";
-import transform3Image from "../static/images/transform3.png";
-
-import design1Image from "../static/images/design1.png";
-import design2Image from "../static/images/design2.png";
-import design3Image from "../static/images/design3.png";
-
-import scale1Image from "../static/images/scale1.png";
-import scale2Image from "../static/images/scale2.png";
-import scale3Image from "../static/images/scale3.png";
+import inLove from "../static/images/in-love.svg";
+import thumbUp from "../static/images/thumb-up.svg";
+import clientImage from "../static/images/clientImage.svg"
 
 import esgateImage from "../static/images/projects/esgate.png";
 import PathviImage from "../static/images/projects/Patahvi.png";
 import JDPOLYImage from "../static/images/projects/JDoly.png";
 import FalconImage from "../static/images/projects/Falcon.png";
 
+// businessDesign Cards
+import chatgpt from "../static/icons/chat-gpt.svg";
+import figma from "../static/icons/figma-logo.svg";
+import framer from "../static/icons/framer.svg";
+import lovable from "../static/icons/lovable-logo.svg";
+import notion from "../static/icons/notion-logo.svg";
+import perplexity from "../static/icons/perplexity.svg";
+import replit from "../static/icons/replit.svg";
+import uizard from "../static/icons/uizard.svg";
+import v0 from "../static/icons/v0-logo.svg";
+import discover from "../static/images/discover-ideate.svg";
+import deliver from "../static/images/deliver.svg";
+import design from "../static/images/design.svg";
+import prototype from "../static/images/prototype-smarter-faster.svg"
 
 import mgamerImage from "../static/images/projects/mgamer.png";
 import studytorchImage from "../static/images/projects/studytorch.png";
@@ -36,7 +39,24 @@ import ayushImage from "../static/images/projects/ayush.png";
 import brandBookImage from "../static/images/projects/brandBook.png";
 import mealqImage from "../static/images/projects/mealq.png";
 import mPaisaImage from "../static/images/projects/mPaisa.png";
+import { Plus_Jakarta_Sans } from "next/font/google";
+import calendar from "../static/icons/calendar.svg";
+import leads from "../static/icons/leads.svg";
+import rocket from "../static/icons/rocket.svg";
+// clients images
+import instapop from "../static/stats/instapop.svg";
+import toast from "../static/stats/toast.svg";
+import wordofMouth from "../static/stats/wordofmouth.svg";
+import falconFitness from "../static/stats/falconfitness.svg";
+import jaldhara from "../static/stats/jaldhara.svg"
+import pathviFarms from "../static/stats/PF.svg";
+import wishit from "../static/stats/wishIt.svg";
+import visao from "../static/stats/visao.svg";
 
+const jarkata = Plus_Jakarta_Sans({
+  weight: "400",
+  subsets: ["latin"],
+});
 export const headerButtons = [
   {
     name: "Home",
@@ -65,101 +85,101 @@ export const homeProjects = [
     heading: "Patahvi Farms",
     description: "We designed Pathavi as a transparency-first digital experience, where trust is built through proof, not promises. Every interaction reveals the true journey of the product — from seed to bottle.",
     image: PathviImage,
-    tags: ["Brand", "Web","SaaS"],
+    tags: ["Brand", "Web", "SaaS"],
   },
   {
     heading: "Jaldhara Polytubes",
     description: "We designed this project to showcase our expertise in delivering Industrial Brand design & delivering a stunning web portfolio site. ",
     image: JDPOLYImage,
-    tags: ["Brand", "Web"],  
+    tags: ["Brand", "Web"],
   },
   {
     heading: "Falcon Fitness",
     description: "We designed and delivered a personalized fitness experience that helps gym members train smarter, stay consistent, and track progress effortlessly.",
     image: FalconImage,
-    tags: ["Brand","App"],
+    tags: ["Brand", "App"],
   },
 ];
 
 export const projects = [{
-    heading: "Patahvi Farms",
-    description: "We designed Pathavi as a transparency-first digital experience, where trust is built through proof, not promises. Every interaction reveals the true journey of the product — from seed to bottle.",
-    image: PathviImage,
-    tags: ["Brand", "Web","SaaS"],
-  },
+  heading: "Patahvi Farms",
+  description: "We designed Pathavi as a transparency-first digital experience, where trust is built through proof, not promises. Every interaction reveals the true journey of the product — from seed to bottle.",
+  image: PathviImage,
+  tags: ["Brand", "Web", "SaaS"],
+},
 
-  {
-    heading: "Jaldhara Polytubes",
-    description: "We designed this project to showcase our expertise in delivering Industrial Brand design & delivering a stunning web portfolio site. ",
-    image: JDPOLYImage,
-    tags: ["Brand", "Web"],  
-  },
-  {
-    heading: "Falcon Fitness",
-    description: "We designed and delivered a personalized fitness experience that helps gym members train smarter, stay consistent, and track progress effortlessly.",
-    image: FalconImage,
-    tags: ["Brand","App"],
-  },
-  {
-    heading: "Parking Eye",
-    description: "We designed the Parking Eye project in Australia — a smart app that assists people in booking parking slots seamlessly by scanning QR codes on parking meters.",
-    image: ParkingEyeImage,
-    tags: ["Brand","App"],
-  },
-  {
-    heading: "ESGATE",
-    description: "ESGATE provides investors with detailed ESG data and insights, highlighting the significance of accurate, niche-specific information for sustainable finance.",
-    image: esgateImage,
-    tags: ["Brand", "Web", "SaaS"],
-  },
-  {
-    heading: "Octowaste",
-    description: "We designed a marketplace for Octowaste, an Australian clean-tech company focused on the responsible exit of solar assets — enabling sustainable, efficient, and transparent solutions for the solar industry.",
-    image : OctowasteImage,
-    tags: ["Marketplace", "Web"],
-  },
-  {
-    heading: "Launchbees",
-    description: "Efficiently manage feature releases, upsells, and configurations without redeploying code.",
-    image: brandBookImage,
-    tags: ["Brand", "Web", "SaaS"],
-  },
-  {
-    heading: "AdGen",
-    description: "Convert inactive users into revenue leads with simple tasks and rewards.",
-    image: adGenImage,
-    tags: ["Brand", "Web"],
-  },
-  {
-    heading: "StudyTorch",
-    description: "An App for creating, organizing study notes, collections, quizzes, and sharing with friends.",
-    image: studytorchImage,
-    tags: ["Brand", "Web", "SaaS"],
-  },
-  {
-    heading: "mGamer",
-    description: "An App lets users earn money and game credits by completing tasks like watching ads and surveys.",
-    image: mgamerImage,
-    tags: ["Brand", "App", "Illustration"],
-  },
-  {
-    heading: "mPaisa",
-    description: "Earn money and gift cards by playing games, completing tasks, and answering surveys.",
-    image: mPaisaImage,
-    tags: ["Brand", "Web", "Illustration"],
-  },
-  {
-    heading: "Revu",
-    description: "Revu is a revolutionary learning tool that intelligently leverages the concepts of spaced repetition",
-    image: ayushImage,
-    tags: ["Brand", "App"],
-  },
-  {
-    heading: "MealQ",
-    description: "MealsQ is a quick food ordering App specifically designed for the Australian users.",
-    image: mealqImage,
-    tags: ["Brand", "Web"],
-  },
+{
+  heading: "Jaldhara Polytubes",
+  description: "We designed this project to showcase our expertise in delivering Industrial Brand design & delivering a stunning web portfolio site. ",
+  image: JDPOLYImage,
+  tags: ["Brand", "Web"],
+},
+{
+  heading: "Falcon Fitness",
+  description: "We designed and delivered a personalized fitness experience that helps gym members train smarter, stay consistent, and track progress effortlessly.",
+  image: FalconImage,
+  tags: ["Brand", "App"],
+},
+{
+  heading: "Parking Eye",
+  description: "We designed the Parking Eye project in Australia — a smart app that assists people in booking parking slots seamlessly by scanning QR codes on parking meters.",
+  image: ParkingEyeImage,
+  tags: ["Brand", "App"],
+},
+{
+  heading: "ESGATE",
+  description: "ESGATE provides investors with detailed ESG data and insights, highlighting the significance of accurate, niche-specific information for sustainable finance.",
+  image: esgateImage,
+  tags: ["Brand", "Web", "SaaS"],
+},
+{
+  heading: "Octowaste",
+  description: "We designed a marketplace for Octowaste, an Australian clean-tech company focused on the responsible exit of solar assets — enabling sustainable, efficient, and transparent solutions for the solar industry.",
+  image: OctowasteImage,
+  tags: ["Marketplace", "Web"],
+},
+{
+  heading: "Launchbees",
+  description: "Efficiently manage feature releases, upsells, and configurations without redeploying code.",
+  image: brandBookImage,
+  tags: ["Brand", "Web", "SaaS"],
+},
+{
+  heading: "AdGen",
+  description: "Convert inactive users into revenue leads with simple tasks and rewards.",
+  image: adGenImage,
+  tags: ["Brand", "Web"],
+},
+{
+  heading: "StudyTorch",
+  description: "An App for creating, organizing study notes, collections, quizzes, and sharing with friends.",
+  image: studytorchImage,
+  tags: ["Brand", "Web", "SaaS"],
+},
+{
+  heading: "mGamer",
+  description: "An App lets users earn money and game credits by completing tasks like watching ads and surveys.",
+  image: mgamerImage,
+  tags: ["Brand", "App", "Illustration"],
+},
+{
+  heading: "mPaisa",
+  description: "Earn money and gift cards by playing games, completing tasks, and answering surveys.",
+  image: mPaisaImage,
+  tags: ["Brand", "Web", "Illustration"],
+},
+{
+  heading: "Revu",
+  description: "Revu is a revolutionary learning tool that intelligently leverages the concepts of spaced repetition",
+  image: ayushImage,
+  tags: ["Brand", "App"],
+},
+{
+  heading: "MealQ",
+  description: "MealsQ is a quick food ordering App specifically designed for the Australian users.",
+  image: mealqImage,
+  tags: ["Brand", "Web"],
+},
 ];
 
 export const businerssPartners = [
@@ -179,28 +199,36 @@ export const businerssPartners = [
 
 export const businessDesigns = [
   {
-    heading: "Discover",
+    heading: "Discover & Ideate with AI",
     description:
-      "We start by understanding your product, business goals, and vision. From there, we conduct thorough research to identify gaps and challenges, turning our findings into actionable insights and clear goals.",
-    images: [discover1Image, discover2Image, discover3Image],
+      "We start by gaining insights into your users and objectives, improving the discovery phase with AI. Our AI-driven tools provide user insights, behavioral patterns, and identify competitive gaps. With AI-assisted diagrams, we outline user journeys and information architecture, guaranteeing a clear path from the beginning.",
+    whatYouget:['User Personas', "UX Research","UX Blueprints"],
+    imagesToolsWeUse:[{image:chatgpt, title:"ChatGpt"},{image:perplexity, title:"Perplexity"},{image:figma, title:"Figma"}, {image:notion, title:"Notion"}, {text:"FigJam"}, {text:"Product Research"}],
+    cardImage:discover,
   },
   {
-    heading: "Transform",
+    heading: "Plan Smarter, Faster",
+    description:
+      "We design an information architecture that facilitates smooth navigation for users, emphasizing innovative features for an optimal experience. By automatically generating user flows and screen designs, we create clickable, no-code prototypes that allow us to validate authentic user experiences and gather valuable feedback quickly. ",
+      whatYouget:['Interactive Mockups', "Validated Flows","Early User Feedback"],
+    imagesToolsWeUse:[{image:lovable, title:"Loveable"},{image:replit,title:"Replit"},{image:v0, title:"V0"},{image:notion, title:"Notion"}, {text:"FigJam"}, {text:"Product Research"}],
+    cardImage:prototype,
+  },
+ {
+    heading: "AI-Supported, Human-Led",
     description:
       "We create an information architecture to guide seamless end-user navigation, focusing on innovative features for an ideal experience. Finally, we wireframe, prototype, and test the product with real users.",
-    images: [transform1Image, transform2Image, transform3Image],
+      whatYouget:['Polished UI Screens', "Reusable Design Components","Scalable Design System"],
+    imagesToolsWeUse:[{image:framer, title:"Framer"},{image:uizard, title:"UiZard"}, {text:"Figma AI"}, {text:"Midjourney"}],
+    cardImage:design,
   },
-  {
-    heading: "Design for impact",
+ {
+    heading: "Deliver",
     description:
-      "UI design is more than just adding visuals; it’s about bringing experiences to life. We carefully craft each element to deliver a consistent and engaging visual experience.",
-    images: [design1Image, design2Image, design3Image],
-  },
-  {
-    heading: "Scale for growth",
-    description:
-      "We build custom front-end projects and work with no-code platforms like Webflow. If development isn’t handled by us, our project manager supports your dev team with any questions or concerns.",
-    images: [scale1Image, scale2Image, scale3Image],
+      "We create an information architecture to guide seamless end-user navigation, focusing on innovative features for an ideal experience. Finally, we wireframe, prototype, and test the product with real users.",
+      whatYouget:['Source Code', "Style Guide","Handoff Files"],
+    imagesToolsWeUse:[{image:notion, title:"Notion"},{image:figma, title:"Figma"}, {text:"Figma Dev Mode"}],
+    cardImage:deliver,
   },
 ];
 
@@ -220,6 +248,52 @@ export const budgets = [
   { label: "$2.5 - $5k", value: "2.5-5" },
   { label: "$5k - $10k", value: "5-10" },
   { label: "$10k - $15k", value: "10-15" },
+];
+export const accordionItems = [
+  {
+    key: '1',
+    label: 'Generative UI',
+    children: <div className={`${jarkata.className} text-sm leading-6 !pl-0`}>
+      <p>
+        We build adaptive interfaces that evolve based on user intent and context. Moving beyond static screens to fluid, intelligent experiences.
+      </p>
+      <br />
+      <p><span>Dynamic Components</span> <span>Generative Prompts</span> <spna>Real time Wireframes</spna></p>
+    </div>,
+  },
+  {
+    key: '2',
+    label: 'System Architecture',
+    children: <div className={`${jarkata.className} text-sm leading-6 !pl-0`}>
+      <p>
+        Creating robust design systems that scale with AI. We define the tokens, rules, and constraints that allow agents to build consistent UI
+      </p>
+      <br />
+      <p><span>Tokens</span> <span>Guidlines</span> <spna>Scalability</spna></p>
+    </div>,
+  },
+  {
+    key: '3',
+    label: 'Neural UX',
+    children: <div className={`${jarkata.className} text-sm leading-6 !pl-0`}>
+      <p>
+        Optimizing the interaction layer between human cognition and artificial intelligence. Making complex models accessible and intuitive.
+      </p>
+      <br />
+      <p><span>Tokens</span> <span>Guidlines</span> <spna>Scalability</spna></p>
+    </div>,
+  },
+  {
+    key: '4',
+    label: 'Product Strategy',
+    children: <div className={`${jarkata.className} text-sm leading-6 !pl-0`}>
+      <p>
+        Defining the role of AI in your product lifecycle. From feature discovery to deployment, we map the path to intelligent utility.
+      </p>
+      <br />
+      <p><span>Roadmap Discovery</span> <span>UX Direction</span> <spna>PMF(Product Market Fit)</spna></p>
+    </div>,
+  },
 ];
 
 //about
@@ -300,3 +374,153 @@ export const hightlights = [
     description: "Certified UI/UX design",
   },
 ];
+
+export const testimonials = [
+  {
+    message: "Your designers bring so many mind-project. I’m very impressed!",
+    client: {
+      name: "Jatin from Toast",
+      feedbackImage:inLove,
+      clientImage: clientImage,
+      clientLogo:toast
+    }
+  },
+ {
+    message: "Your designers bring so many mind-project. I’m very impressed!",
+    client: {
+      name: "Jatin from instapop",
+      feedbackImage:thumbUp,
+      clientImage: clientImage,
+     clientLogo:instapop
+    }
+  },
+   {
+    message: "Your designers bring so many mind-project. I’m very impressed!",
+    client: {
+      name: "Jatin from wordofMouth",
+      feedbackImage:inLove,
+      clientImage: clientImage,
+      clientLogo:wordofMouth
+    }
+  },
+     {
+    message: "Your designers bring so many mind-project. I’m very impressed!",
+    client: {
+      name: "Jatin from falcon Fitness",
+      feedbackImage:thumbUp,
+      clientImage: clientImage,
+      clientLogo:falconFitness
+    }
+  },
+      {
+    message: "Your designers bring so many mind-project. I’m very impressed!",
+    client: {
+      name: "Jatin from jaldhara polytubes",
+      feedbackImage:inLove,
+      clientImage: jaldhara,
+      clientLogo:falconFitness
+    }
+  },
+];
+
+export const stats = [
+    {
+        title: "100+",
+        subTitle: "Projects Designed",
+        image: rocket
+    },
+    {
+        title: "25%",
+        subTitle: "Average increase in leads",
+        image: leads
+    },
+    {
+        title: "5 weeks",
+        subTitle: "Average Design time",
+        image: calendar
+    }
+];
+
+export const clients = [
+    {
+        alt: "instapop",
+        image: instapop
+    },
+    {
+        alt: "toast",
+        image: toast,
+    },
+    {
+        alt: "word of mouth",
+        image: wordofMouth,
+    },
+    {
+        alt: "jaldhara polytubes",
+        image: jaldhara
+    },
+    {
+        alt: "falcon fitness",
+        image: falconFitness
+    },
+    {
+      alt:"Pathavi Farms",
+      image:pathviFarms
+    },
+    {alt:"WishIt", 
+      image:wishit,
+    },
+    {alt:"Visao",image:visao}
+]
+
+export const faqs =[
+  {  key: '1',
+    label: "What's unique about Nebula?",
+    children: <div className={`${jarkata.className} text-sm leading-6 !pl-0 text-white text-sm`}>
+      <p>
+        We build adaptive interfaces that evolve based on user intent and context. Moving beyond static screens to fluid, intelligent experiences.
+      </p>
+      <br />
+      <p><span>Dynamic Components</span> <span>Generative Prompts</span> <spna>Real time Wireframes</spna></p>
+    </div>,
+    },
+     {  key: '2',
+    label: "How many builds can I request each month?",
+    children: <div className={`${jarkata.className} text-sm leading-6 !pl-0 text-white text-sm`}>
+      <p>
+        We build adaptive interfaces that evolve based on user intent and context. Moving beyond static screens to fluid, intelligent experiences.
+      </p>
+      <br />
+      <p><span>Dynamic Components</span> <span>Generative Prompts</span> <spna>Real time Wireframes</spna></p>
+    </div>,
+    },
+      {  key: '3',
+    label:'Can I cancel my subscription at any time?',
+    children: <div className={`${jarkata.className} text-sm leading-6 !pl-0 text-white text-sm`}>
+      <p>
+        We build adaptive interfaces that evolve based on user intent and context. Moving beyond static screens to fluid, intelligent experiences.
+      </p>
+      <br />
+      <p><span>Dynamic Components</span> <span>Generative Prompts</span> <spna>Real time Wireframes</spna></p>
+    </div>,
+    },
+          {  key: '4',
+    label: 'How secure are your solutions?',
+    children: <div className={`${jarkata.className} text-sm leading-6 !pl-0 text-white text-sm`}>
+      <p>
+        We build adaptive interfaces that evolve based on user intent and context. Moving beyond static screens to fluid, intelligent experiences.
+      </p>
+      <br />
+      <p><span>Dynamic Components</span> <span>Generative Prompts</span> <spna>Real time Wireframes</spna></p>
+    </div>,
+    },
+          {  key: '5',
+    label: 'Can your solutions scale with my business growth?',
+    children: <div className={`${jarkata.className} text-sm leading-6 !pl-0 text-white text-sm`}>
+      <p>
+        We build adaptive interfaces that evolve based on user intent and context. Moving beyond static screens to fluid, intelligent experiences.
+      </p>
+      <br />
+      <p><span>Dynamic Components</span> <span>Generative Prompts</span> <spna>Real time Wireframes</spna></p>
+    </div>,
+    },
+]

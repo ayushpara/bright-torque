@@ -25,3 +25,126 @@ body {
     text-wrap: balance;
   }
 }
+.editorial-detail{
+color: #000;
+}
+.editorial-detail h3{
+font-size: 24px;
+line-height: 32px;
+font-weight: 600;
+letter-spacing: -0.1px;
+margin-top: 20px;
+}
+.editorial-detail p, .editorial-detail li {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+letter-spacing: -0.1px;
+margin-top: 10px;
+}
+.editorial-detail ul {
+  padding-left: 20px;
+  list-style-type: disc;
+  margin-top: 20px;
+}
+.editorial-detail .styled-text{
+  padding: 10px 20px;
+  border-left: 2px solid #175D63;
+  background-color: #175D630D;
+  margin-top: 20px;
+}
+.editorial-detail .styled-text p{
+margin-top: 0;
+}
+
+.editorial-detail div{
+  margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .editorial-detail h3{
+font-size: 24px;
+line-height: 32px;
+font-weight: 600;
+letter-spacing: -0.1px;
+margin-top: 20px;
+}
+  .editorial-detail p, .editorial-detail li {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+letter-spacing: -0.1px;
+margin-top: 10px;
+}
+.editorial-detail ul {
+  padding-left: 20px;
+  list-style-type: disc;
+  margin-top: 20px;
+}
+.editorial-detail .styled-text{
+  padding: 10px 20px;
+  border-left: 2px solid #175D63;
+  background-color: #175D630D;
+  margin-top: 20px;
+}
+.editorial-detail .styled-text p{
+margin-top: 0;
+}
+.editorial-detail div{
+  margin: 16px 0;
+}
+}
+.clap {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid #bdc3c7;
+  background: none;
+  cursor: pointer;
+}
+
+.clap:hover {
+  border-color: #27ae60;
+}
+
+.clap svg {
+  fill: none;
+  stroke: #27ae60;
+  stroke-width: 2;
+}
+
+.clap svg.checked {
+  fill: #27ae60;
+  stroke: white;
+}
+
+.clap--count {
+  position: absolute;
+  top: -40px;
+  left: 20px;
+  background: #27ae60;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 0.8rem;
+}
+
+.clap--count-total {
+  position: absolute;
+  top: -22px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #bdc3c7;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
