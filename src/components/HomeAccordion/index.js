@@ -21,10 +21,10 @@ const HomeAccordion = () => {
             <div className='flex flex-col sm:flex-row sm:px-[70px] p-5'>
                 <div className='flex-1 flex items-center'>
                     <div className='max-w-[330px]'>
-                        <h3 className={`text-[44px] leading-[54px] ${syne.className}`}>
+                        <h3 className={`text-[44px] leading-[54px] ${syne.className} text-black-3`}>
                             Core AI Capabilities
                         </h3>
-                        <p className={`${jarkata.className} font-normal`}>
+                        <p className={`${jarkata.className} font-normal text-black-3`}>
                             Leveraging large language models and generative design patterns to build software that thinks.
                         </p>
                     </div>
@@ -83,7 +83,7 @@ const HomeAccordion = () => {
             <div className="sm:px-[70px] p-0 py-5 block">
                 <ClientSay />
                 <div>
-                    <h3 className={`text-[2rem] leading-[40px] sm:text-[44px] sm:leading-[64px] ${syne.className}`}>
+                    <h3 className={`text-[2rem] leading-[40px] sm:text-[44px] sm:leading-[64px] text-black-3 ${syne.className}`}>
                         Our Clients Can’t Say Enough About Us...
                     </h3>
                 </div>
