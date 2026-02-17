@@ -2,7 +2,7 @@ import Image from "next/image";
 import highlightStarIcon from "../../static/icons/highlightStar.svg";
 import { hightlights } from "@/data";
 import desktopImage from "../../static/images/desktop.png";
-import { Plus_Jakarta_Sans } from "next/font/google";
+import { Plus_Jakarta_Sans, Syne } from "next/font/google";
 import BeyondDesign from "../BeyondDesign";
 
 const jarkata = Plus_Jakarta_Sans({
@@ -10,6 +10,10 @@ const jarkata = Plus_Jakarta_Sans({
   subsets: ["latin"],
 });
 
+const syne = Syne({
+  weight:["600"],
+  subsets:["latin"]
+})
 const HightLights = () => {
   return (
     <div className="bg-white">
@@ -18,7 +22,7 @@ const HightLights = () => {
       >
         <div className="sm:mt-0 mt-10">
           <div className=" flex sm:flex-row flex-col justify-between">
-            <p className="sm:text-[48px] text-[24px] leading-[32px] sm:leading-[68px] text-black-3 w-full">
+            <p className={`sm:text-[48px] text-[24px] leading-[32px] sm:leading-[68px] text-black-3 w-full ${syne.className} font-semibold`}>
               This is what we've <br />
               been up to lately...{" "}
             </p>

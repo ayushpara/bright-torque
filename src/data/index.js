@@ -249,6 +249,7 @@ export const budgets = [
   { label: "$5k - $10k", value: "5-10" },
   { label: "$10k - $15k", value: "10-15" },
 ];
+const tagClass ="bg-primary py-1 px-2 p-1 text-xs rounded-md"
 export const accordionItems = [
   {
     key: '1',
@@ -258,7 +259,7 @@ export const accordionItems = [
         We build adaptive interfaces that evolve based on user intent and context. Moving beyond static screens to fluid, intelligent experiences.
       </p>
       <br />
-      <p><span>Dynamic Components</span> <span>Generative Prompts</span> <spna>Real time Wireframes</spna></p>
+      <div className="flex flex-row gap-4"><div className={tagClass}>Dynamic Components</div> <div className={tagClass}>Generative Prompts</div> <div className={tagClass}>Real time Wireframes</div></div>
     </div>,
   },
   {
@@ -269,7 +270,7 @@ export const accordionItems = [
         Creating robust design systems that scale with AI. We define the tokens, rules, and constraints that allow agents to build consistent UI
       </p>
       <br />
-      <p><span>Tokens</span> <span>Guidlines</span> <spna>Scalability</spna></p>
+      <div className="flex flex-row gap-4"><div className={tagClass}>Tokens</div> <div className={tagClass}>Guidlines</div> <div className={tagClass}>Scalability</div></div>
     </div>,
   },
   {
@@ -280,7 +281,7 @@ export const accordionItems = [
         Optimizing the interaction layer between human cognition and artificial intelligence. Making complex models accessible and intuitive.
       </p>
       <br />
-      <p><span>Tokens</span> <span>Guidlines</span> <spna>Scalability</spna></p>
+      <div className="flex flex-row gap-4"><div className={tagClass}>Tokens</div> <div className={tagClass}>Guidlines</div> <div className={tagClass}>Scalability</div></div>
     </div>,
   },
   {
@@ -291,7 +292,7 @@ export const accordionItems = [
         Defining the role of AI in your product lifecycle. From feature discovery to deployment, we map the path to intelligent utility.
       </p>
       <br />
-      <p><span>Roadmap Discovery</span> <span>UX Direction</span> <spna>PMF(Product Market Fit)</spna></p>
+      <div className="flex flex-row gap-4"><div className={tagClass}>Roadmap Discovery</div> <div className={tagClass}>UX Direction</div> <div className={tagClass}>PMF(Product Market Fit)</div></div>
     </div>,
   },
 ];
