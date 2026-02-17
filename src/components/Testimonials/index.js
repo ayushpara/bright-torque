@@ -27,12 +27,12 @@ const Testimonials = () => {
                         <div className='p-2 sm:p-4 max-w-[280px] sm:max-w-[540px] w-full'>
 
                             <div className='bg-white rounded-[20px] h-[180px] sm:h-[320px] p-4 sm:p-8 !pr-0 pb-0 flex flex-col gap-4'>
-                                <p className='text-xs sm:text-lg leading-[14px] sm:leading-8'>
+                                <p className='text-xs sm:text-lg leading-[14px] sm:leading-8 text-black-3'>
                                     "{item.message}"
                                 </p>
                                 <div className='flex flex-row gap-2'>
                                     <Image src={item.client.clientImage} width={24} height={24} alt='client image' className='w-3 h-3 sm:w-6 sm:h-6' />
-                                    <p className='text-[7px] leading-[10px] sm:text-sm sm:leading-5'>{item.client.name}</p>
+                                    <p className='text-[7px] leading-[10px] sm:text-sm sm:leading-5 text-black-3'>{item.client.name}</p>
                                 </div>
                                 <div className='flex flex-row justify-between items-end mt-auto'>
                                     <div className='pb-8'>

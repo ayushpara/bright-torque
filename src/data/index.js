@@ -202,33 +202,33 @@ export const businessDesigns = [
     heading: "Discover & Ideate with AI",
     description:
       "We start by gaining insights into your users and objectives, improving the discovery phase with AI. Our AI-driven tools provide user insights, behavioral patterns, and identify competitive gaps. With AI-assisted diagrams, we outline user journeys and information architecture, guaranteeing a clear path from the beginning.",
-    whatYouget:['User Personas', "UX Research","UX Blueprints"],
-    imagesToolsWeUse:[{image:chatgpt, title:"ChatGpt"},{image:perplexity, title:"Perplexity"},{image:figma, title:"Figma"}, {image:notion, title:"Notion"}, {text:"FigJam"}, {text:"Product Research"}],
-    cardImage:discover,
+    whatYouget: ['User Personas', "UX Research", "UX Blueprints"],
+    imagesToolsWeUse: [{ image: chatgpt, title: "ChatGpt" }, { image: perplexity, title: "Perplexity" }, { image: figma, title: "Figma" }, { image: notion, title: "Notion" }, { text: "FigJam" }, { text: "Product Research" }],
+    cardImage: discover,
   },
   {
     heading: "Plan Smarter, Faster",
     description:
       "We design an information architecture that facilitates smooth navigation for users, emphasizing innovative features for an optimal experience. By automatically generating user flows and screen designs, we create clickable, no-code prototypes that allow us to validate authentic user experiences and gather valuable feedback quickly. ",
-      whatYouget:['Interactive Mockups', "Validated Flows","Early User Feedback"],
-    imagesToolsWeUse:[{image:lovable, title:"Loveable"},{image:replit,title:"Replit"},{image:v0, title:"V0"},{image:notion, title:"Notion"}, {text:"FigJam"}, {text:"Product Research"}],
-    cardImage:prototype,
+    whatYouget: ['Interactive Mockups', "Validated Flows", "Early User Feedback"],
+    imagesToolsWeUse: [{ image: lovable, title: "Loveable" }, { image: replit, title: "Replit" }, { image: v0, title: "V0" }, { image: notion, title: "Notion" }, { text: "FigJam" }, { text: "Product Research" }],
+    cardImage: prototype,
   },
- {
+  {
     heading: "AI-Supported, Human-Led",
     description:
       "We create an information architecture to guide seamless end-user navigation, focusing on innovative features for an ideal experience. Finally, we wireframe, prototype, and test the product with real users.",
-      whatYouget:['Polished UI Screens', "Reusable Design Components","Scalable Design System"],
-    imagesToolsWeUse:[{image:framer, title:"Framer"},{image:uizard, title:"UiZard"}, {text:"Figma AI"}, {text:"Midjourney"}],
-    cardImage:design,
+    whatYouget: ['Polished UI Screens', "Reusable Design Components", "Scalable Design System"],
+    imagesToolsWeUse: [{ image: framer, title: "Framer" }, { image: uizard, title: "UiZard" }, { text: "Figma AI" }, { text: "Midjourney" }],
+    cardImage: design,
   },
- {
+  {
     heading: "Deliver",
     description:
       "We create an information architecture to guide seamless end-user navigation, focusing on innovative features for an ideal experience. Finally, we wireframe, prototype, and test the product with real users.",
-      whatYouget:['Source Code', "Style Guide","Handoff Files"],
-    imagesToolsWeUse:[{image:notion, title:"Notion"},{image:figma, title:"Figma"}, {text:"Figma Dev Mode"}],
-    cardImage:deliver,
+    whatYouget: ['Source Code', "Style Guide", "Handoff Files"],
+    imagesToolsWeUse: [{ image: notion, title: "Notion" }, { image: figma, title: "Figma" }, { text: "Figma Dev Mode" }],
+    cardImage: deliver,
   },
 ];
 
@@ -249,6 +249,7 @@ export const budgets = [
   { label: "$5k - $10k", value: "5-10" },
   { label: "$10k - $15k", value: "10-15" },
 ];
+const tagClass = "bg-primary py-1 px-2 p-1 text-xs rounded-md"
 export const accordionItems = [
   {
     key: '1',
@@ -258,7 +259,7 @@ export const accordionItems = [
         We build adaptive interfaces that evolve based on user intent and context. Moving beyond static screens to fluid, intelligent experiences.
       </p>
       <br />
-      <p><span>Dynamic Components</span> <span>Generative Prompts</span> <spna>Real time Wireframes</spna></p>
+      <div className="flex flex-row gap-4"><div className={tagClass}>Dynamic Components</div> <div className={tagClass}>Generative Prompts</div> <div className={tagClass}>Real time Wireframes</div></div>
     </div>,
   },
   {
@@ -269,7 +270,7 @@ export const accordionItems = [
         Creating robust design systems that scale with AI. We define the tokens, rules, and constraints that allow agents to build consistent UI
       </p>
       <br />
-      <p><span>Tokens</span> <span>Guidlines</span> <spna>Scalability</spna></p>
+      <div className="flex flex-row gap-4"><div className={tagClass}>Tokens</div> <div className={tagClass}>Guidlines</div> <div className={tagClass}>Scalability</div></div>
     </div>,
   },
   {
@@ -280,7 +281,7 @@ export const accordionItems = [
         Optimizing the interaction layer between human cognition and artificial intelligence. Making complex models accessible and intuitive.
       </p>
       <br />
-      <p><span>Tokens</span> <span>Guidlines</span> <spna>Scalability</spna></p>
+      <div className="flex flex-row gap-4"><div className={tagClass}>Tokens</div> <div className={tagClass}>Guidlines</div> <div className={tagClass}>Scalability</div></div>
     </div>,
   },
   {
@@ -291,7 +292,7 @@ export const accordionItems = [
         Defining the role of AI in your product lifecycle. From feature discovery to deployment, we map the path to intelligent utility.
       </p>
       <br />
-      <p><span>Roadmap Discovery</span> <span>UX Direction</span> <spna>PMF(Product Market Fit)</spna></p>
+      <div className="flex flex-row gap-4"><div className={tagClass}>Roadmap Discovery</div> <div className={tagClass}>UX Direction</div> <div className={tagClass}>PMF(Product Market Fit)</div></div>
     </div>,
   },
 ];
@@ -380,147 +381,318 @@ export const testimonials = [
     message: "Your designers bring so many mind-project. I’m very impressed!",
     client: {
       name: "Jatin from Toast",
-      feedbackImage:inLove,
+      feedbackImage: inLove,
       clientImage: clientImage,
-      clientLogo:toast
+      clientLogo: toast
     }
   },
- {
+  {
     message: "Your designers bring so many mind-project. I’m very impressed!",
     client: {
       name: "Jatin from instapop",
-      feedbackImage:thumbUp,
+      feedbackImage: thumbUp,
       clientImage: clientImage,
-     clientLogo:instapop
+      clientLogo: instapop
     }
   },
-   {
+  {
     message: "Your designers bring so many mind-project. I’m very impressed!",
     client: {
       name: "Jatin from wordofMouth",
-      feedbackImage:inLove,
+      feedbackImage: inLove,
       clientImage: clientImage,
-      clientLogo:wordofMouth
+      clientLogo: wordofMouth
     }
   },
-     {
+  {
     message: "Your designers bring so many mind-project. I’m very impressed!",
     client: {
       name: "Jatin from falcon Fitness",
-      feedbackImage:thumbUp,
+      feedbackImage: thumbUp,
       clientImage: clientImage,
-      clientLogo:falconFitness
+      clientLogo: falconFitness
     }
   },
-      {
+  {
     message: "Your designers bring so many mind-project. I’m very impressed!",
     client: {
       name: "Jatin from jaldhara polytubes",
-      feedbackImage:inLove,
+      feedbackImage: inLove,
       clientImage: jaldhara,
-      clientLogo:falconFitness
+      clientLogo: falconFitness
     }
   },
 ];
 
 export const stats = [
-    {
-        title: "100+",
-        subTitle: "Projects Designed",
-        image: rocket
-    },
-    {
-        title: "25%",
-        subTitle: "Average increase in leads",
-        image: leads
-    },
-    {
-        title: "5 weeks",
-        subTitle: "Average Design time",
-        image: calendar
-    }
+  {
+    title: "100+",
+    subTitle: "Projects Designed",
+    image: rocket
+  },
+  {
+    title: "25%",
+    subTitle: "Average increase in leads",
+    image: leads
+  },
+  {
+    title: "5 weeks",
+    subTitle: "Average Design time",
+    image: calendar
+  }
 ];
 
 export const clients = [
-    {
-        alt: "instapop",
-        image: instapop
-    },
-    {
-        alt: "toast",
-        image: toast,
-    },
-    {
-        alt: "word of mouth",
-        image: wordofMouth,
-    },
-    {
-        alt: "jaldhara polytubes",
-        image: jaldhara
-    },
-    {
-        alt: "falcon fitness",
-        image: falconFitness
-    },
-    {
-      alt:"Pathavi Farms",
-      image:pathviFarms
-    },
-    {alt:"WishIt", 
-      image:wishit,
-    },
-    {alt:"Visao",image:visao}
+  {
+    alt: "instapop",
+    image: instapop
+  },
+  {
+    alt: "toast",
+    image: toast,
+  },
+  {
+    alt: "word of mouth",
+    image: wordofMouth,
+  },
+  {
+    alt: "jaldhara polytubes",
+    image: jaldhara
+  },
+  {
+    alt: "falcon fitness",
+    image: falconFitness
+  },
+  {
+    alt: "Pathavi Farms",
+    image: pathviFarms
+  },
+  {
+    alt: "WishIt",
+    image: wishit,
+  },
+  { alt: "Visao", image: visao }
 ]
 
-export const faqs =[
-  {  key: '1',
-    label: "What's unique about Nebula?",
+export const faqs = [
+  {
+    key: '1',
+    title: "What exactly does Bright Torque do ?",
+    children: <div className={`${jarkata.className} text-sm leading-6 !pl-0 text-white text-sm`}>
+      <p>We help brands build a powerful digital presence through strategic UX design, high-converting websites, and AI-enabled product systems. From brand positioning to scalable design systems, we work at the intersection of design, business strategy, and intelligent automation.</p>
+    </div>,
+  },
+  {
+    key: '2',
+    title: "Are you a design agency or a tech agency ?",
     children: <div className={`${jarkata.className} text-sm leading-6 !pl-0 text-white text-sm`}>
       <p>
-        We build adaptive interfaces that evolve based on user intent and context. Moving beyond static screens to fluid, intelligent experiences.
+        We’re a design-first studio with strong product and engineering understanding.
       </p>
-      <br />
-      <p><span>Dynamic Components</span> <span>Generative Prompts</span> <spna>Real time Wireframes</spna></p>
+      <p>
+        Our foundation is UX and product thinking. Technology and AI are tools we use — but clarity, conversion, and experience come first.
+
+      </p>
     </div>,
-    },
-     {  key: '2',
-    label: "How many builds can I request each month?",
+  },
+  {
+    key: '3',
+    title: 'How is Bright Torque different from other design agencies?',
+    children: <div className={`${jarkata.className} text-sm leading-6 !pl-0 text-white text-sm`}>
+      <p>Most agencies focus on aesthetics.</p>
+      <p>We focus on:</p>
+      <ul className="list-disc pl-5">
+        <li>
+          Conversion architecture
+        </li>
+        <li>
+          User psychology
+        </li>
+        <li>
+          Scalable design systems
+        </li>
+        <li>
+          AI-enabled workflows
+        </li>
+        <li>
+          Long-term product thinking
+        </li>
+      </ul>
+      <p>
+        We design brands that are not just beautiful — but built to grow.
+      </p>
+    </div>,
+  },
+  {
+    key: '4',
+    title: 'How do we approach a new project?',
     children: <div className={`${jarkata.className} text-sm leading-6 !pl-0 text-white text-sm`}>
       <p>
-        We build adaptive interfaces that evolve based on user intent and context. Moving beyond static screens to fluid, intelligent experiences.
+        We start with clarity.
       </p>
-      <br />
-      <p><span>Dynamic Components</span> <span>Generative Prompts</span> <spna>Real time Wireframes</spna></p>
+      <ul className="list-disc pl-5">
+        <li>
+          Business goals
+        </li>
+        <li>
+          Audience psychology
+        </li>
+        <li>
+          Conversion pathways
+        </li>
+        <li>
+          UX structure
+        </li>
+        <li>
+          Visual direction
+        </li>
+        <li>
+          Scalable system design
+        </li>
+      </ul>
+      <p>
+        We don’t jump into Figma.
+      </p>
+      <p>
+        We design from strategy outward.
+      </p>
     </div>,
-    },
-      {  key: '3',
-    label:'Can I cancel my subscription at any time?',
+  },
+  {
+    key: '5',
+    title: 'Do we use AI in your process?',
     children: <div className={`${jarkata.className} text-sm leading-6 !pl-0 text-white text-sm`}>
       <p>
-        We build adaptive interfaces that evolve based on user intent and context. Moving beyond static screens to fluid, intelligent experiences.
+
+        Yes — but responsibly.
       </p>
-      <br />
-      <p><span>Dynamic Components</span> <span>Generative Prompts</span> <spna>Real time Wireframes</spna></p>
+      <p>
+
+        We use AI to:
+      </p>
+      <ul className="list-disc pl-5">
+        <li>
+          Accelerate research
+        </li>
+        <li>
+          Map user journeys
+        </li>
+        <li>
+          Audit UX flows
+        </li>
+        <li>
+          Improve content clarity
+        </li>
+        <li>
+          Create smarter product interactions
+        </li>
+      </ul>
+      <p>
+
+        AI enhances our thinking — it doesn’t replace it.
+      </p>
+
     </div>,
-    },
-          {  key: '4',
-    label: 'How secure are your solutions?',
+  },
+    {
+    key: '6',
+    title: 'Can we build AI-first products?',
     children: <div className={`${jarkata.className} text-sm leading-6 !pl-0 text-white text-sm`}>
       <p>
-        We build adaptive interfaces that evolve based on user intent and context. Moving beyond static screens to fluid, intelligent experiences.
+
+       Yes.
       </p>
-      <br />
-      <p><span>Dynamic Components</span> <span>Generative Prompts</span> <spna>Real time Wireframes</spna></p>
+      <p>
+
+      We help brands design:
+      </p>
+      <ul className="list-disc pl-5">
+        <li>
+         AI-powered dashboards
+        </li>
+        <li>
+          Intelligent recommendation systems
+        </li>
+        <li>
+          AI audit layers
+        </li>
+        <li>
+          Conversational interfaces
+        </li>
+        <li>
+          Automation-first workflows
+        </li>
+      </ul>
+      <p>
+        Our focus is on human-centered AI, not just adding “AI” as a feature.
+      </p>
+
     </div>,
-    },
-          {  key: '5',
-    label: 'Can your solutions scale with my business growth?',
+  },
+     {
+    key: '7',
+    title: 'Why is our pricing higher than freelancers?',
     children: <div className={`${jarkata.className} text-sm leading-6 !pl-0 text-white text-sm`}>
       <p>
-        We build adaptive interfaces that evolve based on user intent and context. Moving beyond static screens to fluid, intelligent experiences.
+
+     Because you’re not hiring a designer — you’re investing in a system.
       </p>
-      <br />
-      <p><span>Dynamic Components</span> <span>Generative Prompts</span> <spna>Real time Wireframes</spna></p>
+      <p>
+
+      We bring:
+      </p>
+      <ul className="list-disc pl-5">
+        <li>
+         Product strategy
+        </li>
+        <li>
+          UX architecture
+        </li>
+        <li>
+          Conversion thinking
+        </li>
+        <li>
+          Design system scalability
+        </li>
+        <li>
+          AI integration capability
+        </li>
+      </ul>
+      <p>
+        Our work is built for growth, not just launch.
+      </p>
+
     </div>,
-    },
+  },
+      {
+    key: '8',
+    title: 'What industries do you specialize in?',
+    children: <div className={`${jarkata.className} text-sm leading-6 !pl-0 text-white text-sm`}>
+      <p>
+
+     We are industry-agnostic but especially experienced in:
+      </p>
+      <ul className="list-disc pl-5">
+        <li>
+         SaaS
+        </li>
+        <li>
+          Marketplaces
+        </li>
+        <li>
+         AI-first platforms
+        </li>
+        <li>
+          Creator economy tools
+        </li>
+        <li>
+          E-commerce
+        </li>
+      </ul>
+      <p>
+       If your product requires thoughtful user experience — we can help.
+      </p>
+
+    </div>,
+  },
 ]

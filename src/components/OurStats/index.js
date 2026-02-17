@@ -44,7 +44,7 @@ const OurStats = () => {
                         }}
                     >
                         {[...clients, ...clients].map((item, index) => (
-                            <Image src={item.image} alt={item.alt} width={200} height={isMobile?34:45} className='object-contain object-center max-h-[44px] w-auto' />
+                            <Image src={item.image} alt={item.alt} width={200} height={isMobile?34:45} className='object-contain object-center max-h-[44px] w-auto' key={index} />
                         ))}
                     </motion.div>
                 </div>

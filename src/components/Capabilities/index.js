@@ -1,10 +1,14 @@
 import { strategies, designs } from "@/data";
-import { Plus_Jakarta_Sans } from "next/font/google";
+import { Plus_Jakarta_Sans, Syne } from "next/font/google";
 
 const jarkata = Plus_Jakarta_Sans({
   weight: "400",
   subsets: ["latin"],
 });
+const syne = Syne({
+  weight:['600','400','500'],
+  subsets:["latin"]
+})
 
 const Capabilities = () => {
   return (
@@ -13,7 +17,7 @@ const Capabilities = () => {
         className="lg:px-[120px] sm:px-[70px] sm:py-[60px] p-5 bg-white "
         key="1"
       >
-        <p className="text-[#032825] sm:text-[54px] text-[32px] leading-[84px] font-semibold">
+        <p className={`text-[#032825] sm:text-[54px] text-[32px] leading-[84px] font-semibold ${syne.className}`}>
           Our Capabilities
         </p>
         <p className="text-[#032825] text-xl">
@@ -25,7 +29,7 @@ const Capabilities = () => {
       
       <div key="2" className="lg:px-[120px] sm:px-[70px] sm:py-[60px] p-5 sticky top-10 z-10">
         <div className="flex flex-row justify-between items-center">
-          <p className="text-[#001325F2] text-[44px]">Strategy</p>
+          <p className={`text-[#001325F2] text-[44px] ${syne.className} font-normal`}>Strategy</p>
           <div className="flex justify-end">
             <p className="text-[#001325F2] sm:text-[24px]">1/2</p>
           </div>
@@ -33,7 +37,7 @@ const Capabilities = () => {
         <div className="h-[1px] bg-primary w-full mt-5" />
         <div className="grid sm:grid-cols-2 sm:gap-20 gap-10 mt-10 w-full">
           {strategies.map((strategy) => (
-            <div className="w-full" key={strategy.heading}>
+            <div className={`w-full ${syne.className} font-medium`} key={strategy.heading}>
               <p className="text-[#001325D6] text-[24px]">{strategy.heading}</p>
               <p className={`text-sm text-[#001325D6] sm:w-3/4 ${jarkata.className}`}>
                 {strategy.description}
@@ -45,7 +49,7 @@ const Capabilities = () => {
       
       <div key="3" className="lg:px-[120px] sm:px-[70px] sm:py-[60px] p-5 bg-primary relative z-20">
         <div className="flex flex-row justify-between items-center">
-          <p className="text-[#001325F2] text-[44px]">Design</p>
+          <p className={`text-[#001325F2] text-[44px] ${syne.className} font-normal`}>Design</p>
           <div className="flex justify-end">
             <p className="text-[#001325F2] sm:text-[24px]">2/2</p>
           </div>
@@ -54,7 +58,7 @@ const Capabilities = () => {
         <div className="grid sm:grid-cols-2 sm:gap-20 gap-10 sm:mt-10 mt-5">
           {designs.map((design) => (
             <div key={design.heading}>
-              <p className="text-[#001325D6] text-[24px]">{design.heading}</p>
+              <p className={`text-[#001325D6] text-[24px] ${syne.className} font-medium`}>{design.heading}</p>
               <p className={`text-sm text-[#001325D6] sm:w-3/4 ${jarkata.className}`}>
                 {design.description}
               </p>
