@@ -148,3 +148,11 @@ margin-top: 0;
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+.home-faq ul{
+ list-style-type: disc;
+ margin-bottom: 15px;
+}
+.home-faq p{
+  margin-bottom: 15px;
+}
