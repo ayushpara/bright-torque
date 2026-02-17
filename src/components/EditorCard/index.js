@@ -11,8 +11,8 @@ const EditorCard = ({ editor }) => {
         <div className='flex flex-col items-center px-4'>
             <div className='gap-2 border-[#F2F2F2] border-1 border border solid h-auto p-6 rounded-[20px] flex flex-col items-center w-full'>
                 <Image src={editor?.image} alt='editor' preload width={112} height={112} />
-                <p className='font-semibold'>{editor?.name}</p>
-                <p className='font-semibold'>{editor?.designation}</p>
+                <p className='font-semibold text-black-3'>{editor?.name}</p>
+                <p className='font-semibold text-black-3'>{editor?.designation}</p>
                 <div className='flex gap-4 mt-2'>
                     {editor?.linkedin && (
                         <Link href={editor?.linkedin}>
