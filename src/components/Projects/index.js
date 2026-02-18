@@ -14,7 +14,7 @@ const Projects = () => {
     <div className={`sm:py-[80px] lg:px-[120px] sm:px-[70px] p-5 ${jarkata.className}`}>
       <div>
         <p className="text-[#001325F2] font-medium text-[44px] leading-[44px] ">
-          Look at the projects we’ve delivered !
+          Look at the projects we’ve <span>delivered !</span>
         </p>
         <p className="text-[#001325A3] text-xl pt-5">
         We collaborate with SaaS and tech companies worldwide, including industry leaders.
