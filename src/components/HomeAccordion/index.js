@@ -18,7 +18,7 @@ const HomeAccordion = () => {
 
     return (
         <div className={`${jarkata.className}`}>
-            <div className='flex flex-col sm:flex-row sm:px-[70px] p-5'>
+            <div className='flex flex-col md:flex-row sm:px-[70px] p-5'>
                 <div className='flex-1 flex items-center'>
                     <div className='max-w-[330px]'>
                         <h3 className={`text-[44px] leading-[54px] ${syne.className} text-black-3`}>

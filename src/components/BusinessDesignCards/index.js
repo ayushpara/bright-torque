@@ -19,9 +19,9 @@ const BusinessDesignCard = ({
   const isMobile = useMediaQuery("(max-width: 767px)");
   return (
     <div
-      className={`flex flex-col sm:w-full ${jarkata.className} pt-8 sm:pt-0 h-full`}
+      className={`flex flex-col sm:w-full ${jarkata.className} pt-0 sm:pt-0 py-5 h-[100%]`}
     >
-      <div className="flex flex-col sm:flex-row justify-between h-full pt-6 pb-10">
+      <div className="flex flex-col sm:flex-row justify-between h-[100%]">
         <div className="flex flex-col w-[100%] sm:w-[60%]">
           <p className="text-white text-2xl sm:text-[32px] font-semibold sm:font-bold">{businessDesign.heading}</p>
           <p className="text-white text-sm mt-6 font-medium leading-5">
@@ -152,8 +152,8 @@ const BusinessDesignCards = () => {
 
   return (
     <div className="flex flex-col w-full">
-      <section ref={sectionRef} className="relative h-[300vh]">
-        <div className="sticky top-0 h-screen flex items-center overflow-hidden w-full">
+      <section ref={sectionRef} className="relative h-[350vh] mb-10">
+        <div className="sticky top-[100px] h-[calc(100vh-180px)] md:h-[calc(100vh-100px)] flex sm:items-center overflow-hidden w-full">
           <motion.div
             style={{ x }}
             className="flex flex-row gap-[30px] px-5 sm:px-20"
@@ -167,7 +167,7 @@ const BusinessDesignCards = () => {
               </div>
             ))}
           </motion.div>
-          <div className="absolute bottom-10 left-0 w-full px-5 sm:px-20">
+          <div className="absolute bottom-0 sm:bottom-10 left-0 w-full px-5 sm:px-20">
             <div className="w-full rounded-[20px] h-[5px] bg-[#FFFFFF1A] relative overflow-hidden">
               <motion.div
                 style={{ scaleX: scrollYProgress }}

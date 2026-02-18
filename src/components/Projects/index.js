@@ -24,7 +24,7 @@ const Projects = () => {
          
         </p>
       </div>
-      <div className="grid sm:grid-cols-2 sm:gap-20 gap-10 pt-20">
+      <div className="grid sm:grid-cols-2 md:gap-20 gap-10 pt-20">
         {projects.map((project, index) => (
           <div className="sm:space-y-3 space-y-2" key={index}>
             <div className="relative sm:h-[356px] h-[196px] w-full">

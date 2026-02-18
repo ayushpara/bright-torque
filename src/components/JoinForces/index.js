@@ -13,7 +13,7 @@ const JoinForces = () => {
             className="object-cover w-full h-full absolute"
           />
         </div>
-        <div className="sm:px-20">
+        <div className="md:px-20">
           <p className="text-green-3 sm:text-[44px] text-base sm:leading-[58px] text-center">
             We collaborate with companies committed to meeting genuine human
             needs. By utilizing our comprehensive digital capabilities, we craft
