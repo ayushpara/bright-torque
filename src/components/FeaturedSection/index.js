@@ -33,7 +33,7 @@ const FeaturedSection = ({ editorials }) => {
             {editorials.slice(0, 4).map((editorial, index) => (
               <motion.div
                 key={index}
-                className="relative flex-grow sm:h-[512px] h-[129px] hover:cursor-pointer bg-no-repeat bg-cover bg-center"
+                className="relative flex-grow sm:h-[300px] md:h-[512px] h-[129px] hover:cursor-pointer bg-no-repeat bg-cover bg-center"
                 onHoverStart={() => setSelectedIndex(index)}
                 onHoverEnd={() => setSelectedIndex(-1)}
                 style={{
