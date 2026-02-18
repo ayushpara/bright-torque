@@ -152,8 +152,8 @@ const BusinessDesignCards = () => {
 
   return (
     <div className="flex flex-col w-full">
-      <section ref={sectionRef} className="relative h-[350vh]">
-        <div className="sticky top-[100px] h-[calc(100vh-180px)] h-[calc(100vh-100px)] flex sm:items-center overflow-hidden w-full">
+      <section ref={sectionRef} className="relative h-[350vh] mb-10">
+        <div className="sticky top-[100px] h-[calc(100vh-180px)] md:h-[calc(100vh-100px)] flex sm:items-center overflow-hidden w-full">
           <motion.div
             style={{ x }}
             className="flex flex-row gap-[30px] px-5 sm:px-20"
