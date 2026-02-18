@@ -88,7 +88,7 @@ export const viewport = {
                   <FooterLayout />
                 </div>
                   <Footer/>
-                <div className="sm:hidden sticky bottom-0 z-50 ">
+                <div className="md:hidden sticky bottom-0 z-50 ">
                   <MobileFooterNavigator />
                 </div>
               </div>
