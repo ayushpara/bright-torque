@@ -35,7 +35,7 @@ const Capabilities = () => {
           </div>
         </div>
         <div className="h-[1px] bg-primary w-full mt-5" />
-        <div className="grid sm:grid-cols-2 sm:gap-20 gap-10 mt-10 w-full">
+        <div className="grid sm:grid-cols-2 md:gap-20 gap-10 mt-10 w-full">
           {strategies.map((strategy) => (
             <div className={`w-full ${syne.className} font-medium`} key={strategy.heading}>
               <p className="text-[#001325D6] text-[24px]">{strategy.heading}</p>
@@ -55,7 +55,7 @@ const Capabilities = () => {
           </div>
         </div>
         <div className="h-[1px] bg-primary w-full mt-5" />
-        <div className="grid sm:grid-cols-2 sm:gap-20 gap-10 sm:mt-10 mt-5">
+        <div className="grid sm:grid-cols-2 md:gap-20 gap-10 sm:mt-10 mt-5">
           {designs.map((design) => (
             <div key={design.heading}>
               <p className={`text-[#001325D6] text-[24px] ${syne.className} font-medium`}>{design.heading}</p>
