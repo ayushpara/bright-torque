@@ -77,7 +77,7 @@ const HomeBanner = () => {
             {homeProjects.map((project, index) => (
               <motion.div
                 key={index}
-                className={`relative flex-grow transition-all duration-300 sm:h-[512px] h-[129px] hover:cursor-pointer  ${
+                className={`relative flex-grow transition-all duration-300 sm:h-[312px] md:h-[512px] h-[129px] hover:cursor-pointer  ${
                   selectedIndex === index ? "col-span-3" : "col-span-1"
                 }`}
                 onClick={() => setSelectedIndex(index)}
@@ -109,12 +109,12 @@ const HomeBanner = () => {
                     ))}
                   </div>
                   <div>
-                    <div className="sm:rounded-[1440px] border border-secondary rounded-[312px] sm:h-[56px] sm:w-[208px] w-[40px] h-[13.83px] bg-white justify-center flex items-center">
-                      <div className="flex flex-row sm:space-x-7 space-x-2 items-center">
+                    <div className="sm:rounded-[1440px] border border-secondary rounded-[312px] sm:h-[30px] md:h-[56px] sm:w-[100px]  md:w-[208px] w-[40px] h-[13.83px] bg-white justify-center flex items-center">
+                      <div className="flex flex-row md:space-x-7 space-x-2 items-center">
                         <p className="text-black-2 sm:text-lg text-[4.34px]">
                           View
                         </p>
-                        <div className="relative w-[6.84px] h-[5px] sm:w-[30px] sm:h-[21px]">
+                        <div className="relative w-[6.84px] h-[5px] sm:w-[20px] sm:h-[13px] md:w-[30px] md:h-[21px]">
                           <Image src={viewArrowIcon} alt="view" />
                         </div>
                       </div>

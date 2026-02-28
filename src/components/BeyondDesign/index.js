@@ -14,7 +14,7 @@ const jarkata = Plus_Jakarta_Sans({
 const BeyondDesign = () => {
   return (
     <div className={`smlp-0 pt-7 ${jarkata.className}`}>
-      <div className="grid sm:grid-cols-2 sm:items-center">
+      <div className="grid md:grid-cols-2 sm:items-center">
         <div>
           <div className="space-y-5">
             <Image src={beyondStarIcon} alt="beyond design" />
@@ -27,14 +27,14 @@ const BeyondDesign = () => {
           </div>
         </div>
         <div className="sm:py-0 py-5">
-          <p className="sm:text-[80px] sm:leading-[120px] tracking-[-1.4px] leading-[40px] text-[32px] sm:text-right text-black-3 sm:font-normal font-medium ">
+          <p className="sm:text-[80px] sm:leading-[120px] tracking-[-1.4px] leading-[40px] text-[32px] md:text-right text-black-3 sm:font-normal font-medium ">
             Thinking Just<br/> 
  Beyond Design
           </p>
         </div>
       </div>
       <div>
-        <div className="grid sm:grid-cols-3 sm:gap-10 gap-5 sm:pt-20 sm:pb-8 pt-5">
+        <div className="grid md:grid-cols-3 md:gap-10 gap-5 md:pt-20 md:pb-8 pt-5">
           <div className="bg-[#F6D0DB] rounded-[48px] sm:p-[56px] md:p-[32px] py-10 px-5 justify-between  flex flex-col col-span-1 h-auto gap-[64px] ">
             <div className="relative h-[88px] w-[88px]">
               <Image
@@ -54,8 +54,8 @@ const BeyondDesign = () => {
               </p>
             </div>
           </div>
-          <div className="sm:col-span-2 w-full ">
-            <div className="bg-white rounded-[48px] sm:p-[56px] md:p-[32px] p-10 justify-between  flex flex-col col-span-1 sm:h-[422px] gap-[64px]">
+          <div className="md:col-span-2 w-full ">
+            <div className="bg-white rounded-[48px] sm:p-[56px] md:p-[32px] p-10 justify-between  flex flex-col col-span-1 md:h-[422px] gap-[64px]">
               <div className="relative h-[88px] w-[88px]">
                 <Image
                   src={cuttingEdgeIcon}
@@ -73,7 +73,7 @@ const BeyondDesign = () => {
                 </p>
               </div>
             </div>
-            <div className="grid sm:grid-cols-2 sm:gap-10 gap-5 sm:mt-10 mt-5">
+            <div className="grid md:grid-cols-2 sm:gap-10 gap-5 sm:mt-10 mt-5">
               <div className="bg-[#B6D5D8] rounded-[48px] sm:p-[56px] md:p-[32px] sm:py-10 py-10 px-5 justify-between flex flex-col col-span-1 min-h-[422px] gap-10">
                 <div className="relative h-[88px] w-[88px]">
                   <Image

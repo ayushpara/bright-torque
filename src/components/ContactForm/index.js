@@ -81,7 +81,7 @@ const ContactForm = () => {
   return (
     <div className="bg-white sm:my-[70px] my-[40px] rounded-[48px]">
       {contextHolder}
-      <div className="sm:p-[72px] p-5 sm:w-2/3">
+      <div className="sm:p-[72px] p-5 lg:w-2/3">
         <div className="sm:py-5 py-3">
           <Spin spinning={loading}>
             <Form

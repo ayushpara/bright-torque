@@ -14,7 +14,7 @@ const Projects = () => {
     <div className={`sm:py-[80px] lg:px-[120px] sm:px-[70px] p-5 ${jarkata.className}`}>
       <div>
         <p className="text-[#001325F2] font-medium text-[44px] leading-[44px] ">
-          Look at the projects we’ve delivered !
+          Look at the projects we’ve <span>delivered !</span>
         </p>
         <p className="text-[#001325A3] text-xl pt-5">
         We collaborate with SaaS and tech companies worldwide, including industry leaders.
@@ -24,7 +24,7 @@ const Projects = () => {
          
         </p>
       </div>
-      <div className="grid sm:grid-cols-2 sm:gap-20 gap-10 pt-20">
+      <div className="grid sm:grid-cols-2 md:gap-20 gap-10 pt-20">
         {projects.map((project, index) => (
           <div className="sm:space-y-3 space-y-2" key={index}>
             <div className="relative sm:h-[356px] h-[196px] w-full">

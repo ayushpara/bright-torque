@@ -35,7 +35,7 @@ const HeaderLayout = () => {
 
   return (
     <div className={`bg-primary sm:h-[95px] h-[71px] w-full lg:px-[120px] sm:px-[70px] px-5 header-layout ${jarkata.className}`}>
-      <div className="flex flex-row justify-between h-full items-center">
+      <div className="flex flex-row justify-between h-full items-center gap-4">
         <div className="flex items-center justify-center hover:cursor-pointer">
           <div className="relative w-[162px] h-[24px] ">
           <Image src={logoImage} preload alt="logo" onClick={()=>router.push(HOME)} className="object-cover w-full h-full absolute" />

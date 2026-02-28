@@ -6,7 +6,7 @@ const EditorialDetailBanner = ({ editorial }) => {
   const breadcrumb = <div><Link href="/" prefetch className="text-[#212121CC]">Home  / </Link> <Link href="/editorial" prefetch className="text-[#212121CC]">Editorial  / </Link><Link href={editorial?.slug} prefetch>{editorial?.title}</Link></div>
   return (
     <div className='w-full relative p-5 lg:px-[120px] sm:px-[70px] sm:py-16 z-1'>
-      <div className='absolute top-0 left-0 right-0 h-[80%] sm:h-[65%] bottom-0  bg-primary z-0'></div>
+      <div className='absolute top-0 left-0 right-0 h-[80%] md:h-[65%] bottom-0  bg-primary z-0'></div>
       <div className='w-full max-w-[1280px] mx-auto z-10 relative'>
         <div className='text-sm leading-none text-[#212121] font-normal'>{breadcrumb}</div>
         <h1 className='text-3xl leading-tight leading-relaxed sm:text-[4rem] sm:leading-[80px] text-green-1 mt-5 font-semibold'>{editorial?.title}</h1>
