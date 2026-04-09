@@ -4,6 +4,12 @@ import articleTheImportanceOfAccessibilityInModernDesign from "./the-importance-
 import articleWhatFounderGetWrongAboutDesign from "./what-founder-get-wrong-about-design";
 import articleWhyMostDigitalProductsFail from "./why-most-digital-products-fail"
 import articleWhyStartupsConfusePeedWithlCarity from "./why-startups-confuse-peed-with-clarity";
+////import new articles here
+///Example import articleName from "./article-name";
+
+
+
+
 const articles = [
     articleDesignThatEarnsTrust,
     articleWhyMostDigitalProductsFail,
@@ -11,6 +17,7 @@ const articles = [
     articleWhatFounderGetWrongAboutDesign,
     articleWhyStartupsConfusePeedWithlCarity,
     articleTheImportanceOfAccessibilityInModernDesign
+    //// add new articles here
 ];
 export default articles;
 

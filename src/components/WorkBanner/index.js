@@ -20,18 +20,18 @@ const WorkBanner = () => {
               Breaking new ground to
             </p>
             <p className="sm:text-[72px] text-[31px] sm:leading-[74px] leading-[40px] text-green-1 sm:block hidden">
-              transform design across industry...
+              transform design across industries...
             </p>
             <p className="sm:text-[72px] text-[31px] sm:leading-[74px] leading-[40px] text-green-1 sm:hidden">
               Breaking new ground to{" "}
               <span className="text-secondary">
-                transform design across industry...
+                transform design across industries...
               </span>
             </p>
             <p
               className={`text-green-3 sm:text-xl text-base sm:pt-5 pt-3 ${jarkata.className} `}
             >
-              Transforming pixels into meaningful designs
+              It's about clarity, usability, and growth. Our work focuses on improving product adoption, activation, user retention, and conversion.
             </p>
           </div>
           <div className="flex flex-row justify-end items-center flex-1">

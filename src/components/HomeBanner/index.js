@@ -2,12 +2,14 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+
 import starIcon from "../../static/icons/star.svg";
 import viewArrowIcon from "../../static/icons/viewArrow.svg";
 import { homeProjects } from "@/data";
 import { rotateVariants } from "@/utilities/helpers";
 import { Plus_Jakarta_Sans, Syne } from "next/font/google";
 import OurStats from "../OurStats";
+import { Button } from "antd";
 
 const jarkata = Plus_Jakarta_Sans({
   weight: "400",
@@ -35,13 +37,20 @@ const HomeBanner = () => {
             <p
               className={`text-green-3 sm:text-xl text-base mt-5 ${jarkata.className} sm:block hidden `}
             >
-              We’re a Product Design & Branding Agency  who specializes in B2B SaaS,<br /> Ecommerce platforms, complex web apps and diverse UI/UX design projects.
+              Bright Torque is your AI-powered B2B SaaS design partner. <br/>Developer-ready UI, design system, & developer-ready handoff in 3 weeks.
             </p>
             <p
               className={`text-green-3 sm:text-xl text-base mt-5 ${jarkata.className} sm:hidden  `}
             >
-              We’re a Product Design & Branding<br /> Agency  who specializes in B2B SaaS,<br /> Ecommerce platforms, complex web apps and<br /> diverse UI/UX design projects.
-            </p>
+              Bright Torque is your AI-powered B2B SaaS design partner. Developer-ready UI, design system, & developer-ready handoff in 3 weeks.
+            </p> 
+            <div className="flex flex-row sm:gap-10 gap-5 mt-10">
+              <Button href= "mailto:ayush@brightorque.com" className="flex min-h-[40px]" type="primary" style={{borderRadius:48}}>
+             Book a UX Audit
+            </Button>
+            </div>
+            
+
           </div>
         </div>
       </div>

@@ -19,9 +19,7 @@ const Projects = () => {
         <p className="text-[#001325A3] text-xl pt-5">
         We collaborate with SaaS and tech companies worldwide, including industry leaders.
           <br />
-          In 2023 alone, we supported our clients in securing significant funding by creating user-centric, visually striking products.
-         
-         
+          In 2025 alone, we supported our clients in securing significant funding by creating user-centric, visually striking products.         
         </p>
       </div>
       <div className="grid sm:grid-cols-2 sm:gap-20 gap-10 pt-20">

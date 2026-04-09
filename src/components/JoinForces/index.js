@@ -21,7 +21,7 @@ const JoinForces = () => {
             every day.
           </p>
         </div>
-        <Button href= "mailto:ayush@visao.io" className="flex min-h-[37px]" type="primary" style={{borderRadius:48}}>
+        <Button href= "mailto:ayush@brightorque.com" className="flex min-h-[37px]" type="primary" style={{borderRadius:48}}>
          Let’s Start a project
         </Button>
       </div>

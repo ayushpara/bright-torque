@@ -25,7 +25,7 @@ const Footer = () => {
                         <div className="relative w-[162px] h-[24px]">
                             <Image src={footerLogo} alt="logo" onClick={() => router.push(HOME)} className="object-cover w-full h-full absolute" />
                         </div>
-                        <p className='text-white mt-6 text-base sm:text-xl leading-8'>Design Experts.  Helping Mission-Focused  Zero-to-One Startups</p>
+                        <p className='text-white mt-6 text-base sm:text-xl leading-8'>Design Experts.Design Decisions, Made Visible.</p>
                     </div>
                 </div>
                 <div className='w-full sm:w-auto mt-6 sm:mt-0'>
@@ -45,7 +45,7 @@ const Footer = () => {
             </div>
             <div className='flex flex-col sm:flex-row justify-between items-start sm:items-center mt-10'>
                 <div>
-                    <p className='text-white text-xs'>&copy; {date.getFullYear()} Bright Torque Private Limited. All rights reserved.</p>
+                    <p className='text-white text-xs'>&copy; {date.getFullYear()} BrightTorque Private Limited. All rights reserved.</p>
                 </div>
                 <div className='flex flex-row gap-4 w-[183px] item-center justify-around mt-4 sm:mt-0'>
                     <XOutlined />

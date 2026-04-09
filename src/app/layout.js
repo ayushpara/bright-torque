@@ -48,7 +48,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bright Torque",
+    title: "BrightTorque",
     description: "We design market-ready B2B SaaS products, complex web apps and brand systems. Based in India — portfolio, services, and case studies",
     images: ["/Meta_image_Bright_Torque.png"],
   },

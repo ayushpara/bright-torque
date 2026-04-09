@@ -84,12 +84,12 @@ const BeyondDesign = () => {
                 </div>
                 <div className="space-y-5">
                   <p className="text-black-3 sm:text-[40px] text-[32px] leading-[48px]">
-                    Hide Nothing
+                    Conceal Nothing
                   </p>
                   <p className="text-black-3 text-lg ">
-                    For us, transparency isn't just a buzzword—it's our way of
-                    working. You'll be behind the scenes with our team, staying
-                    in the loop every step of the way.
+                    For us, transparency isn't just a buzzword—it's our style.
+                    You'll be behind the scenes with our team, staying
+                    in the loop every step.
                   </p>
                 </div>
               </div>
@@ -103,7 +103,7 @@ const BeyondDesign = () => {
                 </div>
                 <div className="space-y-5">
                   <p className="text-black-3 sm:text-[40px] text-[32px] leading-[48px]">
-                    Fresh Angles
+                    New Perspectives
                   </p>
                   <p className="text-black-3 text-lg ">
                     Explore, adapt, and stay curious. These are the values our

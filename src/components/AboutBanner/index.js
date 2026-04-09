@@ -20,11 +20,11 @@ const AboutBanner = () => {
         <div className="w-full sm:flex-row flex-col flex ">
           <div className="flex flex-col order-last sm:order-none sm:w-3/4 lg:pr-20">
             <h1 className={`sm:text-[72px] text-[35px]  sm:leading-[74px] leading-[40px] text-secondary ${syne.className}`}>
-              Transforming your ideas into{" "}
-              <span className="text-green-1">Brand & Products</span>
+              Design Partner that moves as {" "} 
+              <span className="text-green-1"> fast as your roadmap</span>
             </h1>
             <h1 className={`text-green-3 sm:text-xl text-base sm:pt-5 pt-3 ${jarkata.className} `}>
-              Breaking new ground to transform the industry.
+              Great product design isn't just about aesthetics. It's about crafting...
             </h1>
           </div>
           <div className="flex flex-row justify-end items-center flex-1 relaive">

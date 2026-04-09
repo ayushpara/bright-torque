@@ -30,7 +30,7 @@ const OurStats = () => {
             </div>
             <div className='w-full flex-col sm:flex-row flex items-center sm:border-t sm:border-t-1 sm:border-t-[#90CCD4]'>
                 <div className='bg-green-1 w-full sm:w-[380px] text-white flex items-center pl-4 relative z-[2] h-[70px] sm:h-[95px]'>
-                    Trusted by B2B leaders
+                Trusted by 20+ brands worldwide
                 </div>
                 <div className="sm:w-[80%] overflow-hidden mx-auto">
                     <motion.div

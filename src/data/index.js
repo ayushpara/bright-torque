@@ -73,6 +73,11 @@ export const headerButtons = [
     redirect: ABOUT,
     key: 3,
   },
+  /*{
+    name: "Editorials",
+    redirect: EDITORIAL, 
+    key: 4,
+  } commented out here */,
   {
     name: "Contact",
     redirect: CONTACT,
@@ -83,9 +88,9 @@ export const headerButtons = [
 export const homeProjects = [
   {
     heading: "Patahvi Farms",
-    description: "We designed Pathavi as a transparency-first digital experience, where trust is built through proof, not promises. Every interaction reveals the true journey of the product — from seed to bottle.",
+    description: "We designed PathaviFarms as a transparency-first digital experience, where trust is built through proof, not promises. Every interaction reveals the true journey of the product — from seed to bottle.",
     image: PathviImage,
-    tags: ["Brand", "Web", "SaaS"],
+    tags: ["Brand", "Web", "E-commerce"],
   },
   {
     heading: "Jaldhara Polytubes",
@@ -431,12 +436,12 @@ export const stats = [
     image: rocket
   },
   {
-    title: "25%",
+    title: "35%",
     subTitle: "Average increase in leads",
     image: leads
   },
   {
-    title: "5 weeks",
+    title: "3 weeks",
     subTitle: "Average Design time",
     image: calendar
   }

@@ -13,7 +13,7 @@ const ContactBanner = () => {
           <div className="flex flex-col order-last sm:order-none sm:w-3/4">
             <p className="text-green-3 sm:text-[72px] text-[36px] leading-[40px] sm:leading-[84px] sm:pt-5 pt-3">
               Let's have a <br />
-              Conversation
+              <p className="text-green-1" >Conversation...</p>
             </p>
           </div>
           <div className="flex flex-row justify-end items-center flex-1">
